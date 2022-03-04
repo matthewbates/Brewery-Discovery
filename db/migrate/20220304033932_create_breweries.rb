@@ -6,6 +6,7 @@ class CreateBreweries < ActiveRecord::Migration[6.1]
       t.string :beer_types
       t.integer :flagship_beers
       t.string :brewery_website
+      # t.string :brewery_address
       t.references :beer
 
       t.timestamps
