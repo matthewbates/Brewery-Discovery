@@ -4,7 +4,7 @@ class CreateBeers < ActiveRecord::Migration[6.1]
       t.string :beer_name
       t.float :beer_abv
       t.string :beer_type
-      # t.string :beer_description
+      t.references :brewery
 
       t.timestamps
     end

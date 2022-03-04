@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  
-  resources :beers
-  resources :breweries
-  # Routing logic: fallback requests for React Router.
-  # Leave this here to help deploy your app later!
-  get "*path", to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
+  resources :users
+  resources :brewery_users
+  resources :beers, only: %i[index show]
+  resources :breweries, only: %i[index show]
+
+  get '*path',
+      to: 'fallback#index',
+      constraints: ->(req) { !req.xhr? && req.format.html? }
 end
