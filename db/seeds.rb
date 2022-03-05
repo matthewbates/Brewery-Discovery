@@ -3,6 +3,7 @@ puts '🌱 Seeding data...'
 puts '🗑 Destroying old data...'
 Brewery.destroy_all
 Beer.destroy_all
+User.destroy_all
 
 puts '🏭 Creating breweries...'
 # MATTHEW'S BREWERIES
@@ -836,6 +837,7 @@ a87 =
     brewery: b18,
   )
 
+  u1 = User.create!(username: 'test', password_digest: 'test')
 puts '🤖 Beep boop beep, erasing data...beep boop...'
 sleep 2
 puts 'Just joking!'
