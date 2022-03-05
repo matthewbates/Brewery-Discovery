@@ -836,4 +836,7 @@ a87 =
     brewery: b18,
   )
 
+puts '🤖 Beep boop beep, erasing data...beep boop...'
+sleep 2
+puts 'Just joking!'
 puts '✅ Seeding done!'

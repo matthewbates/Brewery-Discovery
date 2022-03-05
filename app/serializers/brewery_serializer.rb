@@ -1,7 +1,7 @@
 class BrewerySerializer < ActiveModel::Serializer
   attributes :id,
              :brewery_name,
-             :brewery_logo,
+            #  :brewery_logo,
              :flagship_beers,
              :brewery_website,
              :brewery_address,
