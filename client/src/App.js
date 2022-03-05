@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Navbar, Nav, Container } from "react-bootstrap";
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import Home from "./components/Home";
+import Reviews from "./components/Reviews";
+import Login from "./components/Login";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar bg="dark" variant="dark">
+          <Container>
+            <Navbar.Brand as={Link} to="/">Brewery Discovery</Navbar.Brand>
+            <Nav className="me-auto">
+              <Nav.Link as={Link} to="/">
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/reviews">
+                Reviews
+              </Nav.Link>
+              <Nav.Link as={Link} to="/login">
+                Login
+              </Nav.Link>
+            </Nav>
+          </Container>
+        </Navbar>
+        <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/reviews" element={<Reviews />} />
+            <Route path="/login" element={<Login />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
