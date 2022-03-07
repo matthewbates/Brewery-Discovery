@@ -7,7 +7,7 @@ function Signup({ setCurrentUser }) {
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
 
-  function handleSignup(e) {
+  function handleSubmit(e) {
     e.preventDefault();
     fetch("/signup", {
       method: "POST",
@@ -17,10 +17,10 @@ function Signup({ setCurrentUser }) {
       body: JSON.stringify({
         username,
         password,
-        password_onfirmation: passwordConfirmation,
+        password_confirmation: passwordConfirmation,
       }),
     })
-      .then((response) => response.json())
+      .then((r) => r.json())
       .then(setCurrentUser);
   }
 
@@ -28,36 +28,34 @@ function Signup({ setCurrentUser }) {
     <Container>
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label></Form.Label>
           <Form.Control
             onChange={(e) => setUsername(e.target.value)}
-            type="username"
+            type="text"
+            id="username"
             value={username}
-            placeholder="Username..."
+            placeholder="Username"
           />
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label></Form.Label>
           <Form.Control
             onChange={(e) => setPassword(e.target.value)}
             type="password"
+            id="password"
             value={password}
-            placeholder="Password..."
+            placeholder="Password"
           />
         </Form.Group>
-
-        <Form.Group className="mb-3" controlId="formBasicPassWordConfirmation">
-          <Form.Label></Form.Label>
+        <Form.Group>
           <Form.Control
             onChange={(e) => setPasswordConfirmation(e.target.value)}
             type="password"
+            id="password"
             value={passwordConfirmation}
-            placeholder="Confirm Password..."
-          ></Form.Control>
+            placeholder="Confirm Password"
+          />
         </Form.Group>
 
-        <Button onChange={handleSignup} variant="primary">
+        <Button onClick={handleSubmit} variant="primary">
           Create Account
         </Button>
       </Form>

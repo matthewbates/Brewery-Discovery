@@ -18,6 +18,24 @@ function App() {
     });
   }, []);
 
+  function userDisplay() {}
+
+    function renderLogin() {
+      if (currentUser !== null) {
+        return (
+          <>
+            <p className="loginmsg">Welcome, {currentUser.username}!</p>
+            {/* <button onClick={handleLogout} className="logoutbtn button">
+              Logout
+            </button> */}
+          </>
+        );
+      } else {
+        return <Login user={currentUser} onLogin={setCurrentUser} />;
+      }
+    }
+
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -64,7 +82,7 @@ function App() {
             <Route path="/reviews" element={<Reviews />} />
             <Route
               path="/login"
-              element={<Login setCurrentUser={setCurrentUser} />}
+              element={<Login setCurrentUser={setCurrentUser} renderLogin={renderLogin} />}
             />
             <Route
               path="/signup"

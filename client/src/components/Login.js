@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-import Signup from "./Signup";
 
-function Login(setCurrentUser) {
+function Login({ setCurrentUser, renderLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [onLogin, setOnLogin] = useState("");
@@ -20,8 +19,6 @@ function Login(setCurrentUser) {
       body: JSON.stringify(login),
     }).then((r) => console.log(r));
   }
-
-  function userDisplay() {}
 
   return (
     <Container>
