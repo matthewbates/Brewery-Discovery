@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-// import Login from "./Login";
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import Login from "./Login";
 
 function Signup({ setCurrentUser }) {
   const [username, setUsername] = useState("");
@@ -59,6 +60,9 @@ function Signup({ setCurrentUser }) {
           Create Account
         </Button>
       </Form>
+      <p className="mt-2">
+        Already have an acount? <Link to="/login">Signin</Link>
+      </p>
     </Container>
   );
 }
