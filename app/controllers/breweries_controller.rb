@@ -1,4 +1,5 @@
 class BreweriesController < ApplicationController
+  skip_before_action :authorized, only: %i[index show]
   def index
     render json: Brewery.all
   end
