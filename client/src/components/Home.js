@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import BreweryCardList from "./BreweryCardList";
 import { Row, Col, Container, Card } from "react-bootstrap";
+import Search from "./Search";
 
 function Home({ currentUser }) {
   const [breweries, setBreweries] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("/breweries")
@@ -31,7 +33,12 @@ function Home({ currentUser }) {
 
         <Container>
           <Row>
-            <BreweryCardList breweries={breweries} />
+            <Search search={search} setter={setSearch} />
+            <BreweryCardList
+              breweries={breweries}
+              search={search}
+              setter={setSearch}
+            />
           </Row>
         </Container>
       </Container>

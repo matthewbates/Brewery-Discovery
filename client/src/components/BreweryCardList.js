@@ -2,12 +2,16 @@ import React from "react";
 import { Row, Container } from "react-bootstrap";
 import BreweryCard from "./BreweryCard";
 
-function BreweryCardList({ breweries }) {
+function BreweryCardList({ breweries, search, setter }) {
+
+  const filteredBreweries = breweries.filter((brewery) => (
+    brewery.brewery_name.toLowerCase().includes(search.toLowerCase())
+  ))
   return (
     <>
       <Container>
         <Row>
-          {breweries.map((brewery) => {
+          {filteredBreweries.map((brewery) => {
             return (
               <BreweryCard
                 key={brewery.id}
