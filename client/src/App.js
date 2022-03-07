@@ -25,9 +25,9 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navbar bg="dark" variant="dark">
-          <Container>
+          <Container fluid className="mx-3">
             <Navbar.Brand as={Link} to="/">
-              Brewery Discovery
+              <h3> Brewery Discovery</h3>
             </Navbar.Brand>
             <div className="d-flex justify-content-end align-items-center">
               <Nav className="me-auto">

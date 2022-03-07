@@ -15,14 +15,25 @@ function Home({ currentUser }) {
 
   return (
     <>
-      <Container>
-        <h3 className="p-2 text-center">
-          Welcome To The Brewery Discovery Project
-        </h3>
-        <h1 className="p-2 text-center">Hello {currentUser.username}</h1>
-        <Row>
-          <BreweryCardList breweries={breweries} />
-        </Row>
+      <Container fluid className="container-home-fluid">
+        <div className="home-jumbotron d-flex flex-column justify-content-center">
+          <div className="h-50 d-flex flex-column justify-content-center">
+            <Col>
+              <h1 className="p-2 text-center">Hello {currentUser.username}</h1>
+            </Col>
+            <Col>
+              <h3 className="p-2 text-center">
+                Welcome To The Brewery Discovery Project
+              </h3>
+            </Col>
+          </div>
+        </div>
+
+        <Container>
+          <Row>
+            <BreweryCardList breweries={breweries} />
+          </Row>
+        </Container>
       </Container>
     </>
   );
