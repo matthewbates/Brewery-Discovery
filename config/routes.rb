@@ -3,10 +3,14 @@ Rails.application.routes.draw do
   resources :brewery_users
   resources :beers, only: %i[index show]
   resources :breweries, only: %i[index show]
-  # log in 
+
+  # log in
   post '/login', to: 'sessions#create'
-  # log out 
+
+  # log out
   delete '/logout', to: 'sessions#destroy'
+
+  post '/signup', to: 'users#create'
 
   get '/me', to: 'users#show'
   get '*path',

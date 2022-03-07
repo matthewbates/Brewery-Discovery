@@ -1,23 +1,21 @@
 import "./App.css";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Reviews from "./components/Reviews";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
-const [currentUser, setCurrentUser] = useState("");
- 
-useEffect(()=> { 
-  fetch("/me")
-  .then(res => {
-    if(res.ok){
-      res.json().then(user => setCurrentUser(user))
-    }
-  })
-},[])
-
+  const [currentUser, setCurrentUser] = useState("");
+  useEffect(() => {
+    fetch("/me").then((res) => {
+      if (res.ok) {
+        res.json().then((user) => setCurrentUser(user));
+      }
+    });
+  }, []);
   function handleLogout(e) {
     fetch("/logout", {
       method: "DELETE",
@@ -55,7 +53,9 @@ useEffect(()=> {
                     as={Link}
                     to="/login"
                     variant="outline-light"
-                  >Log out</Button>
+                  >
+                    Log out
+                  </Button>
                 </div>
                 {/* </Nav.Link> */}
               </Nav>
@@ -70,11 +70,14 @@ useEffect(()=> {
               path="/login"
               element={<Login setCurrentUser={setCurrentUser} />}
             />
+            <Route
+              path="/signup"
+              element={<Signup setCurrentUser={setCurrentUser} />}
+            />
           </Routes>
         </div>
       </div>
     </BrowserRouter>
   );
 }
-
 export default App;

@@ -16,7 +16,9 @@ function Home({ currentUser }) {
   return (
     <>
       <Container>
-        <h3 className="p-2 text-center">Welcome To The Brewery Discovery Project</h3>
+        <h3 className="p-2 text-center">
+          Welcome To The Brewery Discovery Project
+        </h3>
         <h1 className="p-2 text-center">Hello {currentUser.username}</h1>
         <Row>
           <BreweryCardList breweries={breweries} />

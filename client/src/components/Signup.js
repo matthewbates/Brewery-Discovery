@@ -1,26 +1,12 @@
 import React, { useState } from "react";
-import { Form, Button, Container, Nav } from "react-bootstrap";
+import { Form, Button, Container } from "react-bootstrap";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import Signup from "./Signup";
+import Login from "./Login";
 
-function Login({ setCurrentUser, renderLogin }) {
+function Signup({ setCurrentUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
-
-  function handleLogin(e) {
-    let login = {
-      username,
-      password,
-    };
-    fetch("/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(login),
-    }).then((r) => console.log(r));
-  }
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -43,31 +29,42 @@ function Login({ setCurrentUser, renderLogin }) {
     <Container>
       <Form>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>User Name</Form.Label>
           <Form.Control
             onChange={(e) => setUsername(e.target.value)}
-            type="username"
-            placeholder="User Name"
+            type="text"
+            id="username"
+            value={username}
+            placeholder="Username"
           />
         </Form.Group>
-
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
           <Form.Control
             onChange={(e) => setPassword(e.target.value)}
             type="password"
+            id="password"
+            value={password}
             placeholder="Password"
           />
         </Form.Group>
-        <Button onClick={handleLogin} variant="primary" to="/login">
-          Log In
+        <Form.Group>
+          <Form.Control
+            onChange={(e) => setPasswordConfirmation(e.target.value)}
+            type="password"
+            id="password"
+            value={passwordConfirmation}
+            placeholder="Confirm Password"
+          />
+        </Form.Group>
+
+        <Button onClick={handleSubmit} variant="primary">
+          Create Account
         </Button>
       </Form>
-      <div className="mt-2">
-        Don't have an account? <Link to="/signup">Signup</Link>
-      </div>
+      <p className="mt-2">
+        Already have an acount? <Link to="/login">Signin</Link>
+      </p>
     </Container>
   );
 }
 
-export default Login;
+export default Signup;
