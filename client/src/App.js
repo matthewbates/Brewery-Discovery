@@ -16,9 +16,13 @@ useEffect(()=> {
       res.json().then(user => setCurrentUser(user))
     }
   })
-},[currentUser])
+},[])
 
-
+  function handleLogout(e) {
+    fetch("/logout", {
+      method: "DELETE",
+    }).then((res) => console.log(res));
+  }
   return (
     <BrowserRouter>
       <div className="App">
@@ -45,6 +49,13 @@ useEffect(()=> {
                   >
                     Login
                   </Button>
+                  <Button
+                    onClick={handleLogout}
+                    className="mx-2 nav-login-btn"
+                    as={Link}
+                    to="/login"
+                    variant="outline-light"
+                  >Log out</Button>
                 </div>
                 {/* </Nav.Link> */}
               </Nav>
@@ -53,9 +64,12 @@ useEffect(()=> {
         </Navbar>
         <div>
           <Routes>
-            <Route path="/" element={<Home currentUser={currentUser}/>} />
+            <Route path="/" element={<Home currentUser={currentUser} />} />
             <Route path="/reviews" element={<Reviews />} />
-            <Route path="/login" element={<Login setCurrentUser={setCurrentUser}/>} />
+            <Route
+              path="/login"
+              element={<Login setCurrentUser={setCurrentUser} />}
+            />
           </Routes>
         </div>
       </div>
