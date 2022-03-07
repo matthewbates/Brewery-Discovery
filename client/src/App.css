@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -44,6 +44,21 @@
 }
 
 .card-div {
-  width: 300px;
-  height: 250px;
+  width: 555px;
+  height: 354px;
+}
+
+.card-img-overlay {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.card-p-text {
+  margin-top: -25px;
+  padding: 0;
+}
+
+.card-footer {
+  margin: 0;
+  padding: 0;
 }

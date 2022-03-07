@@ -1,20 +1,29 @@
 import React from "react";
-import { Row, Col, Container, Card } from "react-bootstrap";
+import { Row, Container } from "react-bootstrap";
+import BreweryCard from "./BreweryCard";
 
 function BreweryCardList({ breweries }) {
   return (
     <>
-      <ul>
-        {breweries.map((brewery) => {
-          return (
-            <BreweryCard
-              key={brewery.id}
-              name={brewery.brewery_name}
-            />
-          )
-        })}
-      </ul>
       <Container>
+        <Row>
+          {breweries.map((brewery) => {
+            return (
+              <BreweryCard
+                key={brewery.id}
+                name={brewery.brewery_name}
+                logo={brewery.brewery_logo}
+                website={brewery.brewery_website}
+                address={brewery.brewery_address}
+                favorites={brewery.is_favorite}
+                phone={brewery.brewery_phone_number}
+              />
+            );
+          })}
+          ;
+        </Row>
+      </Container>
+      {/* <Container>
         {/* <Row>
           <Col xs={12} lg={6}>
             1 of 2
@@ -34,8 +43,8 @@ function BreweryCardList({ breweries }) {
             3 of 3
           </Col>
         </Row> */}
-      </Container>
-      <Container>
+
+      {/* <Container>
         <Row>
           <Col sm={12} md={6} lg={4} className="gap-3 mb-3">
             <Card className="bg-dark text-white card-div mx-auto">
@@ -122,7 +131,7 @@ function BreweryCardList({ breweries }) {
             </Card>
           </Col>
         </Row>
-      </Container>
+      </Container> */}
     </>
   );
 }

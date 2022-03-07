@@ -5,6 +5,9 @@ Brewery.destroy_all
 Beer.destroy_all
 User.destroy_all
 
+# create a couple test users as seed data
+User.create(username: "test", password: "test")
+
 puts '🏭 Creating breweries...'
 # MATTHEW'S BREWERIES
 b1 =

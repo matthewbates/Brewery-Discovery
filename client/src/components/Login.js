@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { Form, Button, Container } from "react-bootstrap";
+import { Form, Button, Container,  } from "react-bootstrap";
 
-function Login() {
+function Login(setCurrentUser) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [onLogin, setOnLogin] = useState("");
 
   function handleLogin(e) {
-    // e.preventDefault();
     let login = {
       username,
       password,
@@ -41,7 +39,7 @@ function Login() {
             placeholder="Password"
           />
         </Form.Group>
-        <Button onClick={handleLogin} variant="primary">
+        <Button onClick={handleLogin} variant="primary" to="/login">
           Log In
         </Button>
       </Form>
