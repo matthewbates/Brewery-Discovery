@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 
-function Login() {
+function Login(setCurrentUser) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [onLogin, setOnLogin] = useState("");
 
   function handleLogin(e) {
-    // e.preventDefault();
     let login = {
       username,
       password,
@@ -19,6 +18,10 @@ function Login() {
       },
       body: JSON.stringify(login),
     }).then((r) => console.log(r));
+  }
+
+  function userDisplay(){
+   
   }
 
   return (

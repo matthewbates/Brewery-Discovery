@@ -1,4 +1,5 @@
 import "./App.css";
+import {useEffect, useState} from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
@@ -6,6 +7,18 @@ import Reviews from "./components/Reviews";
 import Login from "./components/Login";
 
 function App() {
+const [currentUser, setCurrentUser] = useState("");
+ 
+useEffect(()=> { 
+  fetch("/me")
+  .then(res => {
+    if(res.ok){
+      res.json().then(user => setCurrentUser(user))
+    }
+  })
+},[currentUser])
+
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -40,9 +53,9 @@ function App() {
         </Navbar>
         <div>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home currentUser={currentUser}/>} />
             <Route path="/reviews" element={<Reviews />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/login" element={<Login setCurrentUser={setCurrentUser}/>} />
           </Routes>
         </div>
       </div>
