@@ -1,23 +1,22 @@
 import "./App.css";
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import Reviews from "./components/Reviews";
 import Login from "./components/Login";
+import Signup from "./components/Signup";
 
 function App() {
-const [currentUser, setCurrentUser] = useState("");
- 
-useEffect(()=> { 
-  fetch("/me")
-  .then(res => {
-    if(res.ok){
-      res.json().then(user => setCurrentUser(user))
-    }
-  })
-},[currentUser])
+  const [currentUser, setCurrentUser] = useState("");
 
+  useEffect(() => {
+    fetch("/me").then((res) => {
+      if (res.ok) {
+        res.json().then((user) => setCurrentUser(user));
+      }
+    });
+  }, []);
 
   return (
     <BrowserRouter>
@@ -45,6 +44,14 @@ useEffect(()=> {
                   >
                     Login
                   </Button>
+                  <Button
+                    className="mx-2 nav-signup-btn"
+                    as={Link}
+                    to="/signup"
+                    variant="outline-light"
+                  >
+                    Create Account
+                  </Button>
                 </div>
                 {/* </Nav.Link> */}
               </Nav>
@@ -53,9 +60,16 @@ useEffect(()=> {
         </Navbar>
         <div>
           <Routes>
-            <Route path="/" element={<Home currentUser={currentUser}/>} />
+            <Route path="/" element={<Home currentUser={currentUser} />} />
             <Route path="/reviews" element={<Reviews />} />
-            <Route path="/login" element={<Login setCurrentUser={setCurrentUser}/>} />
+            <Route
+              path="/login"
+              element={<Login setCurrentUser={setCurrentUser} />}
+            />
+            <Route
+              path="/signup"
+              element={<Signup setCurrentUser={setCurrentUser} />}
+            />
           </Routes>
         </div>
       </div>

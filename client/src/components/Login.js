@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
+import Signup from "./Signup";
 
 function Login(setCurrentUser) {
   const [username, setUsername] = useState("");
@@ -20,9 +21,7 @@ function Login(setCurrentUser) {
     }).then((r) => console.log(r));
   }
 
-  function userDisplay(){
-   
-  }
+  function userDisplay() {}
 
   return (
     <Container>
