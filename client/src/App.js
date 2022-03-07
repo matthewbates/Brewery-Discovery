@@ -56,6 +56,12 @@ function App() {
                   >
                     Log out
                   </Button>
+                  <Button
+                    className="mx-2 nav-create-account-btn"
+                    as={Link}
+                    to="/signup"
+                    variant="outline-light"
+                  >Create Account</Button>
                 </div>
                 {/* </Nav.Link> */}
               </Nav>
