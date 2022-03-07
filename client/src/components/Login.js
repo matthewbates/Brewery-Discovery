@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Form, Button, Container } from "react-bootstrap";
+import { Form, Button, Container,  } from "react-bootstrap";
 
 function Login({ setCurrentUser, renderLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [onLogin, setOnLogin] = useState("");
 
   function handleLogin(e) {
     let login = {
@@ -40,7 +39,7 @@ function Login({ setCurrentUser, renderLogin }) {
             placeholder="Password"
           />
         </Form.Group>
-        <Button onClick={handleLogin} variant="primary">
+        <Button onClick={handleLogin} variant="primary" to="/login">
           Log In
         </Button>
       </Form>

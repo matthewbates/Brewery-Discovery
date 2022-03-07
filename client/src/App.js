@@ -34,8 +34,18 @@ function App() {
         return <Login user={currentUser} onLogin={setCurrentUser} />;
       }
     }
+<<<<<<< HEAD
 
+=======
+  })
+},[])
+>>>>>>> 4543c6ef2cb5d3ce88f8e8ae76e7ed4f339134bc
 
+  function handleLogout(e) {
+    fetch("/logout", {
+      method: "DELETE",
+    }).then((res) => console.log(res));
+  }
   return (
     <BrowserRouter>
       <div className="App">
@@ -63,6 +73,7 @@ function App() {
                     Login
                   </Button>
                   <Button
+<<<<<<< HEAD
                     className="mx-2 nav-signup-btn"
                     as={Link}
                     to="/signup"
@@ -70,6 +81,14 @@ function App() {
                   >
                     Create Account
                   </Button>
+=======
+                    onClick={handleLogout}
+                    className="mx-2 nav-login-btn"
+                    as={Link}
+                    to="/login"
+                    variant="outline-light"
+                  >Log out</Button>
+>>>>>>> 4543c6ef2cb5d3ce88f8e8ae76e7ed4f339134bc
                 </div>
                 {/* </Nav.Link> */}
               </Nav>
@@ -82,11 +101,15 @@ function App() {
             <Route path="/reviews" element={<Reviews />} />
             <Route
               path="/login"
+<<<<<<< HEAD
               element={<Login setCurrentUser={setCurrentUser} renderLogin={renderLogin} />}
             />
             <Route
               path="/signup"
               element={<Signup setCurrentUser={setCurrentUser} />}
+=======
+              element={<Login setCurrentUser={setCurrentUser} />}
+>>>>>>> 4543c6ef2cb5d3ce88f8e8ae76e7ed4f339134bc
             />
           </Routes>
         </div>
