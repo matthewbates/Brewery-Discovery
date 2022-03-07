@@ -1,19 +1,24 @@
-import React from "react";
-import { Row, Col, Container } from "react-bootstrap";
+import React, { useState, useEffect } from "react";
+import BreweryCardList from "./BreweryCardList";
+import { Row, Col, Container, Card } from "react-bootstrap";
 
 function Home() {
+  const [breweries, setBreweries] = useState([]);
+
+  useEffect(() => {
+    fetch("/breweries")
+      .then((r) => r.json())
+      .then((breweryList) => {
+        setBreweries(breweryList);
+      });
+  });
+
   return (
     <>
       <h3 className="p-2">Welcome To The Brewery Discovery Project</h3>
       <Container>
         <Row>
-          <Col xs={12} lg={6}>1 of 2</Col>
-          <Col xs={12} lg={6}>2 of 2</Col>
-        </Row>
-        <Row>
-          <Col>1 of 3</Col>
-          <Col>2 of 3</Col>
-          <Col>3 of 3</Col>
+          <BreweryCardList breweries={visibleBreweries}/>
         </Row>
       </Container>
     </>
