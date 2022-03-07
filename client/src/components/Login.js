@@ -1,9 +1,12 @@
 import React, { useState } from "react";
-import { Form, Button, Container,  } from "react-bootstrap";
+import { Form, Button, Container, Nav } from "react-bootstrap";
+import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
+import Signup from "./Signup";
 
 function Login({ setCurrentUser, renderLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordConfirmation, setPasswordConfirmation] = useState("");
 
   function handleLogin(e) {
     let login = {
@@ -17,6 +20,23 @@ function Login({ setCurrentUser, renderLogin }) {
       },
       body: JSON.stringify(login),
     }).then((r) => console.log(r));
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    fetch("/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username,
+        password,
+        password_confirmation: passwordConfirmation,
+      }),
+    })
+      .then((r) => r.json())
+      .then(setCurrentUser);
   }
 
   return (
@@ -43,6 +63,9 @@ function Login({ setCurrentUser, renderLogin }) {
           Log In
         </Button>
       </Form>
+      <div className="mt-2">
+        Don't have an account? <Link to="/signup">Signup</Link>
+      </div>
     </Container>
   );
 }

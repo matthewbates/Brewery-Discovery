@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-import Login from "./Login";
+// import Login from "./Login";
 
 function Signup({ setCurrentUser }) {
   const [username, setUsername] = useState("");
