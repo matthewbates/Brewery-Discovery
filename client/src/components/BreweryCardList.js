@@ -4,18 +4,18 @@ import BreweryCard from "./BreweryCard";
 import BeerCard from "./BeerCard";
 
 function BreweryCardList({ breweries, brewerySearch, stateSearch }) {
-  const filteredBreweryAndStateSearch =
-    breweries.filter((brewery) =>
+  const filterBreweryAndStateSearch = breweries
+    .filter((brewery) =>
       brewery.brewery_name.toLowerCase().includes(brewerySearch.toLowerCase())
-    ) &&
-    breweries.filter((brewery) =>
+    )
+    .filter((brewery) =>
       brewery.brewery_state.toLowerCase().includes(stateSearch.toLowerCase())
     );
   return (
     <>
       <Container>
         <Row>
-          {filteredBreweryAndStateSearch.map((brewery) => {
+          {filterBreweryAndStateSearch.map((brewery) => {
             return (
               <BreweryCard
                 key={brewery.id}
