@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Login({ setCurrentUser, renderLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
 
   function handleLogin(e) {
     let login = {
@@ -18,10 +17,8 @@ function Login({ setCurrentUser, renderLogin }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(login),
-    }).then((r) => console.log(r));
+    }).then((r) => setCurrentUser(r));
   }
-
-
 
   return (
     <div className="body_of_form">
