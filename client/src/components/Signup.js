@@ -32,73 +32,79 @@ function Signup({ setCurrentUser }) {
   }
 
   return (
-    <Container>
-      <Form>
+    <div className="body_of_form">
+      <Container>
+        <Form className={("outer", "inner")}>
+          <br></br>
+          <h2>Register Account</h2>
+          <Form.Group className="mb-3" controlId="formFirstName">
+            <Form.Control
+              onChange={(e) => setFirstName(e.target.value)}
+              type="text"
+              id="first_name"
+              value={firstName}
+              placeholder="First Name"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formLastName">
+            <Form.Control
+              onChange={(e) => setLastName(e.target.value)}
+              type="text"
+              id="last_name"
+              value={lastName}
+              placeholder="Last Name"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Control
+              onChange={(e) => setEmail(e.target.value)}
+              type="text"
+              id="email"
+              value={email}
+              placeholder="Enter Email"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formUsername">
+            <Form.Control
+              onChange={(e) => setUsername(e.target.value)}
+              type="text"
+              id="username"
+              value={username}
+              placeholder="Username"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Control
+              onChange={(e) => setPassword(e.target.value)}
+              type="password"
+              id="password"
+              value={password}
+              placeholder="Password"
+            />
+          </Form.Group>
+          <Form.Group
+            className="mb-3"
+            controlId="formBasicPasswordConfirmation"
+          >
+            <Form.Control
+              onChange={(e) => setPasswordConfirmation(e.target.value)}
+              type="password"
+              id="password"
+              value={passwordConfirmation}
+              placeholder="Confirm Password"
+            />
+          </Form.Group>
+          <br></br>
+          <Button onClick={handleSubmit} variant="primary">
+            Create Account
+          </Button>
+        </Form>
         <br></br>
-        <h2>Create An Account!</h2>
-        <Form.Group className="mb-3" controlId="formFirstName">
-          <Form.Control
-            onChange={(e) => setFirstName(e.target.value)}
-            type="text"
-            id="first_name"
-            value={firstName}
-            placeholder="First Name"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formLastName">
-          <Form.Control
-            onChange={(e) => setLastName(e.target.value)}
-            type="text"
-            id="last_name"
-            value={lastName}
-            placeholder="Last Name"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Control
-            onChange={(e) => setEmail(e.target.value)}
-            type="text"
-            id="email"
-            value={email}
-            placeholder="Email"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formUsername">
-          <Form.Control
-            onChange={(e) => setUsername(e.target.value)}
-            type="text"
-            id="username"
-            value={username}
-            placeholder="Username"
-          />
-        </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Control
-            onChange={(e) => setPassword(e.target.value)}
-            type="password"
-            id="password"
-            value={password}
-            placeholder="Password"
-          />
-        </Form.Group>
-        <Form.Group>
-          <Form.Control
-            onChange={(e) => setPasswordConfirmation(e.target.value)}
-            type="password"
-            id="password"
-            value={passwordConfirmation}
-            placeholder="Confirm Password"
-          />
-        </Form.Group>
-        <br></br>
-        <Button onClick={handleSubmit} variant="primary">
-          Create Account
-        </Button>
-      </Form>
-      <div className="mt-2">
-        Already have an acount? <Link to="/">Signin</Link>
-      </div>
-    </Container>
+        <div className="already_have_account">
+          Already registered? <Link to="/">Log In</Link>
+        </div>
+      </Container>
+    </div>
   );
 }
 

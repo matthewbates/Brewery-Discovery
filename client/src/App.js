@@ -62,20 +62,22 @@ function App() {
             </div>
           </Container>
         </Navbar>
-        <div>
-          <Routes>
-            <Route path="/home" element={<Home currentUser={currentUser} />} />
-            <Route path="/reviews" element={<Reviews />} />
-            <Route
-              path="/"
-              element={<Login setCurrentUser={setCurrentUser} />}
-            />
-            <Route
-              path="/signup"
-              element={<Signup setCurrentUser={setCurrentUser} />}
-            />
-          </Routes>
-        </div>
+        <Routes>
+          <Route
+            className={("inner", "outer")}
+            path="/"
+            element={<Login setCurrentUser={setCurrentUser} />}
+          />
+
+          <Route
+            className={("inner", "outer")}
+            path="/signup"
+            element={<Signup setCurrentUser={setCurrentUser} />}
+          />
+
+          <Route path="/home" element={<Home currentUser={currentUser} />} />
+          <Route path="/reviews" element={<Reviews />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
