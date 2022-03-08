@@ -33,26 +33,26 @@ function App() {
                 </Nav.Link>
                 {/* <Nav.Link as={Link} to="/login"> */}
                 <div>
-                  {!currentUser ?
-                  <Button
-                    className="mx-2 nav-login-btn"
-                    as={Link}
-                    to="/"
-                    variant="outline-light"
-                  >
-                    Login
-                  </Button>
-                  :
-                  <Button
-                    onClick={handleLogout}
-                    className="mx-2 nav-login-btn"
-                    as={Link}
-                    to="/"
-                    variant="outline-light"
-                  >
-                    Log out
-                  </Button>
-}
+                  {!currentUser ? (
+                    <Button
+                      className="mx-2 nav-login-btn"
+                      as={Link}
+                      to="/"
+                      variant="outline-light"
+                    >
+                      Login
+                    </Button>
+                  ) : (
+                    <Button
+                      onClick={handleLogout}
+                      className="mx-2 nav-login-btn"
+                      as={Link}
+                      to="/"
+                      variant="outline-light"
+                    >
+                      Log out
+                    </Button>
+                  )}
                 </div>
                 {/* </Nav.Link> */}
               </Nav>
@@ -63,13 +63,23 @@ function App() {
           <Route
             className={("inner", "outer")}
             path="/"
-            element={<Login setCurrentUser={setCurrentUser}  currentUser={currentUser}/>}
+            element={
+              <Login
+                setCurrentUser={setCurrentUser}
+                currentUser={currentUser}
+              />
+            }
           />
 
           <Route
             className={("inner", "outer")}
             path="/signup"
-            element={<Signup setCurrentUser={setCurrentUser} />}
+            element={
+              <Signup
+                setCurrentUser={setCurrentUser}
+                currentUser={currentUser}
+              />
+            }
           />
 
           <Route path="/home" element={<Home currentUser={currentUser} />} />
