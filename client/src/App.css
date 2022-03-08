@@ -48,6 +48,23 @@
   background-color: rgb(231, 231, 231);
   margin: 0;
   padding: 0;
+  position: relative;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("./images/katherine-conrad-QL3SaEwio_k-unsplash.jpeg");
+  background-size: cover;
+}
+
+.home-jumbotorn > .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.home-jumbotorn > .jumbotron-inner {
+  position: relative;
+  z-index: 2;
 }
 
 .nav-login-btn {
@@ -71,7 +88,6 @@
   width: 100%;
   padding: 10px;
   margin: auto;
-  
 }
 .card {
   border-radius: 10px !important;

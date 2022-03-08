@@ -19,26 +19,37 @@ function Home({ currentUser }) {
     <>
       <Container fluid className="container-home-fluid bg-light">
         <div className="home-jumbotron d-flex flex-column justify-content-center">
-          <div className="h-50 d-flex flex-column justify-content-center">
-            <h2 className="p-2 text-center">
-              {currentUser ? `Hello, ${currentUser.username}!` : ""}
-            </h2>
-            <Col>
-              <h3 className="p-2 text-center">
-                Welcome To The Brewery Discovery Project
-              </h3>
-            </Col>
+          <div className="overlay"></div>
+          <div className="jumbotron-inner">
+            <div className="h-50 d-flex flex-column justify-content-center text-light">
+              <h2 className="p-2 text-center">
+                {currentUser ? `Hello, ${currentUser.username}!` : ""}
+              </h2>
+              <Col>
+                <h2 className="p-2 text-center">
+                  Welcome To The Brewery Discovery Project
+                </h2>
+              </Col>
+              <Col lg={5} className="mx-auto">
+                <Search search={search} setter={setSearch} />
+              </Col>
+            </div>
           </div>
+        </div>
+        <div className="text-center mt-5">
+          <h2>BREWERY LIST</h2>
+          <hr className="w-75 mx-auto mt-5" />
         </div>
 
         <Container>
           <Row>
-            <Search search={search} setter={setSearch} />
-            <BreweryCardList
-              breweries={breweries}
-              search={search}
-              setter={setSearch}
-            />
+            <Col>
+              <BreweryCardList
+                breweries={breweries}
+                search={search}
+                setter={setSearch}
+              />
+            </Col>
           </Row>
         </Container>
       </Container>
