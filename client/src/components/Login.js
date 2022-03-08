@@ -23,7 +23,7 @@ function Login({ setCurrentUser, renderLogin }) {
   }
 
   function handleSubmit(e) {
-    e.preventDefault();
+    // e.preventDefault();
     fetch("/signup", {
       method: "POST",
       headers: {

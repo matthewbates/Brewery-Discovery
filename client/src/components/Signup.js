@@ -12,7 +12,7 @@ function Signup({ setCurrentUser }) {
   const [passwordConfirmation, setPasswordConfirmation] = useState("");
 
   function handleSubmit(e) {
-    e.preventDefault();
+    // e.preventDefault();
     fetch("/signup", {
       method: "POST",
       headers: {
