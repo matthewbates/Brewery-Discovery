@@ -108,7 +108,7 @@
   transform-origin: 0 0;
   background: linear-gradient(to bottom, #bc7012, #efd002 100%);
   min-height: 100%;
-  height: auto;
+  min-height: 100%;
 }
 
 .outer-form-div {
