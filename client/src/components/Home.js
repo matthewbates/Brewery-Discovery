@@ -20,9 +20,9 @@ function Home({ currentUser }) {
       <Container fluid className="container-home-fluid">
         <div className="home-jumbotron d-flex flex-column justify-content-center">
           <div className="h-50 d-flex flex-column justify-content-center">
-            <h1 className="p-2 text-center">
+            <h2 className="p-2 text-center">
               {currentUser ? `Hello, ${currentUser.username}!` : ""}
-            </h1>
+            </h2>
             <Col>
               <h3 className="p-2 text-center">
                 Welcome To The Brewery Discovery Project

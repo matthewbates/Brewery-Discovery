@@ -6,11 +6,7 @@ function BreweryCard({ name, logo, website, address, favorites, phone }) {
     <>
       <Col sm={12} md={12} lg={6} className="gap-3 mb-5 mt-5">
         <Card className="card-div mx-auto">
-          <Card.Img
-            className="img-fluid"
-            src={""}
-            alt=""
-          />
+          <Card.Img className="img-fluid" src={""} alt="" />
           <Card.ImgOverlay>
             <div className="p-4 mt-5 flex-column d-flex justify-content-center">
               <Card.Title>
@@ -27,10 +23,7 @@ function BreweryCard({ name, logo, website, address, favorites, phone }) {
               </Card.Text>
             </div>
             <div className="card-b-logo bg-dark">
-              <img
-                src={logo}
-                alt=""
-              />
+              <img className="img-responsive" src={logo} alt="" />
             </div>
 
             <div className="card-footer-div bg-light text-muted d-flex align-items-center">
@@ -88,7 +81,6 @@ function BreweryCard({ name, logo, website, address, favorites, phone }) {
                   </svg>
                 </Col>
                 <Col>
-                  
                   <p className="card-footer-p">3 reviews</p>
                 </Col>
               </Row>
