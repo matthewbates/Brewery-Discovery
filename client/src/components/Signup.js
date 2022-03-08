@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Login from "./Login";
+
 
 function Signup({ setCurrentUser }) {
   const [firstName, setFirstName] = useState("");

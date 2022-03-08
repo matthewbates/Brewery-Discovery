@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Form, Button, Container, Nav } from "react-bootstrap";
-import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import Signup from "./Signup";
+import { Form, Button, Container } from "react-bootstrap";
+import { Link} from "react-router-dom";
 
 function Login({ setCurrentUser, renderLogin }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [passwordConfirmation, setPasswordConfirmation] = useState("");
+
 
   function handleLogin(e) {
     let login = {
@@ -22,22 +21,7 @@ function Login({ setCurrentUser, renderLogin }) {
     }).then((r) => console.log(r));
   }
 
-  function handleSubmit(e) {
-    // e.preventDefault();
-    fetch("/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        username,
-        password,
-        password_confirmation: passwordConfirmation,
-      }),
-    })
-      .then((r) => r.json())
-      .then(setCurrentUser);
-  }
+
 
   return (
     <div className="body_of_form">
