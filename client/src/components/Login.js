@@ -26,7 +26,7 @@ function Login({ setCurrentUser, renderLogin }) {
   return (
     <div className="body_of_form">
       <Container>
-        <div className="mt-5 pt-5">
+        <div className="pt-5">
           <Form className={("outer", "inner")}>
             <br></br>
             <h2>Welcome Back!</h2>
