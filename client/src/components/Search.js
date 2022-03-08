@@ -1,9 +1,13 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 
-function Search({ search, setter }) {
+function Search({ brewerySearch, brewerySetter, stateSearch, stateSetter }) {
   function renderBrewerySearch(e) {
-    setter(e.target.value);
+    brewerySetter(e.target.value);
+  }
+
+  function renderStateSearch(e) {
+    stateSetter(e.target.value);
   }
 
   return (
@@ -14,10 +18,21 @@ function Search({ search, setter }) {
           className="form-control rounded"
           aria-label="Search"
           aria-describedby="search-addon"
-          value={search}
-          placeholder="Search Breweries..."
+          value={brewerySearch}
+          placeholder="Search By Brewery"
           onChange={renderBrewerySearch}
         />
+
+        <input
+          type="text"
+          className="form-control rounded"
+          aria-label="Search"
+          aria-describedby="search-addon"
+          value={stateSearch}
+          placeholder="Search By State"
+          onChange={renderStateSearch}
+        />
+        <Button className="search_by_brewery_or_state">Search</Button>
       </div>
     </Container>
   );

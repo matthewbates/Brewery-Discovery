@@ -5,7 +5,8 @@ import Search from "./Search";
 
 function Home({ currentUser }) {
   const [breweries, setBreweries] = useState([]);
-  const [search, setSearch] = useState("");
+  const [brewerySearch, setBrewerySearch] = useState("");
+  const [stateSearch, setStateSearch] = useState("");
 
   useEffect(() => {
     fetch("/breweries")
@@ -31,7 +32,12 @@ function Home({ currentUser }) {
                 </h2>
               </Col>
               <Col lg={5} className="mx-auto">
-                <Search search={search} setter={setSearch} />
+                <Search
+                  brewerySearch={brewerySearch}
+                  brewerySetter={setBrewerySearch}
+                  stateSearch={stateSearch}
+                  stateSetter={setStateSearch}
+                />
               </Col>
             </div>
           </div>
@@ -46,8 +52,10 @@ function Home({ currentUser }) {
             <Col>
               <BreweryCardList
                 breweries={breweries}
-                search={search}
-                setter={setSearch}
+                brewerySearch={brewerySearch}
+                brewerySetter={setBrewerySearch}
+                stateSearch={stateSearch}
+                stateSetter={setStateSearch}
               />
             </Col>
           </Row>

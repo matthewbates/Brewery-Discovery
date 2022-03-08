@@ -9,6 +9,7 @@ class CreateBreweries < ActiveRecord::Migration[6.1]
       t.string :brewery_address
       t.boolean :is_favorite
       t.string :brewery_phone_number
+      t.string :brewery_state
 
       t.timestamps
     end

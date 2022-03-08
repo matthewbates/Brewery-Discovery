@@ -6,7 +6,7 @@ Beer.destroy_all
 User.destroy_all
 
 # create a couple test users as seed data
-User.create(username: "test", password: "test")
+User.create(username: 'test', password: 'test')
 
 puts '🏭 Creating breweries...'
 # MATTHEW'S BREWERIES
@@ -21,6 +21,7 @@ b1 =
       '2727 North. Cascade Avenue #123, Colorado Springs, CO 80907',
     is_favorite: 0,
     brewery_phone_number: '(719) 471-4628',
+    brewery_state: 'CO',
   )
 b2 =
   Brewery.create!(
@@ -31,6 +32,7 @@ b2 =
     brewery_address: '10 Buffalo Court, Divide, CO 80814',
     is_favorite: 0,
     brewery_phone_number: '(719) 686-8081',
+    brewery_state: 'CO',
   )
 b3 =
   Brewery.create!(
@@ -42,6 +44,7 @@ b3 =
     brewery_address: '725 Manitou Avenue, Manitou Springs, CO 80829',
     is_favorite: 0,
     brewery_phone_number: '(719) 282-7709',
+    brewery_state: 'CO',
   )
 b4 =
   Brewery.create!(
@@ -53,6 +56,7 @@ b4 =
     brewery_address: '1441 W 46th Avenue Unit 19, Denver, CO 80211',
     is_favorite: 0,
     brewery_phone_number: '(720) 508-3292',
+    brewery_state: 'CO',
   )
 b5 =
   Brewery.create!(
@@ -64,6 +68,7 @@ b5 =
     brewery_address: '702 W Colorado Avenue, Colorado Springs, CO 80905',
     is_favorite: 0,
     brewery_phone_number: '(719) 636-2337',
+    brewery_state: 'CO',
   )
 b6 =
   Brewery.create!(
@@ -75,6 +80,7 @@ b6 =
     brewery_address: '2323 Garden of the Gods Road, Colorado Springs, CO 80907',
     is_favorite: 0,
     brewery_phone_number: '(719) 598-3776',
+    brewery_state: 'CO',
   )
 # HALEEM'S BREWERIES
 b7 =
@@ -87,6 +93,7 @@ b7 =
     brewery_address: '3411 W El Segundo Boulevard, Hawthorne, CA 90250',
     is_favorite: 0,
     brewery_phone_number: '(424) 456-4355',
+    brewery_state: 'CA',
   )
 b8 =
   Brewery.create!(
@@ -98,6 +105,7 @@ b8 =
     brewery_address: '12918 Cerise Avenue, Hawthorne, CA 90250',
     is_favorite: 0,
     brewery_phone_number: '(424) 456-4191',
+    brewery_state: 'CA',
   )
 b9 =
   Brewery.create!(
@@ -109,6 +117,7 @@ b9 =
     brewery_address: '20311 S Western Avenue, Torrance, CA 90501',
     is_favorite: 0,
     brewery_phone_number: '(310) 295-2157',
+    brewery_state: 'CA',
   )
 b10 =
   Brewery.create!(
@@ -120,6 +129,7 @@ b10 =
     brewery_address: '619 N Azusa Avenue, Azusa, CA 91702',
     is_favorite: 0,
     brewery_phone_number: '(626) 334-2337',
+    brewery_state: 'CA',
   )
 b11 =
   Brewery.create!(
@@ -131,6 +141,7 @@ b11 =
     brewery_address: '216 S Alameda Street, Los Angeles, CA 90012',
     is_favorite: 0,
     brewery_phone_number: '(213) 537-5550',
+    brewery_state: 'CA',
   )
 b12 =
   Brewery.create!(
@@ -142,6 +153,7 @@ b12 =
     brewery_address: '800 N Alameda Street, Los Angeles, CA 90012',
     is_favorite: 0,
     brewery_phone_number: '(306) 850-8288',
+    brewery_state: 'CA',
   )
 # MYLES' BREWERIES
 b13 =
@@ -154,6 +166,7 @@ b13 =
     brewery_address: '9045 Carroll Way, San Diego, CA 92121',
     is_favorite: 0,
     brewery_phone_number: '(858) 790-6901',
+    brewery_state: 'CA',
   )
 b14 =
   Brewery.create!(
@@ -165,6 +178,7 @@ b14 =
     brewery_address: '3718 Paseo Place Suite 1300, San Diego, CA 92130',
     is_favorite: 0,
     brewery_phone_number: '(858) 800-4566',
+    brewery_state: 'CA',
   )
 b15 =
   Brewery.create!(
@@ -176,6 +190,7 @@ b15 =
     brewery_address: '4893 Voltaire Street, San Diego, CA 92107',
     is_favorite: 0,
     brewery_phone_number: '(619) 795-1095',
+    brewery_state: 'CA',
   )
 b16 =
   Brewery.create!(
@@ -187,6 +202,7 @@ b16 =
     brewery_address: '202 S Raymond Avenue, Pasadena, CA 91105',
     is_favorite: 0,
     brewery_phone_number: '(626) 440-7243',
+    brewery_state: 'CA',
   )
 b17 =
   Brewery.create!(
@@ -198,6 +214,7 @@ b17 =
     brewery_address: ' 1157 Columbia Street, San Diego, CA 92101',
     is_favorite: 0,
     brewery_phone_number: '(619) 234-2739',
+    brewery_state: 'CA',
   )
 b18 =
   Brewery.create!(
@@ -209,6 +226,7 @@ b18 =
     brewery_address: '4202 Sorrento Valley Boulevard, San Diego, CA 92121',
     is_favorite: 0,
     brewery_phone_number: '(855) 945-3253',
+    brewery_state: 'CA',
   )
 
 puts '🍺 Creating beers...'
@@ -840,7 +858,7 @@ a87 =
     brewery: b18,
   )
 
-  u1 = User.create!(username: 'test', password_digest: 'test')
+u1 = User.create!(username: 'test', password_digest: 'test')
 puts '🤖 Beep boop beep, erasing data...beep boop...'
 sleep 2
 puts 'Just joking!'
