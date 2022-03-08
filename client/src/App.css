@@ -60,9 +60,10 @@
   position: absolute;
   bottom: 40px;
   right: 80px;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   overflow: hidden;
   box-shadow: 0 0 2px 2px hsla(0, 0%, 0%, 0.2);
+  border-radius: 10px !important;
 }
 
 .card-b-logo img {

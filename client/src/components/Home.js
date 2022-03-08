@@ -17,7 +17,7 @@ function Home({ currentUser }) {
 
   return (
     <>
-      <Container fluid className="container-home-fluid">
+      <Container fluid className="container-home-fluid bg-light">
         <div className="home-jumbotron d-flex flex-column justify-content-center">
           <div className="h-50 d-flex flex-column justify-content-center">
             <h2 className="p-2 text-center">
