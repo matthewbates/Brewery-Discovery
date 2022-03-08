@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import BreweryCardList from "./BreweryCardList";
-import { Row, Col, Container, Card } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 import Search from "./Search";
 
 function Home({ currentUser }) {
