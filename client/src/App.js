@@ -63,7 +63,7 @@ function App() {
           <Route
             className={("inner", "outer")}
             path="/"
-            element={<Login setCurrentUser={setCurrentUser} />}
+            element={<Login setCurrentUser={setCurrentUser}  currentUser={currentUser}/>}
           />
 
           <Route

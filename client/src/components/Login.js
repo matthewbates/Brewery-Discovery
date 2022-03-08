@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
-function Login({ setCurrentUser, renderLogin }) {
+function Login({ setCurrentUser, currentUser }) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -22,6 +22,7 @@ function Login({ setCurrentUser, renderLogin }) {
 
   return (
     <div className="body_of_form">
+      {currentUser ? <Navigate to="/Home" /> : null}
       <Container>
         <div className="pt-5">
           <Form className={("outer", "inner")}>
