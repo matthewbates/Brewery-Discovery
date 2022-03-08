@@ -49,7 +49,8 @@
   margin: 0;
   padding: 0;
   position: relative;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("./img/katherine-conrad-QL3SaEwio_k-unsplash.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./img/katherine-conrad-QL3SaEwio_k-unsplash.jpeg");
   background-size: cover;
 }
 
@@ -98,6 +99,7 @@
   height: 354px;
   max-width: 555px !important;
   overflow: hidden !important;
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)); */
 }
 
 /* .card-img {

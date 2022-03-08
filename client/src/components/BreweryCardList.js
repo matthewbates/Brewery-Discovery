@@ -26,6 +26,7 @@ function BreweryCardList({ breweries, brewerySearch, stateSearch }) {
                 favorites={brewery.is_favorite}
                 phone={brewery.brewery_phone_number}
                 state={brewery.brewery_state}
+                image={brewery.brewery_image}
               />
             );
           })}

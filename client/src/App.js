@@ -6,10 +6,11 @@ import Home from "./components/Home";
 import Reviews from "./components/Reviews";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import Beers from "./components/Beers";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
- 
+
   function handleLogout(e) {
     fetch("/logout", {
       method: "DELETE",
@@ -84,6 +85,7 @@ function App() {
 
           <Route path="/home" element={<Home currentUser={currentUser} />} />
           <Route path="/reviews" element={<Reviews />} />
+          <Route path="/beers" element={<Beers currentUser={currentUser} />} />
         </Routes>
       </div>
     </BrowserRouter>

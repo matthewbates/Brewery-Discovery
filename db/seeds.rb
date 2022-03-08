@@ -22,6 +22,8 @@ b1 =
     is_favorite: 0,
     brewery_phone_number: '(719) 471-4628',
     brewery_state: 'CO',
+    brewery_image:
+      'https://images.squarespace-cdn.com/content/v1/597908c415d5dbbbd8e7eecb/1549846738186-Q0WAK10D6PTOQB7X4G4P/GoatPatch-17-Edit.jpg',
   )
 b2 =
   Brewery.create!(
@@ -33,6 +35,8 @@ b2 =
     is_favorite: 0,
     brewery_phone_number: '(719) 686-8081',
     brewery_state: 'CO',
+    brewery_image:
+      'https://images.squarespace-cdn.com/content/v1/555cd8b8e4b0c647a26e43c9/1545342891735-THAYS4QII4D5ONZNEZE3/Paradox-3.jpg?format=1000w',
   )
 b3 =
   Brewery.create!(
@@ -45,6 +49,8 @@ b3 =
     is_favorite: 0,
     brewery_phone_number: '(719) 282-7709',
     brewery_state: 'CO',
+    brewery_image:
+      'https://media-cdn.tripadvisor.com/media/photo-s/0d/73/f9/9a/inside.jpg',
   )
 b4 =
   Brewery.create!(
@@ -57,6 +63,9 @@ b4 =
     is_favorite: 0,
     brewery_phone_number: '(720) 508-3292',
     brewery_state: 'CO',
+    brewery_image:
+      'http://koperski.com/wp-content/uploads/2015/08/2015-06-25-crooked-stave-denver-05.jpg
+',
   )
 b5 =
   Brewery.create!(
@@ -69,6 +78,8 @@ b5 =
     is_favorite: 0,
     brewery_phone_number: '(719) 636-2337',
     brewery_state: 'CO',
+    brewery_image:
+      'https://live.staticflickr.com/65535/51268146952_3e80403819.jpg',
   )
 b6 =
   Brewery.create!(
@@ -81,6 +92,8 @@ b6 =
     is_favorite: 0,
     brewery_phone_number: '(719) 598-3776',
     brewery_state: 'CO',
+    brewery_image:
+      'https://redlegbrewing.com/wp-content/uploads/2021/11/Macaron-Photo-Food-Facebook-Cover.png',
   )
 # HALEEM'S BREWERIES
 b7 =
@@ -94,6 +107,8 @@ b7 =
     is_favorite: 0,
     brewery_phone_number: '(424) 456-4355',
     brewery_state: 'CA',
+    brewery_image:
+      'https://images.squarespace-cdn.com/content/v1/5ce849fdc95df000011ea5e7/1626904696609-FCZN67VHDZID6GBXCZ73/the-spacee-20.jpg',
   )
 b8 =
   Brewery.create!(
@@ -106,6 +121,8 @@ b8 =
     is_favorite: 0,
     brewery_phone_number: '(424) 456-4191',
     brewery_state: 'CA',
+    brewery_image:
+      'https://hoppedla.com/wp-content/uploads/2017/03/lesbarstendres_27579467_807713732746050_6423683122327453696_n-1024x628.jpg',
   )
 b9 =
   Brewery.create!(
@@ -118,6 +135,8 @@ b9 =
     is_favorite: 0,
     brewery_phone_number: '(310) 295-2157',
     brewery_state: 'CA',
+    brewery_image:
+      'https://beerbaseball.com/wp-content/uploads/2016/11/monkish-brewing-beer-tasting.jpg',
   )
 b10 =
   Brewery.create!(
@@ -130,6 +149,8 @@ b10 =
     is_favorite: 0,
     brewery_phone_number: '(626) 334-2337',
     brewery_state: 'CA',
+    brewery_image:
+      'https://hoppedla.com/wp-content/uploads/2016/01/congregationalehouselongbeach.jpg',
   )
 b11 =
   Brewery.create!(
@@ -142,6 +163,8 @@ b11 =
     is_favorite: 0,
     brewery_phone_number: '(213) 537-5550',
     brewery_state: 'CA',
+    brewery_image:
+      'https://angelcitybrewery.com/wp-content/uploads/2018/10/ACB-PH-Candids-09-1024x819.jpg',
   )
 b12 =
   Brewery.create!(
@@ -154,6 +177,8 @@ b12 =
     is_favorite: 0,
     brewery_phone_number: '(306) 850-8288',
     brewery_state: 'CA',
+    brewery_image:
+      'https://s3-media0.fl.yelpcdn.com/bphoto/wvoRQ3kSqU4aiynrUIq35A/l.jpg',
   )
 # MYLES' BREWERIES
 b13 =
@@ -167,6 +192,8 @@ b13 =
     is_favorite: 0,
     brewery_phone_number: '(858) 790-6901',
     brewery_state: 'CA',
+    brewery_image:
+      'https://ballastpoint.com/wp-content/uploads/2018/05/SliderImage_LongBeach5-1.jpg',
   )
 b14 =
   Brewery.create!(
@@ -179,6 +206,8 @@ b14 =
     is_favorite: 0,
     brewery_phone_number: '(858) 800-4566',
     brewery_state: 'CA',
+    brewery_image:
+      'https://beermaverick.com/wp-content/uploads/2020/08/HarlandScrippsRanchVanderburghOct20192811of1129.jpg',
   )
 b15 =
   Brewery.create!(
@@ -191,6 +220,8 @@ b15 =
     is_favorite: 0,
     brewery_phone_number: '(619) 795-1095',
     brewery_state: 'CA',
+    brewery_image:
+      'https://www.mikehessbrewing.com/wp-content/uploads/2019/09/walnut-creek-4.jpg',
   )
 b16 =
   Brewery.create!(
@@ -203,6 +234,8 @@ b16 =
     is_favorite: 0,
     brewery_phone_number: '(626) 440-7243',
     brewery_state: 'CA',
+    brewery_image:
+      'https://cdn.hopculture.com/wp-content/uploads/2019/01/berlin0.jpg',
   )
 b17 =
   Brewery.create!(
@@ -215,6 +248,7 @@ b17 =
     is_favorite: 0,
     brewery_phone_number: '(619) 234-2739',
     brewery_state: 'CA',
+    brewery_image: 'https://eventective-media.azureedge.net/2197192_lg.jpg',
   )
 b18 =
   Brewery.create!(
@@ -227,6 +261,8 @@ b18 =
     is_favorite: 0,
     brewery_phone_number: '(855) 945-3253',
     brewery_state: 'CA',
+    brewery_image:
+      'https://media.sandiegoreader.com/img/photos/2018/05/10/ca_wild_ales_brewery_t720.jpg?5755a55b677da5dfc6c8e05d88cfbaffe8abac5c',
   )
 
 puts '🍺 Creating beers...'

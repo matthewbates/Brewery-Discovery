@@ -6,5 +6,7 @@ class BrewerySerializer < ActiveModel::Serializer
              :brewery_website,
              :brewery_address,
              :is_favorite,
-             :brewery_phone_number
+             :brewery_phone_number,
+             :brewery_state,
+             :brewery_image
 end

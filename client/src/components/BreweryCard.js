@@ -1,15 +1,27 @@
 import React from "react";
 import { Row, Col, Card, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
-function BreweryCard({ name, logo, website, address, favorites, phone }) {
+function BreweryCard({
+  name,
+  logo,
+  website,
+  address,
+  favorites,
+  phone,
+  brewery_state,
+  image,
+}) {
   return (
     <>
       <Col sm={12} md={12} lg={6} className="gap-3 mb-5 mt-5">
         <Card className="card-div mx-auto">
-          <Card.Img className="img-fluid" src={""} alt="" />
+          <Card.Img className="img-responsive" src={image} alt="" />
           <Card.ImgOverlay>
             <div className="p-4 mt-5 flex-column d-flex justify-content-center">
+              <Link to="/beers">On Tap Now!</Link>
               <Card.Title>
+                <br></br>
                 <h3>{name}</h3>
               </Card.Title>
               <Card.Text className="">{address}</Card.Text>

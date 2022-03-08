@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2022_03_04_235643) do
     t.boolean "is_favorite"
     t.string "brewery_phone_number"
     t.string "brewery_state"
+    t.string "brewery_image"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
