@@ -11,7 +11,7 @@ function Home({ currentUser }) {
       .then((breweryList) => {
         setBreweries(breweryList);
       });
-  });
+  }, []);
 
   return (
     <>

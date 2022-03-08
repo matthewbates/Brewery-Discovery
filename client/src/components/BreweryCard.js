@@ -8,8 +8,8 @@ function BreweryCard({ name, logo, website, address, favorites, phone }) {
         <Card className="card-div mx-auto">
           <Card.Img
             className="img-fluid"
-            src={"holder.js/100px270"}
-            alt="Card image"
+            src={""}
+            alt=""
           />
           <Card.ImgOverlay>
             <div className="p-4 mt-5 flex-column d-flex justify-content-center">
@@ -26,15 +26,14 @@ function BreweryCard({ name, logo, website, address, favorites, phone }) {
                 <p>{phone}</p>
               </Card.Text>
             </div>
-            <div>
-              <div
-                className="card-b-logo bg-dark rounded-circle"
+            <div className="card-b-logo bg-dark">
+              <img
                 src={logo}
                 alt=""
               />
             </div>
 
-            <div className="card-footer-div bg-light text-muted d-flex align-items-center gap-4 pl-2">
+            <div className="card-footer-div bg-light text-muted d-flex align-items-center">
               <Row className="card-footer-row ">
                 <Col className="">
                   <svg
