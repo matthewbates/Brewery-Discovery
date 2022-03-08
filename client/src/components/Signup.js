@@ -34,7 +34,7 @@ function Signup({ setCurrentUser }) {
   return (
     <div className="body_of_form">
       <Container>
-      <div className="mt-5 pt-5 shadow-lg">
+      <div className="mt-5 pt-5">
         <Form className={("outer", "inner")}>
           <br></br>
           <h2>Register Account</h2>
