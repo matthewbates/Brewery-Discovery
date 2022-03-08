@@ -61,7 +61,6 @@
   bottom: 40px;
   right: 80px;
   border-radius: 50%;
-  border: ;
 }
 .card {
   border-radius: 10px !important;
@@ -74,8 +73,6 @@
   overflow: hidden !important;
 }
 
-.card-img {
-}
 
 .card-img-overlay {
   padding: 0 !important;
@@ -113,11 +110,17 @@
   background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
 }
 
+.outer-form-div {
+  height: 100vh;
+  width: 100vh;
+}
+
 .outer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   text-align: left;
+  border-radius: 10px;
 }
 
 .inner {
