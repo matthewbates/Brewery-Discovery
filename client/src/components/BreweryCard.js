@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card } from "react-bootstrap";
+import { Row, Col, Card, Image } from "react-bootstrap";
 
 function BreweryCard({ name, logo, website, address, favorites, phone }) {
   return (
@@ -22,8 +22,8 @@ function BreweryCard({ name, logo, website, address, favorites, phone }) {
                 <p>{phone}</p>
               </Card.Text>
             </div>
-            <div className="card-b-logo bg-dark">
-              <img className="img-responsive" src={logo} alt="" />
+            <div className="card-b-logo bg-white">
+              <Image className="img-responsive" src={logo} alt="" />
             </div>
 
             <div className="card-footer-div bg-light text-muted d-flex align-items-center">
