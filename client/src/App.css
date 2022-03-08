@@ -1,6 +1,6 @@
-/* .App { */
-/* text-align: center; */
-/* } */
+.App {
+  text-align: center;
+}
 
 .App-logo {
   height: 40vmin;
@@ -49,7 +49,7 @@
   margin: 0;
   padding: 0;
   position: relative;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("./images/katherine-conrad-QL3SaEwio_k-unsplash.jpeg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("./img/katherine-conrad-QL3SaEwio_k-unsplash.jpeg");
   background-size: cover;
 }
 
