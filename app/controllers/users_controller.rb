@@ -3,6 +3,10 @@ class UsersController < ApplicationController
   wrap_parameters format: []
   rescue_from ActiveRecord::RecordInvalid, with: :invalid_params
 
+  # def index
+  #   render json: User.all
+  # end
+
   def show
     current_user = User.find(session[:user_id])
     render json: current_user, status: :ok
@@ -25,6 +29,6 @@ class UsersController < ApplicationController
 
   # params
   def user_params
-    params.permit(:username, :password)
+    params.permit(:first_name, :last_name, :email, :username, :password)
   end
 end
