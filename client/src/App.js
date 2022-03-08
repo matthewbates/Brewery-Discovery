@@ -6,7 +6,8 @@ import Home from "./components/Home";
 import Reviews from "./components/Reviews";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import Beers from "./components/Beers";
+import BeerCard from "./components/BeerCard";
+import BeerCardList from "./components/BeerCardList";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
@@ -85,7 +86,10 @@ function App() {
 
           <Route path="/home" element={<Home currentUser={currentUser} />} />
           <Route path="/reviews" element={<Reviews />} />
-          <Route path="/beers" element={<Beers currentUser={currentUser} />} />
+          <Route
+            path="/beers"
+            element={<BeerCardList currentUser={currentUser} />}
+          />
         </Routes>
       </div>
     </BrowserRouter>

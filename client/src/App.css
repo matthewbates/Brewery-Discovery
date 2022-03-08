@@ -176,3 +176,19 @@
   block-size: center;
   text-align: center;
 }
+
+.update_title_color {
+  color: white;
+}
+
+.update_address_color {
+  color: white;
+}
+
+.update_website_color {
+  color: white;
+}
+
+.update_phone_color {
+  color: white;
+}

@@ -1,13 +1,13 @@
 class BreweriesController < ApplicationController
   skip_before_action :authorized, only: %i[index show]
-  
+
   def index
-    render json: Brewery.all, status: :ok
+    render json: Brewery.all
   end
 
   def show
     brewery = find_brewery
-    render json: brewery, serializer: BreweryWithBeerSerializer,  status: :ok
+    render json: brewery, serializer: BreweryWithBeerSerializer, status: :ok
   end
 
   private

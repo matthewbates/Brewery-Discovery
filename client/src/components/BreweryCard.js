@@ -19,9 +19,8 @@ function BreweryCard({
           <Card.Img className="img-responsive" src={image} alt="" />
           <Card.ImgOverlay>
             <div className="p-4 mt-5 flex-column d-flex justify-content-center">
+              <Card.Title className='update_title_color'>
               <Link to="/beers">On Tap Now!</Link>
-              <Card.Title>
-                <br></br>
                 <h3>{name}</h3>
               </Card.Title>
               <Card.Text className="">{address}</Card.Text>

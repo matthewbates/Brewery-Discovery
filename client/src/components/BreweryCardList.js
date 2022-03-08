@@ -1,12 +1,13 @@
 import React from "react";
 import { Row, Container } from "react-bootstrap";
 import BreweryCard from "./BreweryCard";
+import BeerCard from "./BeerCard";
 
 function BreweryCardList({ breweries, brewerySearch, stateSearch }) {
   const filteredBreweryAndStateSearch =
     breweries.filter((brewery) =>
       brewery.brewery_name.toLowerCase().includes(brewerySearch.toLowerCase())
-    ) ||
+    ) &&
     breweries.filter((brewery) =>
       brewery.brewery_state.toLowerCase().includes(stateSearch.toLowerCase())
     );

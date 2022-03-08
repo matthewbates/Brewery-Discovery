@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import BreweryCardList from "./BreweryCardList";
 import { Row, Col, Container } from "react-bootstrap";
 import Search from "./Search";
+import BeerCardList from "./BeerCardList";
 
 function Home({ currentUser }) {
   const [breweries, setBreweries] = useState([]);
