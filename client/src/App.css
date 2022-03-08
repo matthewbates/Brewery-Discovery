@@ -55,21 +55,21 @@
 }
 
 .card-b-logo {
-  height: 100px;
-  width: 100px;
+  max-height: 80px;
+  width: auto;
   position: absolute;
   bottom: 40px;
   right: 80px;
   /* border-radius: 50%; */
   overflow: hidden;
   box-shadow: 0 0 2px 2px hsla(0, 0%, 0%, 0.2);
-  border-radius: 10px !important;
+  /* border-radius: 10px !important; */
 }
 
 .card-b-logo img {
-  height: 100px;
+  height: 80px;
   width: 100%;
-  padding: 15px;
+  padding: 10px;
   margin: auto;
   
 }
