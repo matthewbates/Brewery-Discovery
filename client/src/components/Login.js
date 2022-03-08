@@ -17,7 +17,15 @@ function Login({ setCurrentUser, currentUser }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(login),
-    }).then((r) => setCurrentUser(r));
+    }).then((r) => r.json())
+    .then(res => {
+      if(res.username){
+      setCurrentUser(res)
+      }else {
+        alert(res.error)
+        setCurrentUser()
+      }
+    });
   }
 
   return (
