@@ -11,7 +11,7 @@ function Home({ currentUser }) {
     fetch("/breweries")
       .then((r) => r.json())
       .then((breweries) => setBreweries(breweries));
-  });
+  }, []);
 
   return (
     <>

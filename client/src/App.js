@@ -26,12 +26,12 @@ function App() {
       <div className="App">
         <Navbar bg="dark" variant="dark">
           <Container fluid className="mx-3">
-            <Navbar.Brand as={Link} to="/">
+            <Navbar.Brand as={Link} to="/home">
               <h3> Brewery Discovery</h3>
             </Navbar.Brand>
             <div className="d-flex justify-content-end align-items-center">
               <Nav className="me-auto">
-                <Nav.Link className="mx-2" as={Link} to="/">
+                <Nav.Link className="mx-2" as={Link} to="/home">
                   Home
                 </Nav.Link>
                 <Nav.Link className="mx-2" as={Link} to="/reviews">
@@ -42,7 +42,7 @@ function App() {
                   <Button
                     className="mx-2 nav-login-btn"
                     as={Link}
-                    to="/login"
+                    to="/"
                     variant="outline-light"
                   >
                     Login
@@ -51,7 +51,7 @@ function App() {
                     onClick={handleLogout}
                     className="mx-2 nav-login-btn"
                     as={Link}
-                    to="/login"
+                    to="/"
                     variant="outline-light"
                   >
                     Log out
@@ -64,10 +64,10 @@ function App() {
         </Navbar>
         <div>
           <Routes>
-            <Route path="/" element={<Home currentUser={currentUser} />} />
+            <Route path="/home" element={<Home currentUser={currentUser} />} />
             <Route path="/reviews" element={<Reviews />} />
             <Route
-              path="/login"
+              path="/"
               element={<Login setCurrentUser={setCurrentUser} />}
             />
             <Route

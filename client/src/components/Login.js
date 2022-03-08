@@ -42,8 +42,10 @@ function Login({ setCurrentUser, renderLogin }) {
   return (
     <Container>
       <Form>
+        <br></br>
+        <h2>Welcome Back!</h2>
         <Form.Group className="mb-3" controlId="formBasicEmail">
-          <Form.Label>User Name</Form.Label>
+          {/* <Form.Label>User Name</Form.Label> */}
           <Form.Control
             onChange={(e) => setUsername(e.target.value)}
             type="username"
@@ -52,7 +54,7 @@ function Login({ setCurrentUser, renderLogin }) {
         </Form.Group>
 
         <Form.Group className="mb-3" controlId="formBasicPassword">
-          <Form.Label>Password</Form.Label>
+          {/* <Form.Label>Password</Form.Label> */}
           <Form.Control
             onChange={(e) => setPassword(e.target.value)}
             type="password"
