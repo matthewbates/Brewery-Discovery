@@ -30,9 +30,17 @@ function Home({ currentUser }) {
                   Welcome To The Brewery Discovery Project
                 </h2>
               </Col>
-              <Col lg={5} className="mx-auto">
-                <Search search={search} setter={setSearch} />
-              </Col>
+
+              <div className="mx-auto col-8">
+                <Row>
+                  <Col className="mx-auto">
+                    <Search search={search} setter={setSearch} />
+                  </Col>
+                  <Col className="mx-auto">
+                    <Search search={search} setter={setSearch} />
+                  </Col>
+                </Row>
+              </div>
             </div>
           </div>
         </div>
