@@ -15,6 +15,7 @@ function BreweryCardList({ breweries, search, setter }) {
             return (
               <BreweryCard
                 key={brewery.id}
+                id ={brewery.id}
                 name={brewery.brewery_name}
                 logo={brewery.brewery_logo}
                 website={brewery.brewery_website}

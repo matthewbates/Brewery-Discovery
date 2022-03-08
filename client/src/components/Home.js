@@ -10,9 +10,7 @@ function Home({ currentUser }) {
   useEffect(() => {
     fetch("/breweries")
       .then((r) => r.json())
-      .then((breweryList) => {
-        setBreweries(breweryList);
-      });
+      .then((breweries) => setBreweries(breweries));
   });
 
   return (

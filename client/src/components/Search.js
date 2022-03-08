@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Row, Col, Navbar, Nav } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 
 function Search({ search, setter }) {
   function renderBrewerySearch(e) {
@@ -11,7 +11,7 @@ function Search({ search, setter }) {
       <div className="input-group pt-5 col-8">
         <input
           type="text"
-          class="form-control rounded"
+          className="form-control rounded"
           aria-label="Search"
           aria-describedby="search-addon"
           value={search}
