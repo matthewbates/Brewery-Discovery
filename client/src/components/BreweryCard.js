@@ -12,15 +12,9 @@ function BreweryCard({ name, logo, website, address, favorites, phone }) {
               <Card.Title>
                 <h3>{name}</h3>
               </Card.Title>
-              <Card.Text className="">
-                <p>{address}</p>
-              </Card.Text>
-              <Card.Text>
-                <p>{website}</p>
-              </Card.Text>
-              <Card.Text className="card-p-text">
-                <p>{phone}</p>
-              </Card.Text>
+              <Card.Text className="">{address}</Card.Text>
+              <Card.Text>{website}</Card.Text>
+              <Card.Text className="card-p-text">{phone}</Card.Text>
             </div>
             <div className="card-b-logo bg-white">
               <Image className="img-responsive" src={logo} alt="" />

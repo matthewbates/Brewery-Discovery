@@ -32,6 +32,9 @@ function Signup({ setCurrentUser, currentUser }) {
       {
         if (r.email){
           setCurrentUser(r)
+        }else {
+           alert(r.errors)
+           setCurrentUser();
         }
       })
      
