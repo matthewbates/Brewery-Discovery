@@ -21,17 +21,17 @@ function BreweryCard({
           as={Link}
           className="card-div mx-auto"
           onClick={(e) => setBrewery(id)}
-          to={`/brewery/${id}`}
+          to={`/breweries/${id}`}
         >
           <Card.Img
-            className="img-responsive card-img-filter"
+            className="h-100 card-img-filter"
             src={image}
             alt=""
           />
           <Card.ImgOverlay className="card-img-o">
             <div className="p-4 mt-2 flex-column d-flex justify-content-center text-light">
               <Card.Title className="update_title_color">
-                <h3>{name}</h3>
+                <h2>{name}</h2>
               </Card.Title>
               <Card.Text className="p-1">{address}</Card.Text>
               <Card.Text className="p-1">{website}</Card.Text>
@@ -48,9 +48,10 @@ function BreweryCard({
               </Button>
             </div>
 
-            <div className="card-footer-div bg-light text-muted ">
+            <div className="card-footer-div text-center">
               <div className="card-b-logo bg-white mx-auto">
-                <Image className="" src={logo} alt="" />
+               <Image className="img-fluid" src={logo} alt="" />
+                
               </div>
             </div>
           </Card.ImgOverlay>
