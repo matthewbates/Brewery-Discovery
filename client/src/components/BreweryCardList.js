@@ -18,7 +18,6 @@ function BreweryCardList({ breweries, brewerySearch, stateSearch, setBrewery }) 
           {filteredBreweryAndStateSearch.map((brewery) => {
             return (
               <BreweryCard
-               
                 key={brewery.id}
                 id={brewery.id}
                 name={brewery.brewery_name}

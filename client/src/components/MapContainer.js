@@ -15,19 +15,19 @@ function MapContainer({ google, currentLocation }) {
   }, []);
 
   function breweryAddress() {
-    breweries.map((brewery) => {
+    breweries.each((brewery) => {
       return brewery.brewery_address;
     });
   }
 
   function breweryLat() {
-    breweries.map((brewery) => {
+    breweries.each((brewery) => {
       return brewery.brewery_lat;
     });
   }
 
   function breweryLon() {
-    breweries.map((brewery) => {
+    breweries.each((brewery) => {
       return brewery.brewery_lon;
     });
   }
@@ -40,23 +40,27 @@ function MapContainer({ google, currentLocation }) {
 
   return (
     <div>
-      <Map
+      {/* <Map
         google={google}
-        zoom={16}
-        // center={{location}}
-        // address={breweryAddress}
-        lat={breweryLat}
-        lon={breweryLon}
-      >
-        <Marker
-          lat={breweryLat}
-          lon={breweryLon}
-          // position={location}
+        zoom={6}
+        center={{ lat: { breweryLat }, lon: { breweryLon } }}
+      > */}
+        {/* <Marker
+          position={{ lat: { breweryLat }, lon: { breweryLon } }}
           icon={{
             url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
           }}
-        />
-      </Map>
+        /> */}
+      {/* </Map> */}
+      {/* <BreweryCardList
+        google={google}
+        zoom={10}
+        center={{ lat: { breweryLat }, lon: { breweryLon } }}
+        position={{ lat: { breweryLat }, lon: { breweryLon } }}
+        icon={{
+          url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
+        }}
+      /> */}
       <br />
     </div>
   );
