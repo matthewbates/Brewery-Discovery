@@ -3,6 +3,7 @@ import { Row, Col, Card, Image, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function BreweryCard({
+  id,
   name,
   logo,
   website,

@@ -37,7 +37,7 @@ function BreweryCardList({
               />
             );
           })}
-          <MapContainer />
+          {/* <MapContainer /> */}
         </Row>
       </Container>
     </>
