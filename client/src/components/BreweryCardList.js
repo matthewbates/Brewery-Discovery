@@ -1,19 +1,11 @@
 import React from "react";
 import { Row, Container } from "react-bootstrap";
 import BreweryCard from "./BreweryCard";
-import BeerCard from "./BeerCard";
 import MapContainer from "./MapContainer";
 
-function BreweryCardList({
-  breweries,
-  brewerySearch,
-  stateSearch,
-  google,
-  position,
-  zoom,
-}) {
-  const filterBreweryAndStateSearch = breweries
-    .filter((brewery) =>
+function BreweryCardList({ breweries, brewerySearch, stateSearch,setBrewery }) {
+  const filteredBreweryAndStateSearch =
+    breweries.filter((brewery) =>
       brewery.brewery_name.toLowerCase().includes(brewerySearch.toLowerCase())
     )
     .filter((brewery) =>
@@ -23,9 +15,10 @@ function BreweryCardList({
     <>
       <Container>
         <Row>
-          {filterBreweryAndStateSearch.map((brewery) => {
+          {filteredBreweryAndStateSearch.map((brewery) => {
             return (
               <BreweryCard
+               
                 key={brewery.id}
                 id={brewery.id}
                 name={brewery.brewery_name}
@@ -36,6 +29,7 @@ function BreweryCardList({
                 phone={brewery.brewery_phone_number}
                 state={brewery.brewery_state}
                 image={brewery.brewery_image}
+                setBrewery={setBrewery}
               />
             );
           })}

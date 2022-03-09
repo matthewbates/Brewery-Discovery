@@ -1,22 +1,20 @@
 import React, { useState, useEffect } from "react";
-import { Row, Container } from "react-bootstrap";
+// import { Row, Container } from "react-bootstrap";
 import BeerCard from "./BeerCard";
 
-function BeerCardList() {
-  const [beers, setBeers] = useState([]);
-  
+function BeerCardList({brewery}) {
+const [currentBrewery, setCurrentBrewery] = useState([]);
 
-  useEffect(() => {
-    fetch("/beers")
-      .then((r) => r.json())
-      .then((beers) => {
-        setBeers(beers);
-      });
-  }, []);
+useEffect(() => {
+  fetch(`/breweries/${brewery}`)
+    .then((r) => r.json())
+    .then((r) => setCurrentBrewery(r.beers));
+}, [brewery]);
 
   return (
     <div>
-      {beers.map((beer) => (
+
+      {currentBrewery.map( beer => 
         <BeerCard
           key={beer.id}
           id={beer.id}
@@ -24,7 +22,9 @@ function BeerCardList() {
           abv={beer.beer_abv}
           type={beer.beer_type}
         />
-      ))}
+)}
+      
+      
     </div>
   );
 }

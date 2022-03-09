@@ -1,6 +1,6 @@
 import React from "react";
-import { Row, Col, Card, Image, Button } from "react-bootstrap";
-import BeerCardList from "./BeerCardList";
+import {  Card,Button } from "react-bootstrap";
+
 
 function BeerCard({ name, abv, type }) {
   return (

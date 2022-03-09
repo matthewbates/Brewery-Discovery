@@ -6,12 +6,12 @@ import Home from "./components/Home";
 import Reviews from "./components/Reviews";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import BeerCard from "./components/BeerCard";
-import BeerCardList from "./components/BeerCardList";
+import Brewery from "./components/Brewery";
 import MapContainer from "./components/MapContainer";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
+  const [brewery, setBrewery] = useState("");
 
   function handleLogout(e) {
     fetch("/logout", {
@@ -85,11 +85,14 @@ function App() {
             }
           />
 
-          <Route path="/home" element={<Home currentUser={currentUser} />} />
+          <Route
+            path="/home"
+            element={<Home currentUser={currentUser} setBrewery={setBrewery} />}
+          />
           <Route path="/reviews" element={<Reviews />} />
           <Route
-            path="/beers"
-            element={<BeerCardList currentUser={currentUser} />}
+            path={`/brewery/${brewery}`}
+            element={<Brewery brewery={brewery} currentUser={currentUser} />}
           />
           <Route path="/map" element={<MapContainer />} />
         </Routes>
