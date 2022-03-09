@@ -2,6 +2,7 @@ import React, { Component, useEffect, useState } from "react";
 import { Map, GoogleApiWrapper, Marker } from "google-maps-react";
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
 import GoogleMapReact from "google-maps-react";
+import BreweryCardList from "./BreweryCardList";
 
 function MapContainer({ google, currentLocation }) {
   const [breweries, setBreweries] = useState("");
@@ -45,8 +46,14 @@ function MapContainer({ google, currentLocation }) {
         address={breweryAddress}
         lat={breweryLat}
         lon={breweryLon}
-        center={currentLocation}
-      ></Map>
+      >
+        <Marker
+          position={location}
+          icon={{
+            url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
+          }}
+        />
+      </Map>
       <br />
     </div>
   );
