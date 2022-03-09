@@ -9,7 +9,7 @@ h6,
 nav,
 .btn {
   font-family: "Bebas Neue", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
 p {
@@ -79,8 +79,9 @@ p {
 }
 
 .card-img-o {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   background-image: linear-gradient(rgb(72, 0, 72, 0.8), rgb(192, 72, 72, 0.8));
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
 }
 
 .card-img-overlay {
