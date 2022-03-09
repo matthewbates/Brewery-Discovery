@@ -25,7 +25,7 @@ function BreweryCard({
           to={`/brewery/${id}`}
         >
           <Card.Img
-            className="img-responsive card-img-filter"
+            className="h-100 card-img-filter"
             src={image}
             alt=""
           />
@@ -49,9 +49,10 @@ function BreweryCard({
               </Button>
             </div>
 
-            <div className="card-footer-div bg-light text-muted text-center ">
+            <div className="card-footer-div text-center">
               <div className="card-b-logo bg-white mx-auto">
-                <Image className="" src={logo} alt="" />
+               <Image className="img-fluid" src={logo} alt="" />
+                
               </div>
             </div>
           </Card.ImgOverlay>
