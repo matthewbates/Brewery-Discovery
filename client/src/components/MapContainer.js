@@ -40,18 +40,18 @@ function MapContainer({ google, currentLocation }) {
 
   return (
     <div>
-      {/* <Map
+      <Map
         google={google}
         zoom={6}
         center={{ lat: { breweryLat }, lon: { breweryLon } }}
-      > */}
-        {/* <Marker
+      >
+        <Marker
           position={{ lat: { breweryLat }, lon: { breweryLon } }}
           icon={{
             url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
           }}
-        /> */}
-      {/* </Map> */}
+        />
+      </Map>
       {/* <BreweryCardList
         google={google}
         zoom={10}
