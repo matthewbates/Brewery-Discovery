@@ -24,6 +24,8 @@ b1 =
     brewery_state: 'CO',
     brewery_image:
       'https://images.squarespace-cdn.com/content/v1/597908c415d5dbbbd8e7eecb/1549846738186-Q0WAK10D6PTOQB7X4G4P/GoatPatch-17-Edit.jpg',
+    brewery_lat: '38.871609',
+    brewery_lon: '-104.822388',
   )
 b2 =
   Brewery.create!(
@@ -37,6 +39,8 @@ b2 =
     brewery_state: 'CO',
     brewery_image:
       'https://images.squarespace-cdn.com/content/v1/555cd8b8e4b0c647a26e43c9/1545342891735-THAYS4QII4D5ONZNEZE3/Paradox-3.jpg?format=1000w',
+    brewery_lat: '43.944098',
+    brewery_lon: '-73.732102',
   )
 b3 =
   Brewery.create!(
@@ -51,6 +55,8 @@ b3 =
     brewery_state: 'CO',
     brewery_image:
       'https://media-cdn.tripadvisor.com/media/photo-s/0d/73/f9/9a/inside.jpg',
+    brewery_lat: '38.857029',
+    brewery_lon: '-104.915614',
   )
 b4 =
   Brewery.create!(
@@ -66,6 +72,8 @@ b4 =
     brewery_image:
       'http://koperski.com/wp-content/uploads/2015/08/2015-06-25-crooked-stave-denver-05.jpg
 ',
+    brewery_lat: '39.780688',
+    brewery_lon: '-105.004715',
   )
 b5 =
   Brewery.create!(
@@ -80,6 +88,8 @@ b5 =
     brewery_state: 'CO',
     brewery_image:
       'https://live.staticflickr.com/65535/51268146952_3e80403819.jpg',
+    brewery_lat: '38.833184',
+    brewery_lon: '-104.837405',
   )
 b6 =
   Brewery.create!(
@@ -94,6 +104,8 @@ b6 =
     brewery_state: 'CO',
     brewery_image:
       'https://redlegbrewing.com/wp-content/uploads/2021/11/Macaron-Photo-Food-Facebook-Cover.png',
+    brewery_lat: '38.896106',
+    brewery_lon: '-104.870451',
   )
 # HALEEM'S BREWERIES
 b7 =
@@ -109,6 +121,8 @@ b7 =
     brewery_state: 'CA',
     brewery_image:
       'https://images.squarespace-cdn.com/content/v1/5ce849fdc95df000011ea5e7/1626904696609-FCZN67VHDZID6GBXCZ73/the-spacee-20.jpg',
+    brewery_lat: '33.916600',
+    brewery_lon: '-118.333481',
   )
 b8 =
   Brewery.create!(
@@ -123,6 +137,8 @@ b8 =
     brewery_state: 'CA',
     brewery_image:
       'https://hoppedla.com/wp-content/uploads/2017/03/lesbarstendres_27579467_807713732746050_6423683122327453696_n-1024x628.jpg',
+    brewery_lat: '33.914754',
+    brewery_lon: '-118.332374',
   )
 b9 =
   Brewery.create!(
@@ -137,6 +153,8 @@ b9 =
     brewery_state: 'CA',
     brewery_image:
       'https://beerbaseball.com/wp-content/uploads/2016/11/monkish-brewing-beer-tasting.jpg',
+    brewery_lat: '33.846322',
+    brewery_lon: '-118.309931',
   )
 b10 =
   Brewery.create!(
@@ -145,12 +163,14 @@ b10 =
       'https://congregationalehouse.com/wp-content/uploads/2021/05/cahlogo-1.png',
     flagship_beers: 13,
     brewery_website: 'https://congregationalehouse.com/',
-    brewery_address: '619 N Azusa Avenue, Azusa, CA 91702',
+    brewery_address: '300 S Raymond Avenue, Pasadena, CA 91105',
     is_favorite: 0,
     brewery_phone_number: '(626) 334-2337',
     brewery_state: 'CA',
     brewery_image:
       'https://hoppedla.com/wp-content/uploads/2016/01/congregationalehouselongbeach.jpg',
+    brewery_lat: '34.140128',
+    brewery_lon: '-118.148512',
   )
 b11 =
   Brewery.create!(
@@ -165,6 +185,8 @@ b11 =
     brewery_state: 'CA',
     brewery_image:
       'https://angelcitybrewery.com/wp-content/uploads/2018/10/ACB-PH-Candids-09-1024x819.jpg',
+    brewery_lat: '34.046630',
+    brewery_lon: '-118.237879',
   )
 b12 =
   Brewery.create!(
@@ -179,6 +201,8 @@ b12 =
     brewery_state: 'CA',
     brewery_image:
       'https://s3-media0.fl.yelpcdn.com/bphoto/wvoRQ3kSqU4aiynrUIq35A/l.jpg',
+    brewery_lat: '34.056019',
+    brewery_lon: '-118.235899',
   )
 # MYLES' BREWERIES
 b13 =
@@ -194,6 +218,8 @@ b13 =
     brewery_state: 'CA',
     brewery_image:
       'https://ballastpoint.com/wp-content/uploads/2018/05/SliderImage_LongBeach5-1.jpg',
+    brewery_lat: '32.888495',
+    brewery_lon: '-117.157955',
   )
 b14 =
   Brewery.create!(
@@ -202,12 +228,14 @@ b14 =
       'https://dr8h81twidjpw.cloudfront.net/uploads/popup_setting/popup_logo_img/Harland_Logo_Large_2007072336.png',
     flagship_beers: 4,
     brewery_website: 'https://harlandbeer.com/',
-    brewery_address: '3718 Paseo Place Suite 1300, San Diego, CA 92130',
+    brewery_address: '4112 Napeir Street, San Diego, CA 92110',
     is_favorite: 0,
     brewery_phone_number: '(858) 800-4566',
     brewery_state: 'CA',
     brewery_image:
       'https://beermaverick.com/wp-content/uploads/2020/08/HarlandScrippsRanchVanderburghOct20192811of1129.jpg',
+    brewery_lat: '32.782504',
+    brewery_lon: '-117.206487',
   )
 b15 =
   Brewery.create!(
@@ -216,12 +244,14 @@ b15 =
       'https://cdn.craftbeer.com/wp-content/uploads/MHB_revised_primary_logo1.jpg',
     flagship_beers: 10,
     brewery_website: 'https://www.mikehessbrewing.com/',
-    brewery_address: '4893 Voltaire Street, San Diego, CA 92107',
+    brewery_address: '879 W Harbor Drive Unit W14-E, San Diego, CA 92101',
     is_favorite: 0,
     brewery_phone_number: '(619) 795-1095',
     brewery_state: 'CA',
     brewery_image:
       'https://www.mikehessbrewing.com/wp-content/uploads/2019/09/walnut-creek-4.jpg',
+    brewery_lat: '32.709379',
+    brewery_lon: '-117.171882',
   )
 b16 =
   Brewery.create!(
@@ -230,12 +260,14 @@ b16 =
       'https://www.csbeverage.com/wp-content/uploads/2016/10/stone-brewing-company.jpg',
     flagship_beers: 10,
     brewery_website: 'https://www.stonebrewing.com/',
-    brewery_address: '202 S Raymond Avenue, Pasadena, CA 91105',
+    brewery_address: '1202 Kettner Boulevard Unit 101, San Diego, CA 92101',
     is_favorite: 0,
     brewery_phone_number: '(626) 440-7243',
     brewery_state: 'CA',
     brewery_image:
       'https://cdn.hopculture.com/wp-content/uploads/2019/01/berlin0.jpg',
+    brewery_lat: '32.718018 4',
+    brewery_lon: '-117.16946',
   )
 b17 =
   Brewery.create!(
@@ -249,6 +281,8 @@ b17 =
     brewery_phone_number: '(619) 234-2739',
     brewery_state: 'CA',
     brewery_image: 'https://eventective-media.azureedge.net/2197192_lg.jpg',
+    brewery_lat: '32.717457',
+    brewery_lon: '-117.167259',
   )
 b18 =
   Brewery.create!(
@@ -257,12 +291,14 @@ b18 =
       'https://h8m9w9k7.rocketcdn.me/wp-content/uploads/2016/03/CWA-Logo-380px.png',
     flagship_beers: 42,
     brewery_website: 'https://californiawildales.com/',
-    brewery_address: '4202 Sorrento Valley Boulevard, San Diego, CA 92121',
+    brewery_address: '4896 Newport Avenue, San Diego, CA 92107',
     is_favorite: 0,
     brewery_phone_number: '(855) 945-3253',
     brewery_state: 'CA',
     brewery_image:
       'https://media.sandiegoreader.com/img/photos/2018/05/10/ca_wild_ales_brewery_t720.jpg?5755a55b677da5dfc6c8e05d88cfbaffe8abac5c',
+    brewery_lat: '32.745837 ',
+    brewery_lon: '-117.249027',
   )
 
 puts '🍺 Creating beers...'

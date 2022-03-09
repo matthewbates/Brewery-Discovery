@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import BeerCard from "./components/BeerCard";
 import BeerCardList from "./components/BeerCardList";
+import MapContainer from "./components/MapContainer";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
@@ -90,6 +91,7 @@ function App() {
             path="/beers"
             element={<BeerCardList currentUser={currentUser} />}
           />
+          <Route path="/map" element={<MapContainer />} />
         </Routes>
       </div>
     </BrowserRouter>
