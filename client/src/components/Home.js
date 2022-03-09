@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import BreweryCardList from "./BreweryCardList";
 import { Row, Col, Container } from "react-bootstrap";
 import Search from "./Search";
-import BeerCardList from "./BeerCardList";
 
-function Home({ currentUser }) {
+function Home({ currentUser, setBrewery }) {
   const [breweries, setBreweries] = useState([]);
   const [brewerySearch, setBrewerySearch] = useState("");
   const [stateSearch, setStateSearch] = useState("");
@@ -57,6 +56,7 @@ function Home({ currentUser }) {
                 brewerySetter={setBrewerySearch}
                 stateSearch={stateSearch}
                 stateSetter={setStateSearch}
+                setBrewery={setBrewery}
               />
             </Col>
           </Row>

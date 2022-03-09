@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import MapContainer from "./MapContainer";
 
 function BreweryCard({
+  id,
   name,
   logo,
   website,
@@ -12,6 +13,7 @@ function BreweryCard({
   phone,
   brewery_state,
   image,
+  setBrewery,
 }) {
   return (
     <>
@@ -21,7 +23,7 @@ function BreweryCard({
           <Card.ImgOverlay className="card-img-o">
             <div className="p-4 mt-2 flex-column d-flex justify-content-center text-light">
               <Card.Title className="update_title_color">
-                <Link to="/beers">
+                <Link onClick={(e) => setBrewery(id)} to={`/brewery/${id}`}>
                   <p className="p-2">On Tap Now!</p>
                 </Link>
                 <h3>{name}</h3>
