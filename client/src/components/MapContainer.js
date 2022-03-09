@@ -42,13 +42,16 @@ function MapContainer({ google, currentLocation }) {
     <div>
       <Map
         google={google}
-        zoom={14}
-        address={breweryAddress}
+        zoom={16}
+        // center={{location}}
+        // address={breweryAddress}
         lat={breweryLat}
         lon={breweryLon}
       >
         <Marker
-          position={location}
+          lat={breweryLat}
+          lon={breweryLon}
+          // position={location}
           icon={{
             url: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png",
           }}
