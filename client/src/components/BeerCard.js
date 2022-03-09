@@ -1,6 +1,5 @@
 import React from "react";
-import {  Card,Button } from "react-bootstrap";
-
+import { Card, Button } from "react-bootstrap";
 
 function BeerCard({ name, abv, type }) {
   return (
@@ -9,7 +8,8 @@ function BeerCard({ name, abv, type }) {
         <Card.Img variant="top" src="" />
         <Card.Body>
           <Card.Title>{name}</Card.Title>
-          <Card.Text></Card.Text>
+          <Card.Text>{abv}%</Card.Text>
+          <Card.Text>Type: {type}</Card.Text>
           <Button variant="primary">Go somewhere</Button>
         </Card.Body>
       </Card>
