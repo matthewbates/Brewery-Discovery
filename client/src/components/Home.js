@@ -30,7 +30,7 @@ function Home({ currentUser, setBrewery }) {
                 <h2>
                   Welcome To The Brewery Discovery Project
                 </h2>
-                <p className="pt-2">Search for a brewery by name or location below</p>
+                <h5 className="pt-2">Search for a brewery by name or location below</h5>
               </Col>
               <Col lg={5} className="mx-auto search-bar">
                 <Search
@@ -45,7 +45,6 @@ function Home({ currentUser, setBrewery }) {
         </div>
         <div className="text-center mt-5">
           <h2>BREWERY LIST</h2>
-          <p>Click on a brewery below to view the beer list</p>
           <hr className="w-75 mx-auto mt-5" />
         </div>
 
