@@ -22,7 +22,7 @@ function BreweryCard({
           as={Link}
           className="card-div mx-auto"
           onClick={(e) => setBrewery(id)}
-          to={`/brewery/${id}`}
+          to={`/breweries/${id}`}
         >
           <Card.Img
             className="h-100 card-img-filter"

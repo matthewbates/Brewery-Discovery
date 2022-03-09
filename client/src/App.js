@@ -91,7 +91,7 @@ function App() {
           />
           <Route path="/reviews" element={<Reviews />} />
           <Route
-            path={`/brewery/${brewery}`}
+            path={`/breweries/${brewery}`}
             element={<Brewery brewery={brewery} currentUser={currentUser} />}
           />
           <Route path="/map" element={<MapContainer />} />
