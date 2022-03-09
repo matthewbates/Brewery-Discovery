@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Container } from "react-bootstrap";
 import BreweryCard from "./BreweryCard";
-import MapContainer from "./MapContainer";
+import MapContainer from "./Map";
 
 function BreweryCardList({ breweries, brewerySearch, stateSearch, setBrewery }) {
   const filteredBreweryAndStateSearch =

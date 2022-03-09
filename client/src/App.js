@@ -7,7 +7,7 @@ import Reviews from "./components/Reviews";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Brewery from "./components/Brewery";
-import MapContainer from "./components/MapContainer";
+import MapContainer from "./components/Map";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
@@ -32,7 +32,7 @@ function App() {
                   Home
                 </Nav.Link>
                 <Nav.Link className="mx-2" as={Link} to="/reviews">
-                  Reviews
+                  Mini-Fridge
                 </Nav.Link>
                 {/* <Nav.Link as={Link} to="/login"> */}
                 <div>
