@@ -11,6 +11,8 @@ class CreateBreweries < ActiveRecord::Migration[6.1]
       t.string :brewery_phone_number
       t.string :brewery_state
       t.string :brewery_image
+      t.string :brewery_lat
+      t.string :brewery_lon
 
       t.timestamps
     end

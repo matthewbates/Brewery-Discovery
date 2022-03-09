@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Card, Image } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import MapContainer from "./MapContainer";
 
 function BreweryCard({
   name,

@@ -8,5 +8,7 @@ class BrewerySerializer < ActiveModel::Serializer
              :is_favorite,
              :brewery_phone_number,
              :brewery_state,
-             :brewery_image
+             :brewery_image,
+             :brewery_lat,
+             :brewery_lon
 end
