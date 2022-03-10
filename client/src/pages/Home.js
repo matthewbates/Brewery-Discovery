@@ -27,7 +27,7 @@ function Home({ currentUser, setBrewery }) {
               <div className="jumbotron-inner">
                 <div className="h-50 d-flex flex-column justify-content-center text-light">
                   <h2 className="p-2 text-center">
-                    {currentUser ? `Hello, ${currentUser.username}!` : ""}
+                    {currentUser ? `Hello, ${currentUser.first_name}!` : ""}
                   </h2>
                   <Col className="text-center">
                     <h2>Welcome To The Brewery Discovery Project</h2>
