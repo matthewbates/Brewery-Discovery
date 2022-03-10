@@ -32,7 +32,6 @@ function BreweryCardList({ breweries, brewerySearch, stateSearch, setBrewery }) 
               />
             );
           })}
-          <MapContainer />
         </Row>
       </Container>
     </>
