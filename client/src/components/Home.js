@@ -43,25 +43,28 @@ function Home({ currentUser, setBrewery }) {
             </div>
           </div>
         </div>
-        <div className="text-center mt-5">
-          <h2>BREWERY LIST</h2>
-          <p>Click on a brewery below to view the beer list</p>
-          <hr className="mx-auto mt-3" />
-        </div>
 
         <Container>
-          <Row>
-            <Col>
-              <BreweryCardList
-                breweries={breweries}
-                brewerySearch={brewerySearch}
-                brewerySetter={setBrewerySearch}
-                stateSearch={stateSearch}
-                stateSetter={setStateSearch}
-                setBrewery={setBrewery}
-              />
-            </Col>
-          </Row>
+          <div className="brewery-list-container">
+            <div className="text-center mt-5">
+              <h2>BREWERY LIST</h2>
+              <p>Click on a brewery below to view the beer list</p>
+              <hr className="mx-auto mt-3" />
+            </div>
+
+            <Row>
+              <Col>
+                <BreweryCardList
+                  breweries={breweries}
+                  brewerySearch={brewerySearch}
+                  brewerySetter={setBrewerySearch}
+                  stateSearch={stateSearch}
+                  stateSetter={setStateSearch}
+                  setBrewery={setBrewery}
+                />
+              </Col>
+            </Row>
+          </div>
         </Container>
       </Container>
     </>
