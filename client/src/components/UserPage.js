@@ -134,7 +134,7 @@ function UserPage({ currentUser, setCurrentUser }) {
                 </Table>
                 <br></br>
                 <Button onClick={handleSubmit} variant="outline-secondary">
-                  Edit Profile
+                  Confirm Changes
                 </Button>
                 <Button onClick={handleDelete} variant="outline-danger">
                   Delete Profile
