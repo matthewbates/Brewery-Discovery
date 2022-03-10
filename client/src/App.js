@@ -2,13 +2,13 @@ import "./App.css";
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
-import Home from "./components/Home";
-import Reviews from "./components/Reviews";
-import Login from "./components/Login";
-import Signup from "./components/Signup";
-import Brewery from "./components/Brewery";
+import Home from "./pages/Home";
+import Reviews from "./pages/Reviews";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+import Brewery from "./pages/Brewery";
 import MapContainer from "./components/MapContainer";
-import UserPage from "./components/UserPage";
+import UserPage from "./pages/UserPage";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
@@ -107,7 +107,10 @@ function App() {
             path="/home"
             element={<Home currentUser={currentUser} setBrewery={setBrewery} />}
           />
-          <Route path="/reviews" element={<Reviews />} />
+          <Route
+            path="/reviews"
+            element={<Reviews currentUser={currentUser} />}
+          />
           <Route
             path={`/breweries/${brewery}`}
             element={<Brewery brewery={brewery} currentUser={currentUser} />}

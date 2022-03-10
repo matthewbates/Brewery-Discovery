@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Card, Image, Button } from "react-bootstrap";
+import { Col, Card, Image, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function BreweryCard({
@@ -8,9 +8,7 @@ function BreweryCard({
   logo,
   website,
   address,
-  favorites,
   phone,
-  brewery_state,
   image,
   setBrewery,
 }) {
@@ -23,11 +21,7 @@ function BreweryCard({
           onClick={(e) => setBrewery(id)}
           to={`/breweries/${id}`}
         >
-          <Card.Img
-            className="h-100 card-img-filter"
-            src={image}
-            alt=""
-          />
+          <Card.Img className="h-100 card-img-filter" src={image} alt="" />
           <Card.ImgOverlay className="card-img-o">
             <div className="p-4 mt-2 flex-column d-flex justify-content-center text-light">
               <Card.Title className="update_title_color">
@@ -50,8 +44,7 @@ function BreweryCard({
 
             <div className="card-footer-div text-center">
               <div className="card-b-logo bg-white mx-auto">
-               <Image className="img-fluid" src={logo} alt="" />
-                
+                <Image className="img-fluid" src={logo} alt="" />
               </div>
             </div>
           </Card.ImgOverlay>

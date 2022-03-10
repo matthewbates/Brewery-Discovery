@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import { Link, Navigate } from "react-router-dom";
 
@@ -28,8 +28,6 @@ function Login({ setCurrentUser, currentUser }) {
         }
       });
   }
-  
-  
 
   return (
     <div className="body_of_form">
