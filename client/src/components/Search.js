@@ -30,8 +30,10 @@ function Search({ brewerySearch, brewerySetter, stateSearch, stateSetter }) {
         >
           <Dropdown.Item eventKey="CA">CA</Dropdown.Item>
           <Dropdown.Item eventKey="CO">CO</Dropdown.Item>
+          <Dropdown.Item eventKey="OR">OR</Dropdown.Item>
           <Dropdown.Item eventKey="TX">TX</Dropdown.Item>
           <Dropdown.Item eventKey="UT">UT</Dropdown.Item>
+          <Dropdown.Item eventKey="WA">WA</Dropdown.Item>
         </DropdownButton>
       </div>
     </Container>

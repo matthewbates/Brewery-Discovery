@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   GoogleMap,
   LoadScript,
@@ -11,13 +11,21 @@ const mapStyles = {
   width: "100%",
 };
 
-const defaultCenter = {
-  lat: 38.871609,
-  lng: -104.822388,
-};
-
 function MapContainer() {
   const [selected, setSelected] = useState({});
+  const [currentPosition, setCurrentPosition] = useState({});
+
+  const success = (position) => {
+    const currentPosition = {
+      lat: position.coords.latitude,
+      lng: position.coords.longitude,
+    };
+    setCurrentPosition(currentPosition);
+  };
+
+  useEffect(() => {
+    navigator.geolocation.getCurrentPosition(success);
+  });
 
   const onSelect = (item) => {
     setSelected(item);
@@ -370,6 +378,63 @@ function MapContainer() {
         lng: -111.859966,
       },
     },
+    {
+      name: "Pint & Plow Brewing Company",
+      address: "332 Clay Street, Kerrville, TX 78028",
+      phone_number: "(830) 315-7468",
+      website: "https://pintandplow.com/",
+      hours_of_operation:
+        "M/Th: 8-9 p.m. | T: CLOSED | Wed/F/Sat: 8-9 p.m. | Sun: 12-9 p.m.",
+      location: {
+        lat: 30.049347,
+        lng: -99.140999,
+      },
+    },
+    {
+      name: "Deschutes Brewery",
+      address: "210 NW 11th Avenue, Portland, OR 97209",
+      phone_number: "(503) 296-4906",
+      website: "https://www.deschutesbrewery.com/",
+      hours_of_operation: "Sun - Th: 11:30-9 p.m., F - Sat: 11:30-10 p.m.",
+      location: {
+        lat: 45.524609,
+        lng: -122.682068,
+      },
+    },
+    {
+      name: "Grains of Wraith Brewery",
+      address: "3901 N Williams Avenue Suite A, Portland, OR 97227",
+      phone_number: "(503) 954-3786",
+      website: "https://gowbeer.com/",
+      hours_of_operation: "M - Th: 2-10 p.m. | F - Sun: 12-10 p.m.",
+      location: {
+        lat: 45.550999,
+        lng: -122.667015,
+      },
+    },
+    {
+      name: "Trap Door Brewing",
+      address: "2315 Main Street, Vancouver, WA 98660",
+      phone_number: "(360) 314-6966",
+      website: "http://trapdoorbrewing.com/",
+      hours_of_operation:
+        "M - W: 3.10 p.m. | Th - Sat: 11-11 p.m. | Sun: 11-10 p.m.",
+      location: {
+        lat: 45.638636,
+        lng: -122.67121,
+      },
+    },
+    {
+      name: "Twisted Pine Brewing Company",
+      address: "3201 Walnut Street Suite A, Boulder, CO 80301",
+      phone_number: "(303) 786-9270",
+      website: "https://twistedpinebrewing.com/",
+      hours_of_operation: "Sun - Sat: 11:30-9 p.m.",
+      location: {
+        lat: 40.020487,
+        lng: -105.251154,
+      },
+    },
   ];
 
   return (
@@ -377,14 +442,15 @@ function MapContainer() {
       <LoadScript googleMapsApiKey="AIzaSyD4G8pUuPzvq_CQ9wdT5eOJpGG4ywQtFsY">
         <GoogleMap
           mapContainerStyle={mapStyles}
-          zoom={5.2}
-          center={defaultCenter}
+          zoom={4.9}
+          center={currentPosition}
         >
           {locations.map((item) => {
             return (
               <Marker
                 key={item.name}
                 position={item.location}
+                currentPostition={currentPosition}
                 onClick={() => onSelect(item)}
               />
             );

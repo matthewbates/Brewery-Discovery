@@ -433,7 +433,76 @@ b30 =
     brewery_lat: '40.724933',
     brewery_lon: '-111.859966',
   )
-
+b31 =
+  Brewery.create(
+    brewery_name: 'Pint & Plow Brewing Co.',
+    brewery_logo:
+      'https://cdn.saffire.com/images.ashx?t=ig&rid=KerrvilleConvention&i=pint_and_plow_logo-black_.jpg&w=330&h=330&cropbox=1&cropboxhpos=center&stf=1',
+    brewery_website: 'https://pintandplow.com/',
+    brewery_address: '332 Clay Street, Kerrville, TX 78028',
+    brewery_phone_number: '(830) 315-7468',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://media-cdn.tripadvisor.com/media/photo-s/1c/94/73/a2/hobo-code-mural-on-outdoor.jpg',
+    brewery_lat: '30.049347',
+    brewery_lon: '-99.140999',
+  )
+b32 =
+  Brewery.create(
+    brewery_name: 'Deschutes Brewery',
+    brewery_logo:
+      'https://upload.wikimedia.org/wikipedia/commons/6/61/DeschutesBreweryLogoRed.jpg',
+    brewery_website: 'https://www.deschutesbrewery.com/',
+    brewery_address: '210 NW 11th Avenue, Portland, OR 97209',
+    brewery_phone_number: '(503) 296-4906',
+    brewery_state: 'OR',
+    brewery_image:
+      'https://resizer.otstatic.com/v2/photos/wide-huge/1/26112766.jpg',
+    brewery_lat: '45.524609',
+    brewery_lon: '-122.682068',
+  )
+b33 =
+  Brewery.create(
+    brewery_name: 'Grains Of Wrath Brewery',
+    brewery_logo:
+      'https://gowbeer.com/wp-content/uploads/2018/02/grey-logo-star.png',
+    brewery_website: 'https://gowbeer.com/',
+    brewery_address: '3901 N Williams Avenue Suite A, Portland, OR 97227',
+    brewery_phone_number: '(503) 954-3786',
+    brewery_state: 'OR',
+    brewery_image:
+      'https://images.squarespace-cdn.com/content/v1/5876279bbebafb82a7c81c00/1553559075709-M8EGTE9JER5FX44387JO/IMG_1913.jpg?format=1000w',
+    brewery_lat: '45.550999',
+    brewery_lon: '-122.667015',
+  )
+b34 =
+  Brewery.create(
+    brewery_name: 'Trap Door Brewing',
+    brewery_logo:
+      'http://washingtonbeerblog.com/wp-content/uploads/2019/01/trap-door-brewing-featt.jpg',
+    brewery_website: 'http://trapdoorbrewing.com/',
+    brewery_address: '2315 Main Street, Vancouver, WA 98660',
+    brewery_phone_number: '(360) 314-6966',
+    brewery_state: 'WA',
+    brewery_image:
+      'http://koperski.com/wp-content/uploads/2017/03/2017-03-03_Trap-Door_03.jpg',
+    brewery_lat: '45.638636',
+    brewery_lon: '-122.671210',
+  )
+b35 =
+  Brewery.create(
+    brewery_name: 'Twisted Pine Brewing Co.',
+    brewery_logo:
+      'https://images.squarespace-cdn.com/content/v1/568bfc1cc647ad1e51802932/1452806618040-OFJHZ0LOFFVHR0TEVOWN/TP-FC-Logo.png',
+    brewery_website: 'https://twistedpinebrewing.com/',
+    brewery_address: '3201 Walnut Street Suite A, Boulder, CO 80301',
+    brewery_phone_number: '(303) 786-9270',
+    brewery_state: 'CO',
+    brewery_image:
+      'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/bc/44/e4/twisted-pine-brewing.jpg?w=1200&h=1200&s=1',
+    brewery_lat: '40.020487',
+    brewery_lon: '-105.251154',
+  )
 puts '🍺 Creating beers...'
 # Goat Patch
 a1 =
@@ -1506,6 +1575,190 @@ a132 =
     brewery: b30,
   )
 
+# Pint & Plow
+a133 =
+  Beer.create!(
+    beer_name: "San Y'bon",
+    beer_abv: 5.6,
+    beer_type: 'Lager',
+    brewery: b31,
+  )
+a134 =
+  Beer.create!(
+    beer_name: 'The Divide',
+    beer_abv: 6.1,
+    beer_type: 'Belgian Style Saison',
+    brewery: b31,
+  )
+a135 =
+  Beer.create!(
+    beer_name: 'Tchoupitoulas',
+    beer_abv: 6.2,
+    beer_type: 'IPA - American',
+    brewery: b31,
+  )
+a136 =
+  Beer.create!(
+    beer_name: 'La Madrugada',
+    beer_abv: 5.6,
+    beer_type: 'Brown Porter',
+    brewery: b31,
+  )
+a137 =
+  Beer.create!(
+    beer_name: 'Off-Season',
+    beer_abv: 5.6,
+    beer_type: 'Amber',
+    brewery: b31,
+  )
+
+# Deschutes
+a133 =
+  Beer.create!(
+    beer_name: 'Black Butte Porter',
+    beer_abv: 5.5,
+    beer_type: 'Porter',
+    brewery: b32,
+  )
+a134 =
+  Beer.create!(
+    beer_name: 'Mirror Pond',
+    beer_abv: 5.0,
+    beer_type: 'Pale Ale',
+    brewery: b32,
+  )
+a135 =
+  Beer.create!(
+    beer_name: 'Obsidian',
+    beer_abv: 6.4,
+    beer_type: 'Stout',
+    brewery: b32,
+  )
+a136 =
+  Beer.create!(
+    beer_name: 'Da Shootz!',
+    beer_abv: 4.0,
+    beer_type: 'American Pilsner',
+    brewery: b32,
+  )
+a137 =
+  Beer.create!(
+    beer_name: 'Inversion',
+    beer_abv: 6.8,
+    beer_type: 'IPA - American',
+    brewery: b32,
+  )
+
+# G.O.W.
+a138 =
+  Beer.create!(
+    beer_name: 'Dive Bar',
+    beer_abv: 4.0,
+    beer_type: 'Lager',
+    brewery: b33,
+  )
+a139 =
+  Beer.create!(
+    beer_name: 'Frost Hammer',
+    beer_abv: 4.8,
+    beer_type: 'Helles Lager',
+    brewery: b33,
+  )
+a140 =
+  Beer.create!(
+    beer_name: 'Dark Clouds',
+    beer_abv: 5.5,
+    beer_type: 'Dunkelweizen',
+    brewery: b33,
+  )
+a141 =
+  Beer.create!(
+    beer_name: 'Cantina Especial',
+    beer_abv: 4.8,
+    beer_type: 'Mexican-Style Lager',
+    brewery: b33,
+  )
+a142 =
+  Beer.create!(
+    beer_name: 'Lionheart',
+    beer_abv: 5.5,
+    beer_type: 'English Amber',
+    brewery: b33,
+  )
+
+# Trap Door
+a138 =
+  Beer.create!(
+    beer_name: 'Lighten Up',
+    beer_abv: 5.5,
+    beer_type: 'New England Pale Ale',
+    brewery: b34,
+  )
+a139 =
+  Beer.create!(
+    beer_name: 'Pilzner',
+    beer_abv: 4.8,
+    beer_type: 'Czech Pilsner',
+    brewery: b34,
+  )
+a140 =
+  Beer.create!(
+    beer_name: 'Trap Door',
+    beer_abv: 6.4,
+    beer_type: 'IPA - American',
+    brewery: b34,
+  )
+a141 =
+  Beer.create!(
+    beer_name: 'Eden',
+    beer_abv: 7.2,
+    beer_type: 'IPA - American',
+    brewery: b34,
+  )
+a142 =
+  Beer.create!(
+    beer_name: 'Cruise the Couve',
+    beer_abv: 5.0,
+    beer_type: 'Session IPA',
+    brewery: b34,
+  )
+
+# Twisted Pine
+a138 =
+  Beer.create!(
+    beer_name: 'Trail Blazer',
+    beer_abv: 5.1,
+    beer_type: 'Blonde Style Ale',
+    brewery: b34,
+  )
+a139 =
+  Beer.create!(
+    beer_name: 'Raspberry Rising',
+    beer_abv: 5.2,
+    beer_type: 'Unfiltered Wheat Ale',
+    brewery: b34,
+  )
+a140 =
+  Beer.create!(
+    beer_name: 'El Dorado',
+    beer_abv: 5.3,
+    beer_type: 'Lager',
+    brewery: b34,
+  )
+a141 =
+  Beer.create!(
+    beer_name: 'Patio Pounder',
+    beer_abv: 4.7,
+    beer_type: 'Session IPA',
+    brewery: b34,
+  )
+a142 =
+  Beer.create!(
+    beer_name: 'Hoppy Boy',
+    beer_abv: 5.7,
+    beer_type: 'American Pale Ale',
+    brewery: b34,
+  )
 puts 'Creating users...'
 u1 = User.create!(username: 'test', password_digest: 'test')
 
