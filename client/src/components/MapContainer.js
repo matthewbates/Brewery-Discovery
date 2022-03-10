@@ -7,7 +7,7 @@ import {
 } from "@react-google-maps/api";
 
 const mapStyles = {
-  height: "100vh",
+  height: "90vh",
   width: "100%",
 };
 
@@ -373,44 +373,49 @@ function MapContainer() {
   ];
 
   return (
-    <LoadScript googleMapsApiKey="AIzaSyD4G8pUuPzvq_CQ9wdT5eOJpGG4ywQtFsY">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={5} center={defaultCenter}>
-        {locations.map((item) => {
-          return (
-            <Marker
-              key={item.name}
-              position={item.location}
-              onClick={() => onSelect(item)}
-            />
-          );
-        })}
-        {selected.location && (
-          <InfoWindow
-            position={selected.location}
-            clickable={true}
-            onCloseClick={() => setSelected({})}
-          >
-            <div>
-              <u>
-                <b>{selected.name}</b>
-                <br />
-              </u>
-              <p>{selected.address}</p>
-              <p>
-                <b>Phone Number: </b>
-                {selected.phone_number}
-              </p>
-              <a href={selected.website}>Visit Website</a>
-              <p>
-                <br />
+    <div className="google_styling">
+      <LoadScript googleMapsApiKey="AIzaSyD4G8pUuPzvq_CQ9wdT5eOJpGG4ywQtFsY">
+        <GoogleMap
+          mapContainerStyle={mapStyles}
+          zoom={5.2}
+          center={defaultCenter}
+        >
+          {locations.map((item) => {
+            return (
+              <Marker
+                key={item.name}
+                position={item.location}
+                onClick={() => onSelect(item)}
+              />
+            );
+          })}
+          {selected.location && (
+            <InfoWindow
+              position={selected.location}
+              clickable={true}
+              onCloseClick={() => setSelected({})}
+            >
+              <div>
+                <u>
+                  <b>{selected.name}</b>
+                  <br />
+                </u>
+                <p>{selected.address}</p>
+                <p>
+                  <b>Phone Number: </b>
+                  {selected.phone_number}
+                </p>
                 <b>Hours of Operation:</b> <br />
                 {selected.hours_of_operation}
-              </p>
-            </div>
-          </InfoWindow>
-        )}
-      </GoogleMap>
-    </LoadScript>
+                <br />
+                <br />
+                <a href={selected.website}>Visit Website</a>
+              </div>
+            </InfoWindow>
+          )}
+        </GoogleMap>
+      </LoadScript>
+    </div>
   );
 }
 

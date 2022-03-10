@@ -9,7 +9,7 @@ h6,
 nav,
 .btn {
   font-family: "Bebas Neue", cursive;
-  letter-spacing: .05rem;
+  letter-spacing: 0.05rem;
 }
 
 p {
@@ -217,3 +217,12 @@ p {
 }
 
 /* User Page Table Stack */
+
+/* styles google map */
+.google_styling {
+  height: 50vh;
+  margin: 10px 50px;
+  filter: drop-shadow(-10px 10px 3px #ccc);
+  margin-top: 15px;
+  text-align: center;
+}
