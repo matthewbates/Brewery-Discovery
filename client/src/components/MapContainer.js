@@ -154,7 +154,7 @@ function MapContainer() {
 
   return (
     <LoadScript googleMapsApiKey="AIzaSyD4G8pUuPzvq_CQ9wdT5eOJpGG4ywQtFsY">
-      <GoogleMap mapContainerStyle={mapStyles} zoom={4} center={defaultCenter}>
+      <GoogleMap mapContainerStyle={mapStyles} zoom={5} center={defaultCenter}>
         {locations.map((item) => {
           return (
             <Marker
