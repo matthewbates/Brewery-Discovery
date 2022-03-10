@@ -1,11 +1,15 @@
 import React from "react";
 import { Row, Container } from "react-bootstrap";
 import BreweryCard from "./BreweryCard";
-import MapContainer from "./MapContainer";
 
-function BreweryCardList({ breweries, brewerySearch, stateSearch, setBrewery }) {
-  const filteredBreweryAndStateSearch =
-    breweries.filter((brewery) =>
+function BreweryCardList({
+  breweries,
+  brewerySearch,
+  stateSearch,
+  setBrewery,
+}) {
+  const filteredBreweryAndStateSearch = breweries
+    .filter((brewery) =>
       brewery.brewery_name.toLowerCase().includes(brewerySearch.toLowerCase())
     )
     .filter((brewery) =>

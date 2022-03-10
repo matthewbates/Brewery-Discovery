@@ -107,7 +107,10 @@ function App() {
             path="/home"
             element={<Home currentUser={currentUser} setBrewery={setBrewery} />}
           />
-          <Route path="/reviews" element={<Reviews />} />
+          <Route
+            path="/reviews"
+            element={<Reviews currentUser={currentUser} />}
+          />
           <Route
             path={`/breweries/${brewery}`}
             element={<Brewery brewery={brewery} currentUser={currentUser} />}

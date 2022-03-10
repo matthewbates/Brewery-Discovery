@@ -8,17 +8,13 @@ function UserPage({ currentUser, setCurrentUser }) {
   const [lastName, setLastName] = useState(`${currentUser.last_name}`);
   const [email, setEmail] = useState(`${currentUser.email}`);
   const [username, setUsername] = useState(`${currentUser.username}`);
-  const [password, setPassword] = useState(`${currentUser.password}`);
-  const [passwordConfirmation, setPasswordConfirmation] = useState(
+  const [password] = useState(`${currentUser.password}`);
+  const [passwordConfirmation] = useState(
     `${currentUser.password_confirmation}`
   );
-  const [attToChange, setAttToChange] = useState("");
 
   // table data
-  const [firstNameBool, setFirstNameBool] = useState(false);
-  const [lastNameBool, setLastNameBool] = useState(false);
-  const [emailBool, setEmailBool] = useState(false);
-  const [usernameBool, setUsernameBool] = useState(false);
+  const [edit, setEdit] = useState(false);
 
   function handleSubmit(e) {
     fetch(`/users/${currentUser.id}`, {
@@ -63,6 +59,7 @@ function UserPage({ currentUser, setCurrentUser }) {
             <div className="pt-5">
               <Form className={("outer", "inner")}>
                 <br></br>
+                <h2> Profile </h2>
                 <Table striped bordered hover variant="dark">
                   <thead>
                     <tr>
@@ -74,55 +71,59 @@ function UserPage({ currentUser, setCurrentUser }) {
                   </thead>
                   <tbody>
                     <tr>
-                      <td onClick={() => setFirstNameBool(true)} >
-                        {firstNameBool ? (
+                      <td>
+                        {edit ? (
                           <div>
                             <Form.Control
                               type="name"
                               aria-describedby="passwordHelpBlock"
                               onChange={(e) => setFirstName(e.target.value)}
+                              Placeholder={currentUser.first_name}
                             />
                           </div>
                         ) : (
                           <div>{currentUser.first_name.toUpperCase()}</div>
                         )}
                       </td>
-                      <td onClick={() => setLastNameBool(true)}>
-                        {lastNameBool ? (
+                      <td>
+                        {edit ? (
                           <div>
                             <Form.Control
                               type="name"
                               id="inputPassword5"
                               aria-describedby="passwordHelpBlock"
                               onChange={(e) => setLastName(e.target.value)}
+                              Placeholder={currentUser.last_name}
                             />
                           </div>
                         ) : (
                           <div>{currentUser.last_name.toUpperCase()}</div>
                         )}
                       </td>
-                      <td onClick={() => setEmailBool(true)}>
-                        {emailBool ? (
+                      <td>
+                        {edit ? (
                           <div>
                             <Form.Control
                               type="name"
                               id="inputPassword5"
                               aria-describedby="passwordHelpBlock"
                               onChange={(e) => setEmail(e.target.value)}
+                              Placeholder={currentUser.email}
                             />
                           </div>
                         ) : (
                           <div>{currentUser.email.toUpperCase()}</div>
                         )}
                       </td>
-                      <td onClick={() => setUsernameBool(true)}>
-                        {usernameBool ? (
+                      <td>
+                        {edit ? (
                           <div>
                             <Form.Control
                               type="name"
                               id="inputPassword5"
                               aria-describedby="passwordHelpBlock"
                               onChange={(e) => setUsername(e.target.value)}
+                              Placeholder={currentUser.username}
                             />
                           </div>
                         ) : (
@@ -133,6 +134,11 @@ function UserPage({ currentUser, setCurrentUser }) {
                   </tbody>
                 </Table>
                 <br></br>
+                {!edit ? (
+                  <Button onClick={() => setEdit(true)}>Edit Profile</Button>
+                ) : (
+                  <Button onClick={() => setEdit(false)}>Cancle Edit</Button>
+                )}
                 <Button onClick={handleSubmit} variant="outline-secondary">
                   Confirm Changes
                 </Button>
@@ -144,10 +150,6 @@ function UserPage({ currentUser, setCurrentUser }) {
           </Container>
         </div>
       )}
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
     </div>
   );
 }
