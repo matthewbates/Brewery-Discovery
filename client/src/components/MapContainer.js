@@ -29,6 +29,8 @@ function MapContainer() {
       address: "2727 North. Cascade Avenue #123, Colorado Springs, CO 80907",
       phone_number: "(719) 471-4628",
       website: "https://www.goatpatchbrewing.com/",
+      hours_of_operation:
+        "M - Th: 12-9 p.m. | F: 12-10 p.m. | Sat: 11-10 p.m. | Sun: 11-8 p.m.",
       location: {
         lat: 38.871609,
         lng: -104.822388,
@@ -39,6 +41,8 @@ function MapContainer() {
       address: "10 Buffalo Court, Divide, CO 80814",
       phone_number: "(719) 686-8081",
       website: "http://paradoxbeercompany.com/index.php",
+      hours_of_operation:
+        "M: 12-8 p.m. | T/W: CLOSED | Th: 12-9 p.m. | F - Sat: 12-8 p.m. | Sun: 12-7 p.m.",
       location: {
         lat: 38.968652,
         lng: -105.034247,
@@ -49,6 +53,8 @@ function MapContainer() {
       address: "725 Manitou Avenue, Manitou Springs, CO 80829",
       phone_number: "(719) 282-7709",
       website: "https://www.manitoubrewing.com/",
+      hours_of_operation:
+        "M - Th: 12-8 p.m. | F: 12-9 p.m. | Sat: 11-9 p.m. | Sun: 11-8 p.m.",
       location: {
         lat: 38.857029,
         lng: -104.915614,
@@ -59,6 +65,7 @@ function MapContainer() {
       address: "1441 W 46th Avenue Unit 19, Denver, CO 80211",
       phone_number: "(720) 508-3292",
       website: "https://www.crookedstave.com/",
+      hour: "M - W: 3-8 p.m. | Th - Sun: 12-8 p.m.",
       location: {
         lat: 39.780688,
         lng: -105.004715,
@@ -69,6 +76,7 @@ function MapContainer() {
       address: "702 W Colorado Avenue, Colorado Springs, CO 80905",
       phone_number: "(719) 636-2337",
       website: "https://www.cerberusbrewingco.com/",
+      hours_of_operation: "Sun - Th: 11-8 p.m. | F - Sat: 11-9 p.m.",
       location: {
         lat: 38.833184,
         lng: -104.837405,
@@ -79,6 +87,8 @@ function MapContainer() {
       address: "2323 Garden of the Gods Road, Colorado Springs, CO 80907",
       phone_number: "(719) 598-3776",
       website: "https://redlegbrewing.com/",
+      hours_of_operation:
+        "M - Th: 12-9 p.m. | F - Sat: 12-10 p.m. | Sun: 12-8 p.m.",
       location: {
         lat: 38.896106,
         lng: -104.870451,
@@ -89,6 +99,8 @@ function MapContainer() {
       address: "3411 W El Segundo Boulevard, Hawthorne, CA 90250",
       phone_number: "(424) 456-4355",
       website: "https://www.commonspace.la/",
+      hours_of_operation:
+        "M - Th: 3-10 p.m. | F - Sat: 12-12 a.m. | Sun: 12-10 p.m.",
       location: {
         lat: 33.9166,
         lng: -118.333481,
@@ -99,6 +111,8 @@ function MapContainer() {
       address: "12918 Cerise Avenue, Hawthorne, CA 90250",
       phone_number: "(424) 456-4191",
       website: "https://www.laaleworks.com/",
+      hours_of_operation:
+        "M - Th: 3-11 p.m. | F - Sat: 12-12 a.m. | Sun: 12-10 p.m.",
       location: {
         lat: 33.914754,
         lng: -118.332374,
@@ -109,6 +123,8 @@ function MapContainer() {
       address: "20311 S Western Avenue, Torrance, CA 90501",
       phone_number: "(310) 295-2157",
       website: "https://www.monkishbrewing.com/",
+      hours_of_operation:
+        "M - Wed: 12-9 p.m. | Th - Sat: 12-10 p.m. | Sun: 12-8 p.m.",
       location: {
         lat: 33.846322,
         lng: -118309931,
@@ -119,6 +135,8 @@ function MapContainer() {
       address: "300 S Raymond Avenue, Pasadena, CA 91105",
       phone_number: "(626) 334-2337",
       website: "https://congregationalehouse.com/",
+      hours_of_operation:
+        "M - T: 4-10 p.m. | W - Th: 11:30-10 p.m. | F - Sat: 11:30-11 p.m. | Sun: 11:30-5 p.m.",
       location: {
         lat: 34.140128,
         lng: -118.148512,
@@ -129,6 +147,8 @@ function MapContainer() {
       address: "216 S Alameda Street, Los Angeles, CA 90012",
       phone_number: "(213) 537-5550",
       website: "https://angelcitybrewery.com/",
+      hours_of_operation:
+        "M: CLOSED | T - Th: 4-11 p.m. | F: 4- 2 a.m. | Sat: 12-2 a.m. | Sun: 12-11 p.m.",
       location: {
         lat: 34.04663,
         lng: -118.237879,
@@ -139,6 +159,7 @@ function MapContainer() {
       address: "800 N Alameda Street, Los Angeles, CA 90012",
       phone_number: "(306) 850-8288",
       website: "https://www.goatpatchbrewing.com/",
+      hours_of_operation: "Sun - Th: 12-10 p.m. | F - Sat: 12-12 a.m.",
       location: {
         lat: 34.056019,
         lng: -118.235899,
@@ -149,6 +170,8 @@ function MapContainer() {
       address: "9045 Carroll Way, San Diego, CA 92121",
       phone_number: "(858) 790-6901",
       website: "https://ballastpoint.com/",
+      hours_of_operation:
+        "M - Th: 11-11 p.m. | F - Sat: 11-12 a.m. | Sun: 11-11 p.m.",
       location: {
         lat: 32.888495,
         lng: -117.157955,
@@ -159,6 +182,7 @@ function MapContainer() {
       address: "4112 Napeir Street, San Diego, CA 92110",
       phone_number: "(858) 800-4566",
       website: "https://harlandbeer.com/",
+      hours_of_operation: "M - Sat: 12-9 p.m. | Sun: 12-7 p.m.",
       location: {
         lat: 32.782504,
         lng: -117.206487,
@@ -169,6 +193,7 @@ function MapContainer() {
       address: "879 W Harbor Drive Unit W14-E, San Diego, CA 92101",
       phone_number: "(619) 795-1095",
       website: "https://www.mikehessbrewing.com/",
+      hours_of_operation: "Sun - Th: 12-10 p.m. | F - Sat: 12-12 a.m.",
       location: {
         lat: 32.709379,
         lng: -117.171882,
@@ -179,6 +204,7 @@ function MapContainer() {
       address: "1202 Kettner Boulevard Unit 101, San Diego, CA 92101",
       phone_number: "(626) 440-7243",
       website: "https://www.stonebrewing.com/",
+      hours_of_operation: "Sun - Th: 12-8 p.m. | F - Sat: 12-9 p.m.",
       location: {
         lat: 32.709379,
         lng: -117.171882,
@@ -189,6 +215,7 @@ function MapContainer() {
       address: "1157 Columbia Street, San Diego, CA 92101",
       phone_number: "(619) 234-2739",
       website: "https://www.karlstrauss.com/",
+      hours_of_operation: "Sun - Th: 11-9 p.m. | F - Sat: 11-10 p.m.",
       location: {
         lat: 32.717457,
         lng: -117.167259,
@@ -199,6 +226,7 @@ function MapContainer() {
       address: "4896 Newport Avenue, San Diego, CA 92107",
       phone_number: "(855) 945-3253",
       website: "https://californiawildales.com/",
+      hours_of_operation: "M - Th: CLOSED | F - Sun: 12-6 p.m.",
       location: {
         lat: 32.745837,
         lng: -117249027,
@@ -209,6 +237,8 @@ function MapContainer() {
       address: "2823 Saint Louis Street, Dallas, TX 75226",
       phone_number: "(214) 888-3322",
       website: "https://deepellumbrewing.com/",
+      hours_of_operation:
+        "M - T: CLOSED | W - Sat: 11-10 p.m. | Sun: 12-7 p.m.",
       location: {
         lat: 32.780788,
         lng: -96.78167,
@@ -219,6 +249,8 @@ function MapContainer() {
       address: "1311 S Ervay Street, Dalls, TX 75215",
       phone_number: "(214) 748-2739",
       website: "https://fcbrewing.com/",
+      hours_of_operation:
+        "M - Th: 3-10 p.m. | F: 3-11 p.m. | Sat: 12-11 p.m. | Sun: 12-8 p.m.",
       location: {
         lat: 32.77208,
         lng: -96.791841,
@@ -229,6 +261,8 @@ function MapContainer() {
       address: "1301 Pace Street, Dallas, TX 75207",
       phone_number: "(214) 234-7600",
       website: "https://www.peticolasbrewing.com/",
+      hours_of_operation:
+        "M: CLOSED | T - F: 12-10 p.m. | Sat: 11-10 p.m. | Sun: 12-6 p.m.",
       location: {
         lat: 32.796828,
         lng: -96.82907,
@@ -239,6 +273,8 @@ function MapContainer() {
       address: "701 Galveston Avenue, Fort Worth, TX 76104",
       phone_number: "(817) 810-9266",
       website: "https://rahrbrewing.com/",
+      hours_of_operation:
+        "M - T: CLOSED | W: 5-8 p.m. | Th: 4-8 p.m. |F: 3-10 p.m. | Sat: 12-10 p.m. | Sun: 2-8 p.m.",
       location: {
         lat: 32.736945,
         lng: -97.326835,
@@ -249,6 +285,7 @@ function MapContainer() {
       address: "220 S Sylvania Avenue Unit 209, Fort Worth, TX 76111",
       phone_number: "(817) 222-0177",
       website: "https://martinhousebrewing.com/",
+      hours_of_operation: "M - Sun: 12-9 p.m.",
       location: {
         lat: 32.763541,
         lng: -97.309974,
@@ -259,6 +296,7 @@ function MapContainer() {
       address: "200 E Broadway Avenue, Fort Worth, TX 76104",
       phone_number: "(817) 841-1721",
       website: "https://www.hopfusionaleworks.com/",
+      hours_of_operation: "M - Sun: 12-11 p.m.",
       location: {
         lat: 32.741629,
         lng: -97324841,
@@ -269,6 +307,7 @@ function MapContainer() {
       address: "2000 Lyons Avenue, Houston, TX 77020",
       phone_number: "(713) 686-9494",
       website: "https://www.saintarnold.com/",
+      hours_of_operation: "M - Sun: 12-11 p.m.",
       location: {
         lat: 29.771509,
         lng: -95.348524,
@@ -279,6 +318,8 @@ function MapContainer() {
       address: "2032 Karbach Street, Houston, TX 77092",
       phone_number: "(713) 680-2739",
       website: "https://www.karbachbrewing.com/",
+      hours_of_operation:
+        "M - Th: 11-9 p.m. | F - Sat: 11-10 p.m. | Sun: 11-6 p.m.",
       location: {
         lat: 29.805832,
         lng: -95.460666,
@@ -289,6 +330,7 @@ function MapContainer() {
       address: "2199 Southwest Temple, South Salt Lake City, UT 84115",
       phone_number: "(385) 955-0504",
       website: "https://www.saltfirebrewing.com/",
+      hours_of_operation: "Sun - Th: 11-8 p.m. | F - Sat: 11-11 p.m.",
       location: {
         lat: 40.722838,
         lng: -111.893687,
@@ -299,6 +341,7 @@ function MapContainer() {
       address: "320 W 800 S, Salt Lake City, UT 84101",
       phone_number: "(801) 487-2337",
       website: "https://fisherbeer.com/",
+      hours_of_operation: "",
       location: {
         lat: 40.752235,
         lng: -111.900477,
@@ -309,6 +352,8 @@ function MapContainer() {
       address: "776 N Terminal Drive, Salt Lake City, UT 84122",
       phone_number: "(801) 575-2002",
       website: "https://www.squatters.com/our-beers/",
+      hours_of_operation:
+        "M - Th: 11-11 p.m. | F - Sat: 11-12 p.m. | Sun: 11-10 p.m.",
       location: {
         lat: 40.785371,
         lng: -111.988009,
@@ -319,6 +364,7 @@ function MapContainer() {
       address: "2110 Highland Drive, Salt Lake City, UT 84106",
       phone_number: "(801) 783-1127",
       website: "https://wasatchbeers.com/",
+      hours_of_operation: "M - F: 12-10 p.m. | Sat - Sun: 10:30 - 10 p.m.",
       location: {
         lat: 40.724933,
         lng: -111.859966,
@@ -344,7 +390,7 @@ function MapContainer() {
             clickable={true}
             onCloseClick={() => setSelected({})}
           >
-            <p>
+            <div>
               <u>
                 <b>{selected.name}</b>
                 <br />
@@ -355,7 +401,12 @@ function MapContainer() {
                 {selected.phone_number}
               </p>
               <a href={selected.website}>Visit Website</a>
-            </p>
+              <p>
+                <br />
+                <b>Hours of Operation:</b> <br />
+                {selected.hours_of_operation}
+              </p>
+            </div>
           </InfoWindow>
         )}
       </GoogleMap>
