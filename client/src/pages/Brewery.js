@@ -1,5 +1,5 @@
 import React from "react";
-import BeerCardList from "./BeerCardList";
+import BeerCardList from "../components/BeerCardList";
 
 function Brewery({ brewery }) {
   
