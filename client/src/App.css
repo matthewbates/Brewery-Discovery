@@ -81,6 +81,7 @@ p {
 .card-img-o {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
   background-image: linear-gradient(rgb(72, 0, 72, 0.8), rgb(192, 72, 72, 0.8));
+  /* background-image: linear-gradient(rgb(62, 81, 81, .8), rgba(222, 203, 164, .8)); */
 }
 
 .card-img-overlay {
@@ -195,3 +196,24 @@ p {
   max-height: 100px !important;
   width: auto;
 }
+
+/* User Page */
+
+.profile-main-div {
+  position: relative;
+  top: 75px;
+  background-color: #fff;
+}
+
+.user-button {
+  min-width: 100%;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
+  margin-bottom: 15px;
+}
+
+.profile-edit-div {
+  max-width: 600px;
+  padding: 30px;
+}
+
+/* User Page Table Stack */
