@@ -34,8 +34,8 @@ function MapContainer() {
     {
       name: "Paradox Brewing Company",
       location: {
-        lat: 43.944098,
-        lng: -73.732102,
+        lat: 38.968652,
+        lng: -105.034247,
       },
     },
     {
