@@ -1,43 +1,49 @@
 import React, { useState } from "react";
-import { Form, Button, Container } from "react-bootstrap";
+import { Form, Button, Container, Table } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 
 function UserPage({ currentUser, setCurrentUser }) {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const [email, setEmail] = useState("");
-  const [username, setUsername] = useState("");
-  const [password, setPassword] = useState("");
-  const [passwordConfirmation, setPasswordConfirmation] = useState("");
+  // User data
+  const [firstName, setFirstName] = useState(`${currentUser.first_name}`);
+  const [lastName, setLastName] = useState(`${currentUser.last_name}`);
+  const [email, setEmail] = useState(`${currentUser.email}`);
+  const [username, setUsername] = useState(`${currentUser.username}`);
+  const [password, setPassword] = useState(`${currentUser.password}`);
+  const [passwordConfirmation, setPasswordConfirmation] = useState(
+    `${currentUser.password_confirmation}`
+  );
   const [attToChange, setAttToChange] = useState("");
-  
 
+  // table data
+  const [firstNameBool, setFirstNameBool] = useState(false);
+  const [lastNameBool, setLastNameBool] = useState(false);
+  const [emailBool, setEmailBool] = useState(false);
+  const [usernameBool, setUsernameBool] = useState(false);
 
   function handleSubmit(e) {
-
-    // fetch(`/users/${currentUser.id}`, {
-    //   method: "PATCH",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //   },
-    //   body: JSON.stringify({
-    //     first_name: firstName,
-    //     last_name: lastName,
-    //     email,
-    //     username,
-    //     password,
-    //     password_confirmation: passwordConfirmation,
-    //   }),
-    // })
-    //   .then((r) => r.json())
-    //   .then((r) => {
-    //     if (r.email) {
-    //       setCurrentUser(r);
-    //     } else {
-    //       alert(r.errors);
-    //       setCurrentUser();
-    //     }
-    //   });
+    fetch(`/users/${currentUser.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        first_name: firstName,
+        last_name: lastName,
+        email,
+        username,
+        password,
+        password_confirmation: passwordConfirmation,
+      }),
+    })
+      .then((r) => r.json())
+      .then((r) => {
+        if (r.email) {
+          setCurrentUser(r);
+        } else {
+          alert(r.errors);
+          setCurrentUser();
+        }
+      });
   }
 
   function handleDelete(e) {
@@ -45,87 +51,93 @@ function UserPage({ currentUser, setCurrentUser }) {
       method: "DELETE",
     }).then(setCurrentUser());
   }
-  
-  console.log(currentUser);
+  console.log(firstName, lastName, email, username);
   return (
     <div>
       {!currentUser ? (
         <Navigate to="/" />
       ) : (
         <div>
+          <Container></Container>
           <Container>
             <div className="pt-5">
               <Form className={("outer", "inner")}>
                 <br></br>
-                <h2>Edit Account</h2>
-                <Form.Group className="mb-3" controlId="formFirstName">
-                  <Form.Label>First Name:</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setFirstName(e.target.value)}
-                    type="text"
-                    id="first_name"
-                    value= {firstName? firstName : currentUser.first_name}
-                    placeholder={currentUser.first_name}
-                  />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formLastName">
-                  <Form.Label>Last Name:</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setLastName(e.target.value)}
-                    type="text"
-                    id="last_name"
-                    value={lastName}
-                    placeholder={currentUser.last_name}
-                  />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicEmail">
-                  <Form.Label>Email:</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setEmail(e.target.value)}
-                    type="text"
-                    id="email"
-                    value={email}
-                    placeholder={currentUser.email}
-                  />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formUsername">
-                  <Form.Label>Username:</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setUsername(e.target.value)}
-                    type="text"
-                    id="username"
-                    value={username}
-                    placeholder={currentUser.username}
-                  />
-                </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword">
-                  <Form.Label className="mb-3">Password:</Form.Label>
-                  <Form.Control
-                    onChange={(e) => setPassword(e.target.value)}
-                    type="password"
-                    id="password"
-                    value={password}
-                    placeholder="Password"
-                  />
-                </Form.Group>
-                <Form.Group
-                  className="mb-3"
-                  controlId="formBasicPasswordConfirmation"
-                >
-                  <Form.Control
-                    onChange={(e) => setPasswordConfirmation(e.target.value)}
-                    type="password"
-                    id="password"
-                    value={passwordConfirmation}
-                    placeholder="Confirm Password"
-                  />
-                </Form.Group>
+                <Table striped bordered hover variant="dark">
+                  <thead>
+                    <tr>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>Email</th>
+                      <th>User Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td onClick={() => setFirstNameBool(true)} >
+                        {firstNameBool ? (
+                          <div>
+                            <Form.Control
+                              type="name"
+                              aria-describedby="passwordHelpBlock"
+                              onChange={(e) => setFirstName(e.target.value)}
+                            />
+                          </div>
+                        ) : (
+                          <div>{currentUser.first_name.toUpperCase()}</div>
+                        )}
+                      </td>
+                      <td onClick={() => setLastNameBool(true)}>
+                        {lastNameBool ? (
+                          <div>
+                            <Form.Control
+                              type="name"
+                              id="inputPassword5"
+                              aria-describedby="passwordHelpBlock"
+                              onChange={(e) => setLastName(e.target.value)}
+                            />
+                          </div>
+                        ) : (
+                          <div>{currentUser.last_name.toUpperCase()}</div>
+                        )}
+                      </td>
+                      <td onClick={() => setEmailBool(true)}>
+                        {emailBool ? (
+                          <div>
+                            <Form.Control
+                              type="name"
+                              id="inputPassword5"
+                              aria-describedby="passwordHelpBlock"
+                              onChange={(e) => setEmail(e.target.value)}
+                            />
+                          </div>
+                        ) : (
+                          <div>{currentUser.email.toUpperCase()}</div>
+                        )}
+                      </td>
+                      <td onClick={() => setUsernameBool(true)}>
+                        {usernameBool ? (
+                          <div>
+                            <Form.Control
+                              type="name"
+                              id="inputPassword5"
+                              aria-describedby="passwordHelpBlock"
+                              onChange={(e) => setUsername(e.target.value)}
+                            />
+                          </div>
+                        ) : (
+                          <div>{currentUser.username.toUpperCase()}</div>
+                        )}
+                      </td>
+                    </tr>
+                  </tbody>
+                </Table>
                 <br></br>
-                <Button onClick={handleSubmit} variant="primary">
-                  Submit Edit
+                <Button onClick={handleSubmit} variant="outline-secondary">
+                  Edit Profile
                 </Button>
-                <Button onClick={handleDelete} variant="danger">
-                  Delete Acc
+                <Button onClick={handleDelete} variant="outline-danger">
+                  Delete Profile
                 </Button>
               </Form>
             </div>
