@@ -15,29 +15,29 @@ function UserPage({ currentUser, setCurrentUser }) {
 
   function handleSubmit(e) {
 
-    fetch(`/users/${currentUser.id}`, {
-      method: "PATCH",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        first_name: firstName,
-        last_name: lastName,
-        email,
-        username,
-        password,
-        password_confirmation: passwordConfirmation,
-      }),
-    })
-      .then((r) => r.json())
-      .then((r) => {
-        if (r.email) {
-          setCurrentUser(r);
-        } else {
-          alert(r.errors);
-          setCurrentUser();
-        }
-      });
+    // fetch(`/users/${currentUser.id}`, {
+    //   method: "PATCH",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify({
+    //     first_name: firstName,
+    //     last_name: lastName,
+    //     email,
+    //     username,
+    //     password,
+    //     password_confirmation: passwordConfirmation,
+    //   }),
+    // })
+    //   .then((r) => r.json())
+    //   .then((r) => {
+    //     if (r.email) {
+    //       setCurrentUser(r);
+    //     } else {
+    //       alert(r.errors);
+    //       setCurrentUser();
+    //     }
+    //   });
   }
 
   function handleDelete(e) {
