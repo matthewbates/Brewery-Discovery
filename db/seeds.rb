@@ -15,11 +15,9 @@ b1 =
     brewery_name: 'Goat Patch Brewing Co.',
     brewery_logo:
       'http://static1.squarespace.com/static/597908c415d5dbbbd8e7eecb/5c36a6f7032be43d787d3a31/61a836254233ba62c09541c6/1638414019064/Ocean-and-Sea_Goat-Patch_Patch.png?format=1500w',
-    flagship_beers: 13,
     brewery_website: 'https://www.goatpatchbrewing.com/',
     brewery_address:
       '2727 North. Cascade Avenue #123, Colorado Springs, CO 80907',
-    is_favorite: 0,
     brewery_phone_number: '(719) 471-4628',
     brewery_state: 'CO',
     brewery_image:
@@ -31,10 +29,8 @@ b2 =
   Brewery.create!(
     brewery_name: 'Paradox Brewing Co.',
     brewery_logo: 'http://paradoxbeercompany.com/main_htm_files/98.jpg',
-    flagship_beers: 20,
     brewery_website: 'http://paradoxbeercompany.com/index.php',
     brewery_address: '10 Buffalo Court, Divide, CO 80814',
-    is_favorite: 0,
     brewery_phone_number: '(719) 686-8081',
     brewery_state: 'CO',
     brewery_image:
@@ -47,10 +43,8 @@ b3 =
     brewery_name: 'Manitou Brewing Co.',
     brewery_logo:
       'https://images.squarespace-cdn.com/content/v1/555cd8b8e4b0c647a26e43c9/1549308151527-WCT01B0ZTA5LYAQXG49C/manitou+logo.jpg?format=1000w',
-    flagship_beers: 17,
     brewery_website: 'https://www.manitoubrewing.com/',
     brewery_address: '725 Manitou Avenue, Manitou Springs, CO 80829',
-    is_favorite: 0,
     brewery_phone_number: '(719) 282-7709',
     brewery_state: 'CO',
     brewery_image:
@@ -63,10 +57,8 @@ b4 =
     brewery_name: 'Crooked Stave Artesian Beer Project',
     brewery_logo:
       'https://pbs.twimg.com/profile_images/1225469298438619137/Fkv8c45b_400x400.jpg',
-    flagship_beers: 6,
     brewery_website: 'https://www.crookedstave.com/',
     brewery_address: '1441 W 46th Avenue Unit 19, Denver, CO 80211',
-    is_favorite: 0,
     brewery_phone_number: '(720) 508-3292',
     brewery_state: 'CO',
     brewery_image:
@@ -80,10 +72,8 @@ b5 =
     brewery_name: 'Cerberus Brewing Co.',
     brewery_logo:
       'https://scontent.fapa1-2.fna.fbcdn.net/v/t1.18169-9/26195867_2046249662261752_917211701343023163_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=iodHLbdrE6MAX85btr4&_nc_ht=scontent.fapa1-2.fna&oh=00_AT_VPa_F3CiBDeXiV7QUNAQMExZSoaF1ryF9Kdtw6H_L7g&oe=6248B35A',
-    flagship_beers: 20,
     brewery_website: 'https://www.cerberusbrewingco.com/',
     brewery_address: '702 W Colorado Avenue, Colorado Springs, CO 80905',
-    is_favorite: 0,
     brewery_phone_number: '(719) 636-2337',
     brewery_state: 'CO',
     brewery_image:
@@ -96,10 +86,8 @@ b6 =
     brewery_name: 'Red Leg Brewing Co.',
     brewery_logo:
       'https://scontent.fapa1-2.fna.fbcdn.net/v/t1.18169-9/25353997_1249876345111856_5902534745385702768_n.png?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=jppM6AXCI1cAX9LIKmR&_nc_oc=AQmJYGdEkqNTlEYD_UInp4j7dQ73R-LfeNZ37dT5vKicKxxy87AdT-NVj5ewQlvTTreBvnTvLRQze0cSreYJMAAP&_nc_ht=scontent.fapa1-2.fna&oh=00_AT-iWK0SMf7CTd179bkKX7kN-TowcUffhXihZTDOinH4yQ&oe=6248A585',
-    flagship_beers: 6,
     brewery_website: 'https://redlegbrewing.com/',
     brewery_address: '2323 Garden of the Gods Road, Colorado Springs, CO 80907',
-    is_favorite: 0,
     brewery_phone_number: '(719) 598-3776',
     brewery_state: 'CO',
     brewery_image:
@@ -113,10 +101,8 @@ b7 =
     brewery_name: 'Common Space Brewery',
     brewery_logo:
       'https://images.squarespace-cdn.com/content/v1/5ce849fdc95df000011ea5e7/1576102004169-0SF0QD6X32OG6NH4BX8N/common+space+private+event+terms?format=1000w',
-    flagship_beers: 17,
     brewery_website: 'https://www.commonspace.la/',
     brewery_address: '3411 W El Segundo Boulevard, Hawthorne, CA 90250',
-    is_favorite: 0,
     brewery_phone_number: '(424) 456-4355',
     brewery_state: 'CA',
     brewery_image:
@@ -129,10 +115,8 @@ b8 =
     brewery_name: 'L.A. Ale Works',
     brewery_logo:
       'https://pbs.twimg.com/profile_images/743131585399054337/BJ83X5xs_400x400.jpg',
-    flagship_beers: 27,
     brewery_website: 'https://www.laaleworks.com/',
     brewery_address: '12918 Cerise Avenue, Hawthorne, CA 90250',
-    is_favorite: 0,
     brewery_phone_number: '(424) 456-4191',
     brewery_state: 'CA',
     brewery_image:
@@ -145,10 +129,8 @@ b9 =
     brewery_name: 'Monkish Brewing',
     brewery_logo:
       'https://beerstreetjournal.com/wp-content/uploads/Monkish-Brewing-Co.-Logo.png',
-    flagship_beers: 13,
     brewery_website: 'https://www.monkishbrewing.com/',
     brewery_address: '20311 S Western Avenue, Torrance, CA 90501',
-    is_favorite: 0,
     brewery_phone_number: '(310) 295-2157',
     brewery_state: 'CA',
     brewery_image:
@@ -161,10 +143,8 @@ b10 =
     brewery_name: 'Congregation Ale House',
     brewery_logo:
       'https://congregationalehouse.com/wp-content/uploads/2021/05/cahlogo-1.png',
-    flagship_beers: 13,
     brewery_website: 'https://congregationalehouse.com/',
     brewery_address: '300 S Raymond Avenue, Pasadena, CA 91105',
-    is_favorite: 0,
     brewery_phone_number: '(626) 334-2337',
     brewery_state: 'CA',
     brewery_image:
@@ -177,10 +157,8 @@ b11 =
     brewery_name: 'Angel City Brewery',
     brewery_logo:
       'https://pbs.twimg.com/profile_images/1125405564354404352/AwByWtOK_400x400.png',
-    flagship_beers: 3,
     brewery_website: 'https://angelcitybrewery.com/',
     brewery_address: '216 S Alameda Street, Los Angeles, CA 90012',
-    is_favorite: 0,
     brewery_phone_number: '(213) 537-5550',
     brewery_state: 'CA',
     brewery_image:
@@ -193,10 +171,8 @@ b12 =
     brewery_name: 'Homebound Brewhaus',
     brewery_logo:
       'https://static.wixstatic.com/media/4c91e0_6a2a9662fc1f46508b78c5dd02ed990f~mv2.png/v1/fill/w_220,h_184,al_c,q_85,usm_0.66_1.00_0.01/homebound-logo-house-07.webp',
-    flagship_beers: 14,
     brewery_website: 'https://www.goatpatchbrewing.com/',
     brewery_address: '800 N Alameda Street, Los Angeles, CA 90012',
-    is_favorite: 0,
     brewery_phone_number: '(306) 850-8288',
     brewery_state: 'CA',
     brewery_image:
@@ -210,10 +186,8 @@ b13 =
     brewery_name: 'Ballast Point',
     brewery_logo:
       'https://m.media-amazon.com/images/I/61e6HbVBkPL._AC_SY450_.jpg',
-    flagship_beers: 13,
     brewery_website: 'https://ballastpoint.com/',
     brewery_address: '9045 Carroll Way, San Diego, CA 92121',
-    is_favorite: 0,
     brewery_phone_number: '(858) 790-6901',
     brewery_state: 'CA',
     brewery_image:
@@ -226,10 +200,8 @@ b14 =
     brewery_name: 'Harland Brewing Co.',
     brewery_logo:
       'https://dr8h81twidjpw.cloudfront.net/uploads/popup_setting/popup_logo_img/Harland_Logo_Large_2007072336.png',
-    flagship_beers: 4,
     brewery_website: 'https://harlandbeer.com/',
     brewery_address: '4112 Napeir Street, San Diego, CA 92110',
-    is_favorite: 0,
     brewery_phone_number: '(858) 800-4566',
     brewery_state: 'CA',
     brewery_image:
@@ -242,10 +214,8 @@ b15 =
     brewery_name: 'Mike Hess Brewing',
     brewery_logo:
       'https://cdn.craftbeer.com/wp-content/uploads/MHB_revised_primary_logo1.jpg',
-    flagship_beers: 10,
     brewery_website: 'https://www.mikehessbrewing.com/',
     brewery_address: '879 W Harbor Drive Unit W14-E, San Diego, CA 92101',
-    is_favorite: 0,
     brewery_phone_number: '(619) 795-1095',
     brewery_state: 'CA',
     brewery_image:
@@ -258,10 +228,8 @@ b16 =
     brewery_name: 'Stone Brewing',
     brewery_logo:
       'https://www.csbeverage.com/wp-content/uploads/2016/10/stone-brewing-company.jpg',
-    flagship_beers: 10,
     brewery_website: 'https://www.stonebrewing.com/',
     brewery_address: '1202 Kettner Boulevard Unit 101, San Diego, CA 92101',
-    is_favorite: 0,
     brewery_phone_number: '(626) 440-7243',
     brewery_state: 'CA',
     brewery_image:
@@ -274,10 +242,8 @@ b17 =
     brewery_name: 'Karl Strauss Brewing Co.',
     brewery_logo:
       'https://www.craftbrewingbusiness.com/wp-content/uploads/2013/12/karl-strauss-brewing-logo-001.jpg',
-    flagship_beers: 11,
     brewery_website: 'https://www.karlstrauss.com/',
-    brewery_address: ' 1157 Columbia Street, San Diego, CA 92101',
-    is_favorite: 0,
+    brewery_address: '1157 Columbia Street, San Diego, CA 92101',
     brewery_phone_number: '(619) 234-2739',
     brewery_state: 'CA',
     brewery_image: 'https://eventective-media.azureedge.net/2197192_lg.jpg',
@@ -289,16 +255,183 @@ b18 =
     brewery_name: 'California Wild Ales',
     brewery_logo:
       'https://h8m9w9k7.rocketcdn.me/wp-content/uploads/2016/03/CWA-Logo-380px.png',
-    flagship_beers: 42,
     brewery_website: 'https://californiawildales.com/',
     brewery_address: '4896 Newport Avenue, San Diego, CA 92107',
-    is_favorite: 0,
     brewery_phone_number: '(855) 945-3253',
     brewery_state: 'CA',
     brewery_image:
       'https://media.sandiegoreader.com/img/photos/2018/05/10/ca_wild_ales_brewery_t720.jpg?5755a55b677da5dfc6c8e05d88cfbaffe8abac5c',
     brewery_lat: '32.745837 ',
     brewery_lon: '-117.249027',
+  )
+
+# Texas Breweries
+b19 =
+  Brewery.create(
+    brewery_name: 'Deep Ellum Brewing Co.',
+    brewery_logo:
+      'https://untappd.akamaized.net/site/beer_logos_hd/beer-3212886_983fa_hd.jpeg',
+    brewery_website: 'https://deepellumbrewing.com/',
+    brewery_address: '2823 Saint Louis Street, Dallas, TX 75226',
+    brewery_phone_number: '(214) 888-3322',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://deepellumtexas.com/wp-content/uploads/bg-experience-v2-min.jpg',
+    brewery_lat: '32.780788',
+    brewery_lon: '-96.781670',
+  )
+b20 =
+  Brewery.create(
+    brewery_name: 'Four Corners Brewing Co.',
+    brewery_logo:
+      'https://mma.prnewswire.com/media/847438/Four_Corners_Brewing_Co_Logo.jpg?w=200',
+    brewery_website: 'https://fcbrewing.com/',
+    brewery_address: '1311 S Ervay Street, Dalls, TX 75215',
+    brewery_phone_number: '(214) 748-2739',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://media-cdn.tripadvisor.com/media/photo-s/06/b9/ce/36/four-corners-brewing.jpg',
+    brewery_lat: '32.772080',
+    brewery_lon: '-96.791841',
+  )
+b21 =
+  Brewery.create(
+    brewery_name: 'Peticolas Brewing Co.',
+    brewery_logo:
+      'https://lh3.googleusercontent.com/4QhoG-D2FTevHnrdW0i_EV1aoDWHBGRgAslP2VzrImwoWI8v4pzIDIUCn1pz17fDPJMWCGuWaKoTteynbZW4Plb-ubDlr60=s750',
+    brewery_website: 'https://www.peticolasbrewing.com/',
+    brewery_address: '1301 Pace Street, Dallas, TX 75207',
+    brewery_phone_number: '(214) 234-7600',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://www.peticolasbrewing.com/wp-content/uploads/2015/06/taproom.sit_.down_.night_.jpg',
+    brewery_lat: '32.796828',
+    brewery_lon: '-96.829070',
+  )
+b22 =
+  Brewery.create(
+    brewery_name: 'Rahr & Sons Brewing Co.',
+    brewery_logo:
+      'https://www.standardsalescompanylp.com/images/brands/rahr.png',
+    brewery_website: 'https://rahrbrewing.com/',
+    brewery_address: '701 Galveston Avenue, Fort Worth, TX 76104',
+    brewery_phone_number: '(817) 810-9266',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://deepellumtexas.com/wp-content/uploads/bg-experience-v2-min.jpg',
+    brewery_lat: '32.736945',
+    brewery_lon: '-97.326835',
+  )
+b23 =
+  Brewery.create(
+    brewery_name: 'Martin House Brewing Co.',
+    brewery_logo:
+      'https://martinhousebrewing.com/wp-content/uploads/2020/03/logo1-e1585624896534.jpg',
+    brewery_website: 'https://martinhousebrewing.com/',
+    brewery_address: '220 S Sylvania Avenue Unit 209, Fort Worth, TX 76111',
+    brewery_phone_number: '(817) 222-0177',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://img.texasmonthly.com/2020/11/taproom-martin-house.jpg?auto=compress&crop=faces&fit=fit&fm=pjpg&ixlib=php-1.2.1&q=45',
+    brewery_lat: '32.763541',
+    brewery_lon: '-97.309974',
+  )
+b24 =
+  Brewery.create(
+    brewery_name: 'Hop Fusion Ale Works',
+    brewery_logo:
+      'https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,h_267,q_75,w_400/http://res.cloudinary.com/simpleview/image/upload/v1464722434/clients/fortworth/HopFusionlogo_527940b3-f0ae-5102-046bdb0b5cdcc980.gif',
+    brewery_website: 'https://www.hopfusionaleworks.com/',
+    brewery_address: '200 E Broadway Avenue, Fort Worth, TX 76104',
+    brewery_phone_number: '(817) 841-1721',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://txartisan.com/wp-content/uploads/2021/05/66034290_2486971694686597_7702834089425895424_n.jpg',
+    brewery_lat: '32.741629',
+    brewery_lon: '-97.324841',
+  )
+b25 =
+  Brewery.create(
+    brewery_name: 'St. Arnold Brewing Co.',
+    brewery_logo:
+      'https://cdn.craftbeer.com/wp-content/uploads/2016/02/04124601/SaintArnold2.jpg',
+    brewery_website: 'https://www.saintarnold.com/',
+    brewery_address: '2000 Lyons Avenue, Houston, TX 77020',
+    brewery_phone_number: '(713) 686-9494',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://365thingsinhouston.com/wp-content/uploads/2018/08/brewery-spotlight-saint-arnold-brewing-company-beer-garden-featured-e1535745260264.jpeg',
+    brewery_lat: '29.771509',
+    brewery_lon: '-95.348524',
+  )
+b26 =
+  Brewery.create(
+    brewery_name: 'Karbach Brewing Co.',
+    brewery_logo:
+      'https://untappd.akamaized.net/venuelogos/venue_89636_18259f6d.png?v=1',
+    brewery_website: 'https://www.karbachbrewing.com/',
+    brewery_address: '2032 Karbach Street, Houston, TX 77092',
+    brewery_phone_number: '(713) 680-2739',
+    brewery_state: 'TX',
+    brewery_image:
+      'https://365thingsinhouston.com/wp-content/uploads/2018/05/karbach-restaurant-karbach-brewing-company-houston.jpg',
+    brewery_lat: '29.805832',
+    brewery_lon: '-95.460666',
+  )
+b27 =
+  Brewery.create(
+    brewery_name: 'Saltfire Brewing Co.',
+    brewery_logo:
+      'https://static1.squarespace.com/static/5887c511893fc0b3632c0311/t/5b0734cb1ae6cfbbb74c2a86/1642089803217/',
+    brewery_website: 'https://www.saltfirebrewing.com/',
+    brewery_address: '2199 Southwest Temple, South Salt Lake City, UT 84115',
+    brewery_phone_number: '(385) 955-0504',
+    brewery_state: 'UT',
+    brewery_image: 'https://pbs.twimg.com/media/C87WCqSUwAEsp00.jpg',
+    brewery_lat: '40.722838',
+    brewery_lon: '-111.893687',
+  )
+b28 =
+  Brewery.create(
+    brewery_name: 'A.Fisher Brewing Co.',
+    brewery_logo:
+      'https://cdn.shopify.com/s/files/1/0250/8803/2819/files/logo_sticker_3_600x200.png?v=1632858935',
+    brewery_website: 'https://fisherbeer.com/',
+    brewery_address: '320 W 800 S, Salt Lake City, UT 84101',
+    brewery_phone_number: '(801) 487-2337',
+    brewery_state: 'UT',
+    brewery_image:
+      'https://cdn.beeradvocate.com/assets/uploads/2018/09/133FromTheSource01-820x564.jpg',
+    brewery_lat: '40.752235',
+    brewery_lon: '-111.900477',
+  )
+b29 =
+  Brewery.create(
+    brewery_name: 'Squatters Pub Brewery',
+    brewery_logo:
+      'https://www.squatters.com/wp-content/uploads/2020/08/Squatters-Craft-Beers.png',
+    brewery_website: 'https://www.squatters.com/our-beers/',
+    brewery_address: '776 N Terminal Drive, Salt Lake City, UT 84122',
+    brewery_phone_number: '(801) 575-2002',
+    brewery_state: 'UT',
+    brewery_image:
+      'https://assets.simpleviewinc.com/simpleview/image/upload/crm/saltlake/DSC_02331_fae76f1f-b403-46de-db5936a6709f1d88.jpg',
+    brewery_lat: '40.785371',
+    brewery_lon: '-111.988009',
+  )
+b30 =
+  Brewery.create(
+    brewery_name: 'Wasatch Brewery - Sugarhouse',
+    brewery_logo:
+      'https://logovectordl.com/wp-content/uploads/2021/10/wasatch-brew-pub-logo-vector.png',
+    brewery_website: 'https://wasatchbeers.com/',
+    brewery_address: '2110 Highland Drive, Salt Lake City, UT 84106',
+    brewery_phone_number: '(801) 783-1127',
+    brewery_state: 'UT',
+    brewery_image:
+      'https://media-cdn.tripadvisor.com/media/photo-s/11/2a/bc/27/wasatch-brew-pub-at-sugarhouse.jpg',
+    brewery_lat: '40.724933',
+    brewery_lon: '-111.859966',
   )
 
 puts '🍺 Creating beers...'
@@ -451,7 +584,7 @@ a21 =
   Beer.create!(
     beer_name: 'No Big Deal',
     beer_abv: 5.0,
-    beer_type: 'German Style Kolsch',
+    beer_type: 'German Style Kölsch',
     brewery: b5,
   )
 a22 =
@@ -515,7 +648,7 @@ a30 =
   Beer.create!(
     beer_name: "Prospector's Pick",
     beer_abv: 5.3,
-    beer_type: 'Kolsch',
+    beer_type: 'Kölsch',
     brewery: b6,
   )
 # Common Space
@@ -559,7 +692,7 @@ a36 =
   Beer.create!(
     beer_name: 'Goldilocks',
     beer_abv: 5.0,
-    beer_type: 'Blonde Kolsch',
+    beer_type: 'Blonde Kölsch',
     brewery: b8,
   )
 a37 =
@@ -929,9 +1062,453 @@ a87 =
     beer_type: 'Golden Sour With Blueberries',
     brewery: b18,
   )
+# Deep Ellum Brewing Co.
+a88 =
+  Beer.create!(
+    beer_name: 'Dallas Blonde',
+    beer_abv: 5.2,
+    beer_type: 'American Blonde Ale',
+    brewery: b19,
+  )
+a89 =
+  Beer.create!(
+    beer_name: 'Deep Ellum IPA',
+    beer_abv: 7.0,
+    beer_type: 'IPA - American',
+    brewery: b19,
+  )
+a90 =
+  Beer.create!(
+    beer_name: 'Easy Peasy IPA',
+    beer_abv: 5.2,
+    beer_type: 'IPA - Session',
+    brewery: b19,
+  )
+a91 =
+  Beer.create!(
+    beer_name: 'Neato Bandito',
+    beer_abv: 6.0,
+    beer_type: 'Imperial Mexican-Style Lager',
+    brewery: b19,
+  )
+a92 =
+  Beer.create!(
+    beer_name: 'Play Date',
+    beer_abv: 5.4,
+    beer_type: 'American Sour Blonde Ale',
+    brewery: b19,
+  )
 
+# Four Corners
+a93 =
+  Beer.create!(
+    beer_name: 'Local Buzz',
+    beer_abv: 5.0,
+    beer_type: 'Honey Rye Golden Ale',
+    brewery: b20,
+  )
+a94 =
+  Beer.create!(
+    beer_name: 'El Chingón',
+    beer_abv: 7.3,
+    beer_type: 'IPA - American',
+    brewery: b20,
+  )
+a94 =
+  Beer.create!(
+    beer_name: "Heart O' Texas",
+    beer_abv: 5.0,
+    beer_type: 'Red Ale',
+    brewery: b20,
+  )
+a96 =
+  Beer.create!(
+    beer_name: 'El Grito',
+    beer_abv: 4.0,
+    beer_type: 'Lager',
+    brewery: b20,
+  )
+a97 =
+  Beer.create!(
+    beer_name: 'El Super Bee',
+    beer_abv: 8.0,
+    beer_type: 'DIPA',
+    brewery: b20,
+  )
+
+# Peticolas Brewing
+a98 =
+  Beer.create!(
+    beer_name: 'Velvet Hammer',
+    beer_abv: 9.0,
+    beer_type: 'Imperial Red Ale',
+    brewery: b21,
+  )
+a99 =
+  Beer.create!(
+    beer_name: 'Golden Opportunity',
+    beer_abv: 4.6,
+    beer_type: 'Kölsch',
+    brewery: b21,
+  )
+a100 =
+  Beer.create!(
+    beer_name: 'Great Scot!',
+    beer_abv: 6.8,
+    beer_type: 'Scottish Ale',
+    brewery: b21,
+  )
+a101 =
+  Beer.create!(
+    beer_name: "Sit Down Or I'll Sit You Down",
+    beer_abv: 10.0,
+    beer_type: 'IPA - Imperial',
+    brewery: b21,
+  )
+a102 =
+  Beer.create!(
+    beer_name: 'Irish Goodbye',
+    beer_abv: 6.5,
+    beer_type: 'Irish Red Ale',
+    brewery: b21,
+  )
+
+# Rahr & Sons
+a103 =
+  Beer.create!(
+    beer_name: 'Adios Pantalones',
+    beer_abv: 4.5,
+    beer_type: 'Cerveza De Sesión',
+    brewery: b22,
+  )
+a104 =
+  Beer.create!(
+    beer_name: 'Paleta De Mango',
+    beer_abv: 5.0,
+    beer_type: 'Mango Chile Beer',
+    brewery: b22,
+  )
+a105 =
+  Beer.create!(
+    beer_name: 'Dadgum IPA',
+    beer_abv: 6.6,
+    beer_type: 'IPA - American',
+    brewery: b22,
+  )
+a106 =
+  Beer.create!(
+    beer_name: 'Rahr Blonde',
+    beer_abv: 5.0,
+    beer_type: 'Helles Lager',
+    brewery: b22,
+  )
+a107 =
+  Beer.create!(
+    beer_name: 'Winter Warmer',
+    beer_abv: 8.0,
+    beer_type: 'English Dark Ale',
+    brewery: b22,
+  )
+
+# Martin House
+a108 =
+  Beer.create!(
+    beer_name: 'Best Maid Sour Pickle Beer',
+    beer_abv: 4.7,
+    beer_type: 'Sour Gose',
+    brewery: b23,
+  )
+a109 =
+  Beer.create!(
+    beer_name: 'BockSlider Toadies Texas Bock',
+    beer_abv: 5.6,
+    beer_type: 'Bock - Single/Traditional',
+    brewery: b23,
+  )
+a110 =
+  Beer.create!(
+    beer_name: 'True Love Raspberry Sour Ale',
+    beer_abv: 5.2,
+    beer_type: 'Sour',
+    brewery: b23,
+  )
+a111 =
+  Beer.create!(
+    beer_name: 'The Imperial Texan',
+    beer_abv: 9.0,
+    beer_type: 'Red Ale - Imperial Double',
+    brewery: b23,
+  )
+a112 =
+  Beer.create!(
+    beer_name: 'The Salty Lady',
+    beer_abv: 5.0,
+    beer_type: 'Sour',
+    brewery: b23,
+  )
+
+# Hop Fusion Ale Works
+a113 =
+  Beer.create!(
+    beer_name: 'Dad Life',
+    beer_abv: 4.5,
+    beer_type: 'Lager - American Light',
+    brewery: b24,
+  )
+a114 =
+  Beer.create!(
+    beer_name: 'Tejano Lager',
+    beer_abv: 5.62,
+    beer_type: 'Lager - Pale',
+    brewery: b24,
+  )
+a115 =
+  Beer.create!(
+    beer_name: 'El Gran Pepinillo',
+    beer_abv: 5.8,
+    beer_type: 'Lager - American Light',
+    brewery: b24,
+  )
+a116 =
+  Beer.create!(
+    beer_name: 'The Sound of Munchen',
+    beer_abv: 5.5,
+    beer_type: 'German Pilsner',
+    brewery: b24,
+  )
+a117 =
+  Beer.create!(
+    beer_name: 'There We Gose Again',
+    beer_abv: 4.7,
+    beer_type: 'Sour',
+    brewery: b24,
+  )
+
+# St. Arnold
+a118 =
+  Beer.create!(
+    beer_name: 'Lawnmower',
+    beer_abv: 4.9,
+    beer_type: 'German-style Kölsch',
+    brewery: b25,
+  )
+a119 =
+  Beer.create!(
+    beer_name: 'H-Town Pils',
+    beer_abv: 5.2,
+    beer_type: 'Lager',
+    brewery: b25,
+  )
+a120 =
+  Beer.create!(
+    beer_name: 'Hideaway',
+    beer_abv: 5.0,
+    beer_type: 'Salt & Lime Beer',
+    brewery: b25,
+  )
+a121 =
+  Beer.create!(
+    beer_name: 'Amber Ale',
+    beer_abv: 6.2,
+    beer_type: 'Amber Ale',
+    brewery: b25,
+  )
+a122 =
+  Beer.create!(
+    beer_name: 'Art Car IPA',
+    beer_abv: 7.1,
+    beer_type: 'IPA - American',
+    brewery: b25,
+  )
+
+# Karbach
+a123 =
+  Beer.create!(
+    beer_name: 'Love Street',
+    beer_abv: 4.9,
+    beer_type: 'Blonde',
+    brewery: b26,
+  )
+a124 =
+  Beer.create!(
+    beer_name: 'Crawford Bock',
+    beer_abv: 4.5,
+    beer_type: 'Bock',
+    brewery: b26,
+  )
+a125 =
+  Beer.create!(
+    beer_name: 'Hopadillo',
+    beer_abv: 6.6,
+    beer_type: 'IPA - American',
+    brewery: b26,
+  )
+a126 =
+  Beer.create!(
+    beer_name: 'Light Circus',
+    beer_abv: 6.0,
+    beer_type: 'Hazy IPA',
+    brewery: b26,
+  )
+a127 =
+  Beer.create!(
+    beer_name: 'Free & Easy N/A IPA',
+    beer_abv: 0.05,
+    beer_type: 'Non-Alcoholic IPA',
+    brewery: b26,
+  )
+
+# Saltfire
+a123 =
+  Beer.create!(
+    beer_name: 'Los Braceros',
+    beer_abv: 5.5,
+    beer_type: 'Pale Lager',
+    brewery: b27,
+  )
+a124 =
+  Beer.create!(
+    beer_name: 'Frankly Mr. Shankly',
+    beer_abv: 7.1,
+    beer_type: 'IPA - New England',
+    brewery: b27,
+  )
+a125 =
+  Beer.create!(
+    beer_name: 'Dirty Chai Stout',
+    beer_abv: 6.7,
+    beer_type: 'Coffee Stout',
+    brewery: b27,
+  )
+a126 =
+  Beer.create!(
+    beer_name: 'Füry Kölsch',
+    beer_abv: 6.3,
+    beer_type: 'Kölsch',
+    brewery: b27,
+  )
+a127 =
+  Beer.create!(
+    beer_name: 'Mobius Trip - Utah Peaches',
+    beer_abv: 8.0,
+    beer_type: 'Fruited Sour',
+    brewery: b27,
+  )
+
+# Fischer
+a128 =
+  Beer.create!(
+    beer_name: 'Fisher Beer',
+    beer_abv: 5.5,
+    beer_type: 'Classic American Pilsner',
+    brewery: b28,
+  )
+a129 =
+  Beer.create!(
+    beer_name: 'Kolsch',
+    beer_abv: 4.6,
+    beer_type: 'Kölsch',
+    brewery: b28,
+  )
+a130 =
+  Beer.create!(
+    beer_name: 'Blondowski',
+    beer_abv: 4.4,
+    beer_type: 'American Blonde Ale',
+    brewery: b28,
+  )
+a131 =
+  Beer.create!(
+    beer_name: 'Space Cowgirl',
+    beer_abv: 5.2,
+    beer_type: 'American Blonde Ale',
+    brewery: b28,
+  )
+a132 =
+  Beer.create!(
+    beer_name: 'The Classic',
+    beer_abv: 4.6,
+    beer_type: 'Sour',
+    brewery: b28,
+  )
+
+# Squatters
+a128 =
+  Beer.create!(
+    beer_name: '147 West',
+    beer_abv: 5.0,
+    beer_type: 'Broadway Cold Hazy',
+    brewery: b29,
+  )
+a129 =
+  Beer.create!(
+    beer_name: 'Hazy Hop Rising',
+    beer_abv: 9.0,
+    beer_type: 'Hazy IPA',
+    brewery: b29,
+  )
+a130 =
+  Beer.create!(
+    beer_name: 'Juicy IPA',
+    beer_abv: 6.2,
+    beer_type: 'IPA - American',
+    brewery: b29,
+  )
+a131 =
+  Beer.create!(
+    beer_name: 'Chasing Tail',
+    beer_abv: 4.6,
+    beer_type: 'Golden Ale',
+    brewery: b29,
+  )
+a132 =
+  Beer.create!(
+    beer_name: 'Hop Rising',
+    beer_abv: 9.0,
+    beer_type: 'DIPA',
+    brewery: b29,
+  )
+
+# Wasatch Brewery
+a128 =
+  Beer.create!(
+    beer_name: 'Our Share',
+    beer_abv: 5.0,
+    beer_type: 'IPA - American',
+    brewery: b30,
+  )
+a129 =
+  Beer.create!(
+    beer_name: 'Apricot Hefeweizen',
+    beer_abv: 4.8,
+    beer_type: 'American Wheat With Fruit',
+    brewery: b30,
+  )
+a130 =
+  Beer.create!(
+    beer_name: 'Polygamy Porter',
+    beer_abv: 6.2,
+    beer_type: 'IPA - American',
+    brewery: b30,
+  )
+a131 =
+  Beer.create!(
+    beer_name: 'Island Hop',
+    beer_abv: 5.0,
+    beer_type: 'American Session IPA',
+    brewery: b30,
+  )
+a132 =
+  Beer.create!(
+    beer_name: 'Ghost Rider',
+    beer_abv: 6.0,
+    beer_type: 'IPA - American',
+    brewery: b30,
+  )
+
+puts 'Creating users...'
 u1 = User.create!(username: 'test', password_digest: 'test')
-puts '🤖 Beep boop beep, erasing data...beep boop...'
+
+puts 'Finalizing seed data...'
 sleep 2
-puts 'Just joking!'
 puts '✅ Seeding done!'
