@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Container } from "react-bootstrap";
 import BreweryCard from "./BreweryCard";
-import MapContainer from "./Map";
+import MapContainer from "./MapContainer";
 
 function BreweryCardList({ breweries, brewerySearch, stateSearch, setBrewery }) {
   const filteredBreweryAndStateSearch =
@@ -32,7 +32,6 @@ function BreweryCardList({ breweries, brewerySearch, stateSearch, setBrewery }) 
               />
             );
           })}
-          <MapContainer />
         </Row>
       </Container>
     </>
