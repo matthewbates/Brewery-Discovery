@@ -31,6 +31,9 @@ function App() {
                 <Nav.Link className="mx-2" as={Link} to="/home">
                   Home
                 </Nav.Link>
+                <Nav.Link className="mx-2" as={Link} to="/map">
+                  Map
+                </Nav.Link>
                 <Nav.Link className="mx-2" as={Link} to="/reviews">
                   Mini-Fridge
                 </Nav.Link>
