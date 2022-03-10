@@ -27,10 +27,10 @@ function Home({ currentUser, setBrewery }) {
                 {currentUser ? `Hello, ${currentUser.username}!` : ""}
               </h2>
               <Col className="text-center">
-                <h2>
-                  Welcome To The Brewery Discovery Project
-                </h2>
-                <p className="pt-2">Search for a brewery by name or location below</p>
+                <h2>Welcome To The Brewery Discovery Project</h2>
+                <p className="pt-2">
+                  Search for a brewery by name or location below
+                </p>
               </Col>
               <Col lg={5} className="mx-auto search-bar">
                 <Search

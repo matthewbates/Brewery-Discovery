@@ -22,6 +22,7 @@ function MapContainer() {
   const onSelect = (item) => {
     setSelected(item);
   };
+  // add website, address, & phone number
   const locations = [
     {
       name: "Goat Patch Brewing Company",
@@ -131,8 +132,8 @@ function MapContainer() {
     {
       name: "Stone Brewing",
       location: {
-        lat: 32.718018,
-        lng: -117.16946,
+        lat: 32.709379,
+        lng: -117.171882,
       },
     },
     {
@@ -146,7 +147,7 @@ function MapContainer() {
       name: "California Wild Ales",
       location: {
         lat: 32.745837,
-        lng: -117.249027,
+        lng: -117249027,
       },
     },
   ];
