@@ -28,8 +28,10 @@ function Search({ brewerySearch, brewerySetter, stateSearch, stateSetter }) {
           title="Search By State"
           onSelect={handleSelect}
         >
-          <Dropdown.Item eventKey="CO">CO</Dropdown.Item>
           <Dropdown.Item eventKey="CA">CA</Dropdown.Item>
+          <Dropdown.Item eventKey="CO">CO</Dropdown.Item>
+          <Dropdown.Item eventKey="TX">TX</Dropdown.Item>
+          <Dropdown.Item eventKey="UT">UT</Dropdown.Item>
         </DropdownButton>
       </div>
     </Container>
