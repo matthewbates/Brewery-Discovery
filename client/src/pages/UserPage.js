@@ -3,14 +3,23 @@ import { Form, Button, Container, Table, Col, Row } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 
 function UserPage({ currentUser, setCurrentUser }) {
-  // User data
-  const [firstName, setFirstName] = useState(`${currentUser.first_name}`);
-  const [lastName, setLastName] = useState(`${currentUser.last_name}`);
-  const [email, setEmail] = useState(`${currentUser.email}`);
-  const [username, setUsername] = useState(`${currentUser.username}`);
-  const [password] = useState(`${currentUser.password}`);
+  // Conditional added to prevent error if state is not set
+
+  const [firstName, setFirstName] = useState(
+    `${currentUser ? currentUser.first_name : null}`
+  );
+  const [lastName, setLastName] = useState(
+    `${currentUser ? currentUser.first_name : null}`
+  );
+  const [email, setEmail] = useState(
+    `${currentUser ? currentUser.last_name : null}`
+  );
+  const [username, setUsername] = useState(
+    `${currentUser ? currentUser.email : null}`
+  );
+  const [password] = useState(`${currentUser ? currentUser.password : null}`);
   const [passwordConfirmation] = useState(
-    `${currentUser.password_confirmation}`
+    `${currentUser ? currentUser.password_confirmation : null}`
   );
 
   // table data
@@ -45,7 +54,10 @@ function UserPage({ currentUser, setCurrentUser }) {
   function handleDelete(e) {
     fetch(`/users/${currentUser.id}`, {
       method: "DELETE",
-    }).then(setCurrentUser());
+    }).then((r) => {
+      localStorage.removeItem("user-data");
+      setCurrentUser();
+    });
   }
   console.log(firstName, lastName, email, username);
   return (
