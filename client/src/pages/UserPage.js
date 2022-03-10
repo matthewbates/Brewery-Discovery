@@ -57,7 +57,7 @@ function UserPage({ currentUser, setCurrentUser }) {
           <div>
             <Container>
               <div className="profile-main-div">
-                <div className="p-5  bg-light rounded shadow-lg">
+                <div className="p-5  bg-light shadow-lg">
                   <br></br>
                   <h1 className="text-center p-3 mb-3">Account Profile </h1>
                   <div className="p-2 table-responsive">
