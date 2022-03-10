@@ -1,5 +1,5 @@
 import "./App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
@@ -8,6 +8,7 @@ import Login from "./components/Login";
 import Signup from "./components/Signup";
 import Brewery from "./components/Brewery";
 import MapContainer from "./components/MapContainer";
+import UserPage from "./components/UserPage";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
@@ -18,6 +19,19 @@ function App() {
       method: "DELETE",
     }).then(setCurrentUser());
   }
+
+  // currentUser added to local storage to persist on refresh
+
+  useEffect(() => {
+    const data = localStorage.getItem("user-data");
+    if (data) {
+      setCurrentUser(JSON.parse(data));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("user-data", JSON.stringify(currentUser));
+  });
   return (
     <BrowserRouter>
       <div className="App">
@@ -34,7 +48,9 @@ function App() {
                 <Nav.Link className="mx-2" as={Link} to="/reviews">
                   Reviews
                 </Nav.Link>
-                {/* <Nav.Link as={Link} to="/login"> */}
+                <Nav.Link as={Link} to="/userpage">
+                  Profile
+                </Nav.Link>
                 <div>
                   {!currentUser ? (
                     <Button
@@ -57,7 +73,6 @@ function App() {
                     </Button>
                   )}
                 </div>
-                {/* </Nav.Link> */}
               </Nav>
             </div>
           </Container>
@@ -95,6 +110,15 @@ function App() {
             element={<Brewery brewery={brewery} currentUser={currentUser} />}
           />
           <Route path="/map" element={<MapContainer />} />
+          <Route
+            path="/userpage"
+            element={
+              <UserPage
+                currentUser={currentUser}
+                setCurrentUser={setCurrentUser}
+              />
+            }
+          />
         </Routes>
       </div>
     </BrowserRouter>

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Form, Button, Container } from "react-bootstrap";
 import { Link, Navigate } from "react-router-dom";
 
@@ -17,16 +17,19 @@ function Login({ setCurrentUser, currentUser }) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(login),
-    }).then((r) => r.json())
-    .then(res => {
-      if(res.username){
-      setCurrentUser(res)
-      }else {
-        alert(res.error)
-        setCurrentUser()
-      }
-    });
+    })
+      .then((r) => r.json())
+      .then((res) => {
+        if (res.username) {
+          setCurrentUser(res);
+        } else {
+          alert(res.error);
+          setCurrentUser();
+        }
+      });
   }
+  
+  
 
   return (
     <div className="body_of_form">
