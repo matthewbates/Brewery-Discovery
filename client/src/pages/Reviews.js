@@ -30,19 +30,19 @@ function Reviews({ currentUser }) {
                   Beer Name
                 </p>
 
-                <h5 className=" beer-details">Sculpin IPA</h5>
+                <h5 className=" beer-details">Sculpin</h5>
               </Col>
               <Col className="text-center">
                 <h6 className="text-uppercase text-muted beer-title">ABV</h6>
 
-                <h5 className="beer-details">7.5 %</h5>
+                <h5 className="beer-details">7 %</h5>
               </Col>
               <Col className="text-center">
                 <h6 className="text-uppercase text-muted beer-title">
                   Beer Type
                 </h6>
 
-                <h5 className="beer-details">IPA</h5>
+                <h5 className="beer-details">IPA - WEST COAST</h5>
               </Col>
 
               <Col lg={3} className="text-center">
@@ -67,19 +67,19 @@ function Reviews({ currentUser }) {
                   Beer Name
                 </p>
 
-                <h5 className=" beer-details">Sculpin IPA</h5>
+                <h5 className=" beer-details">WEE GUS</h5>
               </Col>
               <Col className="text-center">
                 <h6 className="text-uppercase text-muted beer-title">ABV</h6>
 
-                <h5 className="beer-details">7.5 %</h5>
+                <h5 className="beer-details">4.2 %</h5>
               </Col>
               <Col className="text-center">
                 <h6 className="text-uppercase text-muted beer-title">
                   Beer Type
                 </h6>
 
-                <h5 className="beer-details">IPA</h5>
+                <h5 className="beer-details">LAGER</h5>
               </Col>
 
               <Col lg={3} className="text-center">
