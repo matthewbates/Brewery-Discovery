@@ -64,7 +64,7 @@ function Login({ setCurrentUser, currentUser }) {
           <br></br>
           {/* link to sign up page */}
           <div className="dont_have_account text-light">
-            Don't have an account? <Link to="/signup" className="text-light">Sign Up</Link>
+            Don't have an account? <Link to="/signup" className="text-white">Sign Up</Link>
           </div>
         </div>
       </Container>
