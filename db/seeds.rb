@@ -1780,35 +1780,35 @@ a138 =
     beer_name: 'Independence Pass',
     beer_abv: 7.0,
     beer_type: 'IPA -American',
-    brewery: b35,
+    brewery: b36,
   )
 a139 =
   Beer.create!(
     beer_name: 'This Seasons Blonde',
     beer_abv: 5.6,
     beer_type: 'Blonde',
-    brewery: b35,
+    brewery: b36,
   )
 a140 =
   Beer.create!(
     beer_name: 'Ajax',
     beer_abv: 4.7,
     beer_type: 'Pilsner',
-    brewery: b35,
+    brewery: b36,
   )
 a141 =
   Beer.create!(
     beer_name: 'Cloud 9',
     beer_abv: 6.8,
     beer_type: 'Saison',
-    brewery: b35,
+    brewery: b36,
   )
 a142 =
   Beer.create!(
     beer_name: 'Excess In Moderation',
     beer_abv: 5.6,
     beer_type: 'Hazy IPA',
-    brewery: b35,
+    brewery: b36,
   )
 
 puts 'Creating users...'
