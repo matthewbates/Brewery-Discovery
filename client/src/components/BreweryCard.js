@@ -25,13 +25,13 @@ function BreweryCard({
           <Card.ImgOverlay className="card-img-o">
             <div className="p-4 mt-2 flex-column d-flex justify-content-center text-light">
               <Card.Title className="update_title_color">
-                <h2>{name}</h2>
+                <h2 className="text-warning">{name}</h2>
               </Card.Title>
               <Card.Text className="p-1">{address}</Card.Text>
               <Card.Text className="p-1">{website}</Card.Text>
               <Card.Text className="card-p-text p-1">{phone}</Card.Text>
               <Button
-                variant="light"
+                variant="warning w-50"
                 className="mx-auto"
                 as={Link}
                 onClick={(e) => setBrewery(id)}

@@ -30,8 +30,8 @@ function Home({ currentUser, setBrewery }) {
                     {currentUser ? `Hello, ${currentUser.first_name}!` : ""}
                   </h2>
                   <Col className="text-center">
-                    <h2>Welcome To The Brewery Discovery Project</h2>
-                    <p className="pt-2">
+                    <h3>Welcome To The Brewery Discovery Project</h3>
+                    <p className="pt-2 text-lg">
                       Search for a brewery by name or location below
                     </p>
                   </Col>
@@ -46,26 +46,28 @@ function Home({ currentUser, setBrewery }) {
                 </div>
               </div>
             </div>
-            <div className="text-center mt-5">
-              <h2>BREWERY LIST</h2>
-              <p>Click on a brewery below to view the beer list</p>
-              <hr className="w-75 mx-auto mt-5" />
-            </div>
+            <div className="brewery-list-container pt-5">
+              <Container>
+                <div className="text-center">
+                  <h1>BREWERY LIST</h1>
+                  <p>Click on a brewery below to view the beer list</p>
+                  <hr className="w-75 mx-auto mt-5" />
+                </div>
 
-            <Container>
-              <Row>
-                <Col>
-                  <BreweryCardList
-                    breweries={breweries}
-                    brewerySearch={brewerySearch}
-                    brewerySetter={setBrewerySearch}
-                    stateSearch={stateSearch}
-                    stateSetter={setStateSearch}
-                    setBrewery={setBrewery}
-                  />
-                </Col>
-              </Row>
-            </Container>
+                <Row>
+                  <Col>
+                    <BreweryCardList
+                      breweries={breweries}
+                      brewerySearch={brewerySearch}
+                      brewerySetter={setBrewerySearch}
+                      stateSearch={stateSearch}
+                      stateSetter={setStateSearch}
+                      setBrewery={setBrewery}
+                    />
+                  </Col>
+                </Row>
+              </Container>
+            </div>
           </Container>
         </div>
       ) : (

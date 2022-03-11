@@ -9,7 +9,6 @@ import Signup from "./pages/Signup";
 import Brewery from "./pages/Brewery";
 import MapContainer from "./components/MapContainer";
 import UserPage from "./pages/UserPage";
-import MiniFridge from "./components/MiniFridge";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
@@ -37,49 +36,54 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar bg="dark" variant="dark">
-          <Container fluid className="mx-3">
+        {/* Navbar with Logo, Links, and login/logout */}
+        <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+          <Container fluid className="mx-3 align-items-center me-auto">
             <Navbar.Brand as={Link} to="/home">
-              <h3> Brewery Discovery</h3>
+              <h3 className="mt-2 text-warning"> Brewery Discovery</h3>
             </Navbar.Brand>
-            <div className="d-flex justify-content-end align-items-center">
-              <Nav className="me-auto">
-                <Nav.Link className="mx-2" as={Link} to="/home">
-                  Home
-                </Nav.Link>
-                <Nav.Link className="mx-2" as={Link} to="/map">
-                  Map
-                </Nav.Link>
-                <Nav.Link className="mx-2" as={Link} to="/mini_fridge">
-                  Mini-Fridge
-                </Nav.Link>
-                <Nav.Link as={Link} to="/userpage">
-                  Profile
-                </Nav.Link>
-                <div>
-                  {/* Ternary used for distplaying Login/Logout button */}
-                  {!currentUser ? (
-                    <Button
-                      className="mx-2 nav-login-btn"
-                      as={Link}
-                      to="/"
-                      variant="outline-light"
-                    >
-                      Login
-                    </Button>
-                  ) : (
-                    <Button
-                      onClick={handleLogout}
-                      className="mx-2 nav-login-btn"
-                      as={Link}
-                      to="/"
-                      variant="outline-light"
-                    >
-                      Log out
-                    </Button>
-                  )}
-                </div>
-              </Nav>
+            <div className="">
+              <Navbar.Toggle aria-controls="navbarScroll" />
+              <Navbar.Collapse id=" navbarScroll">
+                <Nav className="me-auto text-left" navbarScroll >
+                  <Nav.Link className="mx-2" as={Link} to="/home">
+                    Home
+                  </Nav.Link>
+                  <Nav.Link className="mx-2" as={Link} to="/map">
+                    Map
+                  </Nav.Link>
+                  <Nav.Link className="mx-2" as={Link} to="/reviews">
+                    Mini-Fridge
+                  </Nav.Link>
+                  <Nav.Link className="mx-2" as={Link} to="/userpage">
+                    Profile
+                  </Nav.Link>
+
+                  <div>
+                    {/* Ternary used for distplaying Login/Logout button */}
+                    {!currentUser ? (
+                      <Button
+                        className="mx-2 nav-login-btn"
+                        as={Link}
+                        to="/"
+                        variant="outline-warning"
+                      >
+                        Login
+                      </Button>
+                    ) : (
+                      <Button
+                        onClick={handleLogout}
+                        className="mx-2 nav-login-btn"
+                        as={Link}
+                        to="/"
+                        variant="outline-warning"
+                      >
+                        Log out
+                      </Button>
+                    )}
+                  </div>
+                </Nav>
+              </Navbar.Collapse>
             </div>
           </Container>
         </Navbar>

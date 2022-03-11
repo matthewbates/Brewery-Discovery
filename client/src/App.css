@@ -6,19 +6,31 @@ h3,
 h4,
 h5,
 h6,
-nav,
 .btn {
   font-family: "Bebas Neue", cursive;
   letter-spacing: 0.05rem;
 }
 
+nav {
+  font-size: 18px;
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 0.08rem;
+  border-right: 1px solid #ccc;
+}
+
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.4rem;
+  letter-spacing: 0.02rem;
 }
 
 /* Custom Styles */
+
+/* ________________________________________________________________ */
+
+/* Home Beer List Page */
+
 .container-home-fluid {
   margin: 0 !important;
   padding: 0 !important;
@@ -50,15 +62,18 @@ p {
 }
 
 .search-bar {
-  min-width: 300px;
+  min-width: 450px;
   max-width: 600px;
+  margin-top: -20px;
 }
 
 .nav-login-btn {
   width: 90px;
 }
 
-/* ________________________________________________________________ */
+.brewery-list-container {
+  background-color: rgb(241, 241, 241);
+}
 
 /* Home Page Brewery Card Styling */
 
@@ -71,17 +86,21 @@ p {
   height: 354px;
   max-width: 555px !important;
   overflow: hidden !important;
+  text-align: center;
 }
 
 .card-img-filter {
-  -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(40%);
+  -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(80%);
+  /* background-image: url("https://cdn.wallpapersafari.com/13/52/2AyLvi.jpg"); */
 }
 
 .card-img-o {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)); */
-  background-image: linear-gradient(rgb(72, 0, 72, 0.8), rgb(192, 72, 72, 0.8));
-  /* background-image: linear-gradient(rgb(62, 81, 81, .8), rgba(222, 203, 164, .8)); */
+  background: linear-gradient(
+    to bottom,
+    rgb(49, 47, 46),
+    rgba(48, 37, 4, 0.329)
+  );
 }
 
 .card-img-overlay {
@@ -91,7 +110,6 @@ p {
 
 .card-p-text {
   margin-top: -25px;
-  padding: 0;
 }
 
 /* Card Footer */
@@ -120,11 +138,13 @@ p {
   background-color: #f7a900;
   transition: all 1s;
   transform-origin: 0 0;
-  background: linear-gradient(to bottom, #bc7012, #efd002 100%);
+  /* background: linear-gradient(to bottom, #bc7012, #efd002 100%); */
+  background-image: url(./img/brewery_discovery_sign-in-banner.jpg);
   /* min-height: 100%; */
   background-repeat: no-repeat;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   min-width: 100%;
   min-height: 100vh;
 }
@@ -143,7 +163,7 @@ p {
 }
 
 .inner {
-  width: 450px;
+  max-width: 450px;
   margin: auto;
   background: #ffffff;
   box-shadow: 0px 14px 80px rgba(178, 179, 206, 0.2);
@@ -201,22 +221,29 @@ p {
 
 .profile-main-div {
   position: relative;
-  top: 75px;
-  background-color: #fff;
+  top: 40px;
+  background-color: rgb(240, 240, 240);
 }
 
-.user-button {
-  min-width: 100%;
-  box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
-  margin-bottom: 15px;
+.account-profile-div {
+  padding: 80px;
+  border-top: 2px solid #e4e4e4;
+  /* background-color: rgb(230, 230, 230); */
+  /* background: linear-gradient(to bottom, #d6d6d6, #afafaf 100%); */
 }
 
 .profile-edit-div {
   max-width: 600px;
-  padding: 30px;
+  padding: 0 40px;
+  /* background-color: rgb(253, 253, 253); */
 }
-
-/* User Page Table Stack */
+.user-button {
+  min-width: 100%;
+  box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2);
+  margin-bottom: 10px;
+  height: 50px;
+  font-size: 25px !important;
+}
 
 /* styles google map */
 .google_styling {

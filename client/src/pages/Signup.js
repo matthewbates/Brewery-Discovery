@@ -45,7 +45,7 @@ function Signup({ setCurrentUser, currentUser }) {
       {currentUser ? <Navigate to="/Home" /> : null}
       <Container>
         <div className="pt-5">
-          <Form className={("outer", "inner")}>
+          <Form className="outer inner">
             <br></br>
             <h2>Register Account</h2>
             <Form.Group className="mb-3" controlId="formFirstName">
@@ -111,8 +111,8 @@ function Signup({ setCurrentUser, currentUser }) {
             </Button>
           </Form>
           <br></br>
-          <div className="already_have_account">
-            Already registered? <Link to="/">Log In</Link>
+          <div className="already_have_account text-white">
+            Already registered? <Link className="text-white" to="/">Log In</Link>
           </div>
         </div>
       </Container>

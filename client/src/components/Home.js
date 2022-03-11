@@ -18,17 +18,17 @@ function Home({ currentUser, setBrewery }) {
 
   return (
     <>
-      <Container fluid className="container-home-fluid bg-light">
+      <Container fluid className="container-home-fluid">
         <div className="home-jumbotron d-flex flex-column justify-content-center">
           <div className="overlay"></div>
           <div className="jumbotron-inner">
             <div className="h-50 d-flex flex-column justify-content-center text-light">
-              <h2 className="p-2 text-center">
+              <h3 className="p-2 text-center">
                 {currentUser ? `Hello, ${currentUser.username}!` : ""}
-              </h2>
+              </h3>
               <Col className="text-center">
                 <h2>Welcome To The Brewery Discovery Project</h2>
-                <p className="pt-2">
+                <p className="pt-1 text-uppercase">
                   Search for a brewery by name or location below
                 </p>
               </Col>
@@ -43,25 +43,28 @@ function Home({ currentUser, setBrewery }) {
             </div>
           </div>
         </div>
-        <div className="text-center mt-5">
-          <h2>BREWERY LIST</h2>
-          <p>Click on a brewery below to view the beer list</p>
-          <hr className="w-75 mx-auto mt-5" />
-        </div>
 
         <Container>
-          <Row>
-            <Col>
-              <BreweryCardList
-                breweries={breweries}
-                brewerySearch={brewerySearch}
-                brewerySetter={setBrewerySearch}
-                stateSearch={stateSearch}
-                stateSetter={setStateSearch}
-                setBrewery={setBrewery}
-              />
-            </Col>
-          </Row>
+          <div className="brewery-list-container">
+            <div className="text-center mt-5">
+              <h2>BREWERY LIST</h2>
+              <p>Click on a brewery below to view the beer list</p>
+              <hr className="mx-auto mt-3" />
+            </div>
+
+            <Row>
+              <Col>
+                <BreweryCardList
+                  breweries={breweries}
+                  brewerySearch={brewerySearch}
+                  brewerySetter={setBrewerySearch}
+                  stateSearch={stateSearch}
+                  stateSetter={setStateSearch}
+                  setBrewery={setBrewery}
+                />
+              </Col>
+            </Row>
+          </div>
         </Container>
       </Container>
     </>

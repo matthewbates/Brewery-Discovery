@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Col, Row } from "react-bootstrap";
-import MiniFridge from "./MiniFridge";
 
-function BeerCard({ name, abv, type }) {
+function BeerCard({ id, name, abv, type }) {
+  const [addToMiniFridge, setAddToMiniFridge] = useState([]);
+
+  function handleAddToFavorites(e) {
+    const selectedId = e.currentTarget.id;
+
+    if (!addToMiniFridge.includes(selectedId)) {
+      setAddToMiniFridge((addToMiniFridge) => [...addToMiniFridge, selectedId]);
+    }
+  }
+
   return (
     <>
       <Col sm={12} md={12} lg={12} className="justify-content-center mb-2 mt-2">
@@ -28,7 +37,11 @@ function BeerCard({ name, abv, type }) {
             </Col>
 
             <Col lg={3} className="text-center">
-              <Button className="" variant="outline-dark">
+              <Button
+                className=""
+                variant="outline-dark"
+                onClick={handleAddToFavorites}
+              >
                 Add To Beer List
               </Button>
             </Col>
