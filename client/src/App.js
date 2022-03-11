@@ -36,6 +36,7 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        {/* Navbar with Logo, Links, and login/logout */}
         <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
           <Container fluid className="mx-3 align-items-center me-auto">
             <Navbar.Brand as={Link} to="/home">
