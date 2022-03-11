@@ -38,7 +38,7 @@ function Login({ setCurrentUser, currentUser }) {
       {currentUser ? <Navigate to="/Home" /> : null}
       <Container>
         <div className="pt-5">
-          <Form className={("outer", "inner")}>
+          <Form className="outer inner">
             <br></br>
             <h2>Welcome Back!</h2>
             {/* user log in form */}
@@ -63,8 +63,8 @@ function Login({ setCurrentUser, currentUser }) {
           </Form>
           <br></br>
           {/* link to sign up page */}
-          <div className="dont_have_account">
-            Don't have an account? <Link to="/signup">Sign Up</Link>
+          <div className="dont_have_account text-light">
+            Don't have an account? <Link to="/signup" className="text-light">Sign Up</Link>
           </div>
         </div>
       </Container>
