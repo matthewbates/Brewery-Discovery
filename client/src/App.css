@@ -20,7 +20,7 @@ nav {
 
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.4rem;
   letter-spacing: 0.02rem;
 }
@@ -86,6 +86,7 @@ p {
   height: 354px;
   max-width: 555px !important;
   overflow: hidden !important;
+  text-align: center;
 }
 
 .card-img-filter {
@@ -96,7 +97,7 @@ p {
 }
 
 .card-img-o {
-  background: linear-gradient(to bottom, rgb(41, 32, 22), transparent);
+  background: linear-gradient(to bottom, rgb(49, 47, 46),rgba(26, 22, 11, 0.329) );
   
 
 }
@@ -109,6 +110,7 @@ p {
 .card-p-text {
   margin-top: -25px;
 }
+
 
 /* Card Footer */
 

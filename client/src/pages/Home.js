@@ -30,7 +30,7 @@ function Home({ currentUser, setBrewery }) {
                     {currentUser ? `Hello, ${currentUser.first_name}!` : ""}
                   </h2>
                   <Col className="text-center">
-                    <h2>Welcome To The Brewery Discovery Project</h2>
+                    <h3>Welcome To The Brewery Discovery Project</h3>
                     <p className="pt-2">
                       Search for a brewery by name or location below
                     </p>
@@ -49,7 +49,7 @@ function Home({ currentUser, setBrewery }) {
             <div className="brewery-list-container pt-5">
               <Container>
                 <div className="text-center">
-                  <h2>BREWERY LIST</h2>
+                  <h1>BREWERY LIST</h1>
                   <p>Click on a brewery below to view the beer list</p>
                   <hr className="w-75 mx-auto mt-5" />
                 </div>
