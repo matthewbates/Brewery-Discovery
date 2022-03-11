@@ -1,6 +1,14 @@
 import React from "react";
 import { Navigate } from "react-router-dom";
-function Reviews({ currentUser }) {
+import MiniFridge from "../components/MiniFridge";
+import BeerCard from "../components/BeerCard";
+
+function Reviews({
+  currentUser,
+  setAddToMiniFridge,
+  setFavorites,
+  addToMiniFridge,
+}) {
   return (
     <>
       {currentUser ? (

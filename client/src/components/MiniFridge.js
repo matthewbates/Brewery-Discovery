@@ -1,18 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import Reviews from "../pages/Reviews";
+import BeerCard from "./BeerCard";
 
 function MiniFridge() {
-  const [addToMiniFridge, setAddToMiniFridge] = useState([]);
+  const [miniFridge, setAddToMiniFridge] = useState([]);
+  const [favoriteIds, setFavoriteIds] = useState([]);
 
-  function handleAddToFavorites() {
-    setAddToMiniFridge((addToMiniFridge) => !addToMiniFridge);
-  }
+  const favoriteBeers = miniFridge.filter((miniFridge) =>
+    favoriteIds.includes(miniFridge.id)
+  );
 
-  function renderAddToFridge() {
-      
-  }
+  useEffect(() => {
+    fetch("/beers")
+      .then((response) => response.json())
+      .then(console.log);
+  });
 
   return (
-    <div className="add_to_favorites" onClick={handleAddToFavorites}></div>
+    <div>
+      {/* <BeerCard
+        addBeer={handleAddToFavorites}
+        setAddToMiniFridge={setAddToMiniFridge}
+        setFavorites={setFavorites}
+        addToMiniFridge={addToMiniFridge}
+      />
+      <Reviews
+        addBeer={handleAddToFavorites}
+        setAddToMiniFridge={setAddToMiniFridge}
+        setFavorites={setFavorites}
+        addToMiniFridge={addToMiniFridge} */}
+      />
+    </div>
   );
 }
 

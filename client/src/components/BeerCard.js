@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
+import MiniFridge from "./MiniFridge";
 
 function BeerCard({ name, abv, type }) {
   return (
