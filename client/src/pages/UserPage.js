@@ -3,8 +3,8 @@ import { Form, Button, Container, Table, Col, Row } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 
 function UserPage({ currentUser, setCurrentUser }) {
-  // Conditional added to prevent error if state is not set
-
+  //State held for User Profile
+    // Conditional added to prevent error if state is not set
   const [firstName, setFirstName] = useState(
     `${currentUser ? currentUser.first_name : null}`
   );
@@ -22,9 +22,9 @@ function UserPage({ currentUser, setCurrentUser }) {
     `${currentUser ? currentUser.password_confirmation : null}`
   );
 
-  // table data
+  // Edit button state
   const [edit, setEdit] = useState(false);
-
+// Submits update by user to db
   function handleSubmit(e) {
     fetch(`/users/${currentUser.id}`, {
       method: "PATCH",
@@ -43,14 +43,15 @@ function UserPage({ currentUser, setCurrentUser }) {
       .then((r) => r.json())
       .then((r) => {
         if (r.email) {
+          // if patch success setCurrentUser to response
           setCurrentUser(r);
         } else {
+          // if fail alert with errors
           alert(r.errors);
-          setCurrentUser();
         }
       });
   }
-
+// Deletes User's Profile
   function handleDelete(e) {
     fetch(`/users/${currentUser.id}`, {
       method: "DELETE",
@@ -59,10 +60,11 @@ function UserPage({ currentUser, setCurrentUser }) {
       setCurrentUser();
     });
   }
-  console.log(firstName, lastName, email, username);
+
   return (
     <div>
       <Container className="body_of_form">
+        {/* Ternary used to verify currentUser */}
         {!currentUser ? (
           <Navigate to="/" />
         ) : (
@@ -85,6 +87,7 @@ function UserPage({ currentUser, setCurrentUser }) {
                       <tbody>
                         <tr>
                           <td>
+                            {/* Ternary used if "edit" is true show form/ iffalse show current value */}
                             {edit ? (
                               <div>
                                 <Form.Control
@@ -152,22 +155,23 @@ function UserPage({ currentUser, setCurrentUser }) {
                     <h3 className="text-center pt-3">EDIT YOU PROFILE</h3>
                     <hr className="w-75 mx-auto" />
                     <div className="p-4 text-center w-50 mx-auto">
-                      {!edit ? (
+                      {/* Ternary for edit button | true displays cancle edit/ false displays edit profile |onClick switches boolean value */}
+                      {edit ? (
                         <Button
                           className="mx-auto user-button"
-                          onClick={() => setEdit(true)}
+                          onClick={() => setEdit(!edit)}
                         >
-                          Edit Profile
+                          Cancle Edit
                         </Button>
                       ) : (
                         <Button
                           className="mx-auto user-button"
-                          onClick={() => setEdit(false)}
+                          onClick={() => setEdit(!edit)}
                         >
-                          Cancle Edit
+                          Edit Profile
                         </Button>
                       )}
-
+                      {/* Confirm changes button | Delete Profile button */}
                       <Button
                         className="mx-auto user-button"
                         onClick={handleSubmit}

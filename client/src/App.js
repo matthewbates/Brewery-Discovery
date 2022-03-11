@@ -13,7 +13,7 @@ import UserPage from "./pages/UserPage";
 function App() {
   const [currentUser, setCurrentUser] = useState("");
   const [brewery, setBrewery] = useState("");
-
+  //>> Logout
   function handleLogout(e) {
     fetch("/logout", {
       method: "DELETE",
@@ -32,6 +32,7 @@ function App() {
   useEffect(() => {
     localStorage.setItem("user-data", JSON.stringify(currentUser));
   });
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -55,6 +56,7 @@ function App() {
                   Profile
                 </Nav.Link>
                 <div>
+                  {/* Ternary used for distplaying Login/Logout button */}
                   {!currentUser ? (
                     <Button
                       className="mx-2 nav-login-btn"
@@ -80,6 +82,8 @@ function App() {
             </div>
           </Container>
         </Navbar>
+
+        {/* Routes */}
         <Routes>
           <Route
             className={("inner", "outer")}
