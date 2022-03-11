@@ -135,7 +135,7 @@ function MapContainer() {
         "M - Wed: 12-9 p.m. | Th - Sat: 12-10 p.m. | Sun: 12-8 p.m.",
       location: {
         lat: 33.846322,
-        lng: -118309931,
+        lng: -118.309931,
       },
     },
     {
@@ -237,7 +237,7 @@ function MapContainer() {
       hours_of_operation: "M - Th: CLOSED | F - Sun: 12-6 p.m.",
       location: {
         lat: 32.745837,
-        lng: -117249027,
+        lng: -117.249027,
       },
     },
     {
@@ -307,7 +307,7 @@ function MapContainer() {
       hours_of_operation: "M - Sun: 12-11 p.m.",
       location: {
         lat: 32.741629,
-        lng: -97324841,
+        lng: -97.324841,
       },
     },
     {
@@ -433,6 +433,17 @@ function MapContainer() {
       location: {
         lat: 40.020487,
         lng: -105.251154,
+      },
+    },
+    {
+      name: "Aspen Brewing Company",
+      address: "121 S Galena Street, Aspen, CO 81611",
+      phone_number: "(970) 710-2461",
+      website: "https://aspenbrewingco.com/",
+      hours_of_operation: "M - Sun: 12-10 p.m.",
+      location: {
+        lat: 39.189778,
+        lng: -106.818443,
       },
     },
   ];

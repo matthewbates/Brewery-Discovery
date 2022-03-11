@@ -503,6 +503,20 @@ b35 =
     brewery_lat: '40.020487',
     brewery_lon: '-105.251154',
   )
+b36 =
+  Brewery.create(
+    brewery_name: 'Aspen Brewing Co.',
+    brewery_logo:
+      'https://www.coloradobrewerylist.com/wp-content/uploads/2014/02/Aspen-300x300.png',
+    brewery_website: 'https://aspenbrewingco.com/',
+    brewery_address: '121 S Galena Street, Aspen, CO 81611',
+    brewery_phone_number: '(970) 710-2461',
+    brewery_state: 'CO',
+    brewery_image:
+      'https://res.cloudinary.com/sagacity/image/upload/c_crop,h_810,w_1080,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/aspen_tap1edited_w9ja02.jpg',
+    brewery_lat: '39.189778',
+    brewery_lon: '-106.818443',
+  )
 puts '🍺 Creating beers...'
 # Goat Patch
 a1 =
@@ -1759,6 +1773,44 @@ a142 =
     beer_type: 'American Pale Ale',
     brewery: b35,
   )
+
+# Aspen Brewing
+a138 =
+  Beer.create!(
+    beer_name: 'Independence Pass',
+    beer_abv: 7.0,
+    beer_type: 'IPA -American',
+    brewery: b35,
+  )
+a139 =
+  Beer.create!(
+    beer_name: 'This Seasons Blonde',
+    beer_abv: 5.6,
+    beer_type: 'Blonde',
+    brewery: b35,
+  )
+a140 =
+  Beer.create!(
+    beer_name: 'Ajax',
+    beer_abv: 4.7,
+    beer_type: 'Pilsner',
+    brewery: b35,
+  )
+a141 =
+  Beer.create!(
+    beer_name: 'Cloud 9',
+    beer_abv: 6.8,
+    beer_type: 'Saison',
+    brewery: b35,
+  )
+a142 =
+  Beer.create!(
+    beer_name: 'Excess In Moderation',
+    beer_abv: 5.6,
+    beer_type: 'Hazy IPA',
+    brewery: b35,
+  )
+
 puts 'Creating users...'
 u1 = User.create!(username: 'test', password_digest: 'test')
 
