@@ -31,7 +31,7 @@ function BreweryCard({
               <Card.Text className="p-1">{website}</Card.Text>
               <Card.Text className="card-p-text p-1">{phone}</Card.Text>
               <Button
-                variant="light"
+                variant="warning w-50"
                 className="mx-auto"
                 as={Link}
                 onClick={(e) => setBrewery(id)}

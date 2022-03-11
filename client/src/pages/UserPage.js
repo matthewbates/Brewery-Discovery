@@ -3,8 +3,8 @@ import { Form, Button, Container, Table, Col, Row } from "react-bootstrap";
 import { Navigate } from "react-router-dom";
 
 function UserPage({ currentUser, setCurrentUser }) {
-  // Conditional added to prevent error if state is not set
-
+  //State held for User Profile
+    // Conditional added to prevent error if state is not set
   const [firstName, setFirstName] = useState(
     `${currentUser ? currentUser.first_name : null}`
   );
@@ -22,9 +22,9 @@ function UserPage({ currentUser, setCurrentUser }) {
     `${currentUser ? currentUser.password_confirmation : null}`
   );
 
-  // table data
+  // Edit button state
   const [edit, setEdit] = useState(false);
-
+// Submits update by user to db
   function handleSubmit(e) {
     fetch(`/users/${currentUser.id}`, {
       method: "PATCH",
@@ -43,14 +43,15 @@ function UserPage({ currentUser, setCurrentUser }) {
       .then((r) => r.json())
       .then((r) => {
         if (r.email) {
+          // if patch success setCurrentUser to response
           setCurrentUser(r);
         } else {
+          // if fail alert with errors
           alert(r.errors);
-          setCurrentUser();
         }
       });
   }
-
+// Deletes User's Profile
   function handleDelete(e) {
     fetch(`/users/${currentUser.id}`, {
       method: "DELETE",
@@ -59,10 +60,11 @@ function UserPage({ currentUser, setCurrentUser }) {
       setCurrentUser();
     });
   }
-  console.log(firstName, lastName, email, username);
+
   return (
     <div>
       <Container className="body_of_form">
+        {/* Ternary used to verify currentUser */}
         {!currentUser ? (
           <Navigate to="/" />
         ) : (
