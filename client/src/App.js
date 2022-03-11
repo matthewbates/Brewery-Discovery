@@ -36,10 +36,10 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
           <Container fluid className="mx-3 align-items-center me-auto">
             <Navbar.Brand as={Link} to="/home">
-              <h3 className="mt-2"> Brewery Discovery</h3>
+              <h3 className="mt-2 text-warning"> Brewery Discovery</h3>
             </Navbar.Brand>
             <div className="">
               <Navbar.Toggle aria-controls="navbarScroll" />
@@ -65,7 +65,7 @@ function App() {
                         className="mx-2 nav-login-btn"
                         as={Link}
                         to="/"
-                        variant="outline-light"
+                        variant="outline-warning"
                       >
                         Login
                       </Button>
@@ -75,7 +75,7 @@ function App() {
                         className="mx-2 nav-login-btn"
                         as={Link}
                         to="/"
-                        variant="outline-light"
+                        variant="outline-warning"
                       >
                         Log out
                       </Button>

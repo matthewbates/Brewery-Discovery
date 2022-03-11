@@ -31,7 +31,7 @@ function Home({ currentUser, setBrewery }) {
                   </h2>
                   <Col className="text-center">
                     <h3>Welcome To The Brewery Discovery Project</h3>
-                    <p className="pt-2">
+                    <p className="pt-2 text-lg">
                       Search for a brewery by name or location below
                     </p>
                   </Col>
