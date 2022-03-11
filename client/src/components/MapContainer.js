@@ -442,7 +442,7 @@ function MapContainer() {
       <LoadScript googleMapsApiKey="AIzaSyD4G8pUuPzvq_CQ9wdT5eOJpGG4ywQtFsY">
         <GoogleMap
           mapContainerStyle={mapStyles}
-          zoom={4.9}
+          zoom={11}
           center={currentPosition}
         >
           {locations.map((item) => {

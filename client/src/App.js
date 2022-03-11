@@ -9,6 +9,7 @@ import Signup from "./pages/Signup";
 import Brewery from "./pages/Brewery";
 import MapContainer from "./components/MapContainer";
 import UserPage from "./pages/UserPage";
+import MiniFridge from "./components/MiniFridge";
 
 function App() {
   const [currentUser, setCurrentUser] = useState("");
@@ -49,7 +50,7 @@ function App() {
                 <Nav.Link className="mx-2" as={Link} to="/map">
                   Map
                 </Nav.Link>
-                <Nav.Link className="mx-2" as={Link} to="/reviews">
+                <Nav.Link className="mx-2" as={Link} to="/mini_fridge">
                   Mini-Fridge
                 </Nav.Link>
                 <Nav.Link as={Link} to="/userpage">
@@ -112,7 +113,7 @@ function App() {
             element={<Home currentUser={currentUser} setBrewery={setBrewery} />}
           />
           <Route
-            path="/reviews"
+            path="/mini_fridge"
             element={<Reviews currentUser={currentUser} />}
           />
           <Route
