@@ -31,7 +31,7 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("user-data", JSON.stringify(currentUser));
-  },[]);
+  });
   return (
     <BrowserRouter>
       <div className="App">

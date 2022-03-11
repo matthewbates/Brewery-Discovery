@@ -1729,35 +1729,35 @@ a138 =
     beer_name: 'Trail Blazer',
     beer_abv: 5.1,
     beer_type: 'Blonde Style Ale',
-    brewery: b34,
+    brewery: b35,
   )
 a139 =
   Beer.create!(
     beer_name: 'Raspberry Rising',
     beer_abv: 5.2,
     beer_type: 'Unfiltered Wheat Ale',
-    brewery: b34,
+    brewery: b35,
   )
 a140 =
   Beer.create!(
     beer_name: 'El Dorado',
     beer_abv: 5.3,
     beer_type: 'Lager',
-    brewery: b34,
+    brewery: b35,
   )
 a141 =
   Beer.create!(
     beer_name: 'Patio Pounder',
     beer_abv: 4.7,
     beer_type: 'Session IPA',
-    brewery: b34,
+    brewery: b35,
   )
 a142 =
   Beer.create!(
     beer_name: 'Hoppy Boy',
     beer_abv: 5.7,
     beer_type: 'American Pale Ale',
-    brewery: b34,
+    brewery: b35,
   )
 puts 'Creating users...'
 u1 = User.create!(username: 'test', password_digest: 'test')
