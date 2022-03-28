@@ -9,17 +9,17 @@ function UserPage({ currentUser, setCurrentUser }) {
     `${currentUser ? currentUser.first_name : null}`
   );
   const [lastName, setLastName] = useState(
-    `${currentUser ? currentUser.first_name : null}`
-  );
-  const [email, setEmail] = useState(
     `${currentUser ? currentUser.last_name : null}`
   );
-  const [username, setUsername] = useState(
+  const [email, setEmail] = useState(
     `${currentUser ? currentUser.email : null}`
   );
-  const [password] = useState(`${currentUser ? currentUser.password : null}`);
+  const [username, setUsername] = useState(
+    `${currentUser ? currentUser.username : null}`
+  );
+  const [password] = useState(`${currentUser.password}`);
   const [passwordConfirmation] = useState(
-    `${currentUser ? currentUser.password_confirmation : null}`
+    `${currentUser.password}`
   );
 
   // Edit button state
@@ -51,6 +51,8 @@ function UserPage({ currentUser, setCurrentUser }) {
         }
       });
   }
+
+  console.log(firstName, lastName, email, username)
 // Deletes User's Profile
   function handleDelete(e) {
     fetch(`/users/${currentUser.id}`, {
