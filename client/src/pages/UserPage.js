@@ -17,8 +17,11 @@ function UserPage({ currentUser, setCurrentUser }) {
   const [username, setUsername] = useState(
     `${currentUser ? currentUser.username : null}`
   );
-  const [password] = useState(currentUser.password);
-  const [passwordConfirmation] = useState(currentUser.password_confirmation);
+  const [password] = useState(`${currentUser.password}`);
+  const [passwordConfirmation] = useState(
+    `${currentUser.password}`
+  );
+
 
   // Edit button state
   const [edit, setEdit] = useState(false);
@@ -49,7 +52,9 @@ function UserPage({ currentUser, setCurrentUser }) {
         }
       });
   }
-  // Deletes User's Profile
+
+  console.log(firstName, lastName, email, username)
+// Deletes User's Profile
   function handleDelete(e) {
     fetch(`/users/${currentUser.id}`, {
       method: "DELETE",
