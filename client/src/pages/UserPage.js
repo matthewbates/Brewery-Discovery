@@ -4,27 +4,25 @@ import { Navigate } from "react-router-dom";
 
 function UserPage({ currentUser, setCurrentUser }) {
   //State held for User Profile
-    // Conditional added to prevent error if state is not set
+  // Conditional added to prevent error if state is not set
   const [firstName, setFirstName] = useState(
     `${currentUser ? currentUser.first_name : null}`
   );
   const [lastName, setLastName] = useState(
-    `${currentUser ? currentUser.first_name : null}`
-  );
-  const [email, setEmail] = useState(
     `${currentUser ? currentUser.last_name : null}`
   );
-  const [username, setUsername] = useState(
+  const [email, setEmail] = useState(
     `${currentUser ? currentUser.email : null}`
   );
-  const [password] = useState(`${currentUser ? currentUser.password : null}`);
-  const [passwordConfirmation] = useState(
-    `${currentUser ? currentUser.password_confirmation : null}`
+  const [username, setUsername] = useState(
+    `${currentUser ? currentUser.username : null}`
   );
+  const [password] = useState(currentUser.password);
+  const [passwordConfirmation] = useState(currentUser.password_confirmation);
 
   // Edit button state
   const [edit, setEdit] = useState(false);
-// Submits update by user to db
+  // Submits update by user to db
   function handleSubmit(e) {
     fetch(`/users/${currentUser.id}`, {
       method: "PATCH",
@@ -36,8 +34,8 @@ function UserPage({ currentUser, setCurrentUser }) {
         last_name: lastName,
         email,
         username,
-        password,
-        password_confirmation: passwordConfirmation,
+        // password,
+        // password_confirmation: passwordConfirmation,
       }),
     })
       .then((r) => r.json())
@@ -51,7 +49,7 @@ function UserPage({ currentUser, setCurrentUser }) {
         }
       });
   }
-// Deletes User's Profile
+  // Deletes User's Profile
   function handleDelete(e) {
     fetch(`/users/${currentUser.id}`, {
       method: "DELETE",
@@ -75,7 +73,13 @@ function UserPage({ currentUser, setCurrentUser }) {
                   <h1 className="text-center p-3 mb-3">Account Profile </h1>
                   <div className="account-profile-div">
                     <div className="p-2 table-responsive">
-                      <Table striped bordered hover variant="striped" className="border-dark">
+                      <Table
+                        striped
+                        bordered
+                        hover
+                        variant="striped"
+                        className="border-dark"
+                      >
                         <thead>
                           <tr>
                             <th>First Name</th>

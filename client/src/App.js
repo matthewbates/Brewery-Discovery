@@ -39,13 +39,14 @@ function App() {
         {/* Navbar with Logo, Links, and login/logout */}
         <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
           <Container fluid className="mx-3 align-items-center me-auto">
+            
             <Navbar.Brand as={Link} to="/home">
               <h3 className="mt-2 text-warning"> Brewery Discovery</h3>
             </Navbar.Brand>
             <div className="">
               <Navbar.Toggle aria-controls="navbarScroll" />
               <Navbar.Collapse id=" navbarScroll">
-                <Nav className="me-auto text-left" navbarScroll >
+                <Nav className="me-auto text-left" navbarScroll>
                   <Nav.Link className="mx-2" as={Link} to="/home">
                     Home
                   </Nav.Link>

@@ -16,6 +16,4 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     head :no_content
   end
-
-  private
 end

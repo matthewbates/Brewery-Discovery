@@ -47,7 +47,7 @@ p {
   background-size: cover;
 }
 
-.home-jumbotorn > .overlay {
+.home-jumbotron > .overlay {
   position: absolute;
   top: 0;
   right: 0;
@@ -56,7 +56,7 @@ p {
   z-index: 1;
 }
 
-.home-jumbotorn > .jumbotron-inner {
+.home-jumbotron > .jumbotron-inner {
   position: relative;
   z-index: 2;
 }

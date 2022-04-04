@@ -14,6 +14,7 @@ function BreweryCard({
 }) {
   return (
     <>
+    {/* margin-bottom, margin-top */}
       <Col sm={12} md={12} lg={6} className="gap-3 mb-5 mt-5">
         <Card
           as={Link}

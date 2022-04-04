@@ -3,12 +3,8 @@ class UsersController < ApplicationController
   wrap_parameters format: []
   rescue_from ActiveRecord::RecordInvalid, with: :invalid_params
 
-  # def index
-  #   render json: User.all
-  # end
-
   def show
-    current_user = User.find(session[:user_id])
+    current_user = User.find(session[:id])
     render json: current_user, status: :ok
   end
 
@@ -16,10 +12,10 @@ class UsersController < ApplicationController
     user = User.create!(user_params)
     render json: user, status: :created
   end
-  
+
   def update
     user = User.find(params[:id])
-    
+
     user.update(user_params)
     render json: user, status: :ok
   end
@@ -28,6 +24,7 @@ class UsersController < ApplicationController
     user.destroy
     head :no_content
   end
+
   private
 
   #errors
@@ -40,6 +37,17 @@ class UsersController < ApplicationController
 
   # params
   def user_params
-    params.permit(:first_name, :last_name, :email, :username, :password, :password_confirmation)
+    params.permit(
+      :first_name,
+      :last_name,
+      :email,
+      :username,
+      :password,
+      :password_confirmation,
+    )
+  end
+
+  def update_params
+    params.permit(:first_name, :last_name, :email, :username)
   end
 end
