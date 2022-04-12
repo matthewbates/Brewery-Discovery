@@ -13,7 +13,7 @@
 ![Codewars](https://img.shields.io/badge/Codewars-B1361E?style=plastic&logo=codewars&logoColor=grey)
 
 
-## Learning Goals:
+## Learning Goals
 - Create a full-stack web application with a React.js front-end & Rails API back-end
 - Have at least two models with a one-to-many relationship on the backend, with full CRUD actions
 - Have at least two different client-side routes using React Router
